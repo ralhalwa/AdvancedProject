@@ -298,3 +298,4 @@ C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\refint\
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.pdb
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.genruntimeconfig.cache
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\ref\FormApp.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.AuditLogs.resources

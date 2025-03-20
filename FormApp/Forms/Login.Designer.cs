@@ -48,7 +48,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.BackColor = Color.WhiteSmoke;
+            txtEmail.BackColor = SystemColors.Window;
             txtEmail.Location = new Point(617, 314);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(447, 39);
