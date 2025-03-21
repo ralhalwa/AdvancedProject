@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace FormApp
 {
-    public partial class Dashboard: Form
+    public partial class Dashboard : Form
     {
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
