@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Button();
-            btnReturnRequest = new Button();
-            btnRentalTransactions = new Button();
-            btnReturnRecords = new Button();
-            btnEquipmentManagement = new Button();
-            btnAuditLogs = new Button();
-            btnDbBackup = new Button();
-            btnGenerateReport = new Button();
-            btnLogout = new Button();
-            btnExit = new Button();
             flowLayoutPanel2 = new FlowLayoutPanel();
             lblName = new Label();
             lblPosition = new Label();
@@ -65,134 +54,23 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            flowLayoutPanel1.SuspendLayout();
+            lblDashboard = new Label();
+            label16 = new Label();
+            lblRequest = new Label();
+            lblTransactions = new Label();
+            lblEquipmentManagement = new Label();
+            lblReturnRecords = new Label();
+            lblGenerateReport = new Label();
+            lblDBbackup = new Label();
+            lblViewAuditLogs = new Label();
+            lblExit = new Label();
+            lblLogOut = new Label();
             flowLayoutPanel2.SuspendLayout();
             pnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(btnReturnRequest);
-            flowLayoutPanel1.Controls.Add(btnRentalTransactions);
-            flowLayoutPanel1.Controls.Add(btnReturnRecords);
-            flowLayoutPanel1.Controls.Add(btnEquipmentManagement);
-            flowLayoutPanel1.Controls.Add(btnAuditLogs);
-            flowLayoutPanel1.Controls.Add(btnDbBackup);
-            flowLayoutPanel1.Controls.Add(btnGenerateReport);
-            flowLayoutPanel1.Controls.Add(btnLogout);
-            flowLayoutPanel1.Controls.Add(btnExit);
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(-2, 60);
-            flowLayoutPanel1.Margin = new Padding(10);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(0, 15, 0, 0);
-            flowLayoutPanel1.Size = new Size(211, 389);
-            flowLayoutPanel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 18);
-            button1.Name = "button1";
-            button1.Size = new Size(208, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Dashboard";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // btnReturnRequest
-            // 
-            btnReturnRequest.Location = new Point(3, 53);
-            btnReturnRequest.Name = "btnReturnRequest";
-            btnReturnRequest.Size = new Size(208, 29);
-            btnReturnRequest.TabIndex = 1;
-            btnReturnRequest.Text = "Rental Requests";
-            btnReturnRequest.UseVisualStyleBackColor = true;
-            btnReturnRequest.Click += button2_Click;
-            // 
-            // btnRentalTransactions
-            // 
-            btnRentalTransactions.Location = new Point(3, 88);
-            btnRentalTransactions.Name = "btnRentalTransactions";
-            btnRentalTransactions.Size = new Size(208, 29);
-            btnRentalTransactions.TabIndex = 2;
-            btnRentalTransactions.Text = "Rental Transactions";
-            btnRentalTransactions.UseVisualStyleBackColor = true;
-            btnRentalTransactions.Click += btnRentalTransactions_Click;
-            // 
-            // btnReturnRecords
-            // 
-            btnReturnRecords.Location = new Point(3, 123);
-            btnReturnRecords.Name = "btnReturnRecords";
-            btnReturnRecords.Size = new Size(208, 29);
-            btnReturnRecords.TabIndex = 3;
-            btnReturnRecords.Text = "Return Records";
-            btnReturnRecords.UseVisualStyleBackColor = true;
-            btnReturnRecords.Click += btnRentalRecords_Click;
-            // 
-            // btnEquipmentManagement
-            // 
-            btnEquipmentManagement.Location = new Point(3, 158);
-            btnEquipmentManagement.Name = "btnEquipmentManagement";
-            btnEquipmentManagement.Size = new Size(208, 29);
-            btnEquipmentManagement.TabIndex = 4;
-            btnEquipmentManagement.Text = "Equipment Management";
-            btnEquipmentManagement.UseVisualStyleBackColor = true;
-            btnEquipmentManagement.Click += btnEquipmentManagement_Click;
-            // 
-            // btnAuditLogs
-            // 
-            btnAuditLogs.Location = new Point(3, 193);
-            btnAuditLogs.Name = "btnAuditLogs";
-            btnAuditLogs.Size = new Size(208, 29);
-            btnAuditLogs.TabIndex = 5;
-            btnAuditLogs.Text = "View Audit Logs";
-            btnAuditLogs.UseVisualStyleBackColor = true;
-            btnAuditLogs.Click += btnAuditLogs_Click;
-            // 
-            // btnDbBackup
-            // 
-            btnDbBackup.Location = new Point(3, 228);
-            btnDbBackup.Name = "btnDbBackup";
-            btnDbBackup.Size = new Size(208, 29);
-            btnDbBackup.TabIndex = 6;
-            btnDbBackup.Text = "Perform Database Backup";
-            btnDbBackup.UseVisualStyleBackColor = true;
-            btnDbBackup.Click += btnDbBackup_Click;
-            // 
-            // btnGenerateReport
-            // 
-            btnGenerateReport.Location = new Point(3, 263);
-            btnGenerateReport.Name = "btnGenerateReport";
-            btnGenerateReport.Size = new Size(208, 29);
-            btnGenerateReport.TabIndex = 7;
-            btnGenerateReport.Text = "Generate Report";
-            btnGenerateReport.UseVisualStyleBackColor = true;
-            btnGenerateReport.Click += btnGenerateReport_Click;
-            // 
-            // btnLogout
-            // 
-            btnLogout.Location = new Point(3, 298);
-            btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(208, 29);
-            btnLogout.TabIndex = 8;
-            btnLogout.Text = "Log Out";
-            btnLogout.UseVisualStyleBackColor = true;
-            btnLogout.Click += btnLogout_Click;
-            // 
-            // btnExit
-            // 
-            btnExit.Location = new Point(3, 333);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(208, 29);
-            btnExit.TabIndex = 9;
-            btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = true;
-            btnExit.Click += button10_Click;
             // 
             // flowLayoutPanel2
             // 
@@ -203,8 +81,9 @@
             flowLayoutPanel2.Margin = new Padding(0, 4, 0, 0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Padding = new Padding(3);
-            flowLayoutPanel2.Size = new Size(802, 62);
+            flowLayoutPanel2.Size = new Size(853, 62);
             flowLayoutPanel2.TabIndex = 1;
+            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
             // lblName
             // 
@@ -241,9 +120,9 @@
             pnlInfo.Controls.Add(label3);
             pnlInfo.Controls.Add(label2);
             pnlInfo.Controls.Add(label1);
-            pnlInfo.Location = new Point(232, 73);
+            pnlInfo.Location = new Point(260, 76);
             pnlInfo.Name = "pnlInfo";
-            pnlInfo.Size = new Size(568, 152);
+            pnlInfo.Size = new Size(571, 161);
             pnlInfo.TabIndex = 2;
             // 
             // label14
@@ -380,26 +259,27 @@
             // 
             lblRecentEq.AutoSize = true;
             lblRecentEq.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRecentEq.Location = new Point(232, 246);
+            lblRecentEq.Location = new Point(260, 259);
             lblRecentEq.Name = "lblRecentEq";
             lblRecentEq.Size = new Size(230, 23);
             lblRecentEq.TabIndex = 3;
             lblRecentEq.Text = "Recently Added Equipment";
+            lblRecentEq.Click += lblRecentEq_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(232, 272);
+            dataGridView1.Location = new Point(260, 285);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(556, 67);
+            dataGridView1.Size = new Size(556, 88);
             dataGridView1.TabIndex = 4;
             // 
             // lblRecentRentalReq
             // 
             lblRecentRentalReq.AutoSize = true;
             lblRecentRentalReq.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRecentRentalReq.Location = new Point(232, 342);
+            lblRecentRentalReq.Location = new Point(260, 388);
             lblRecentRentalReq.Name = "lblRecentRentalReq";
             lblRecentRentalReq.Size = new Size(183, 23);
             lblRecentRentalReq.TabIndex = 5;
@@ -408,19 +288,19 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(232, 365);
+            dataGridView2.Location = new Point(260, 414);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(556, 67);
+            dataGridView2.Size = new Size(556, 90);
             dataGridView2.TabIndex = 6;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Gainsboro;
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(-2, 67);
+            panel1.Location = new Point(-2, 60);
             panel1.Name = "panel1";
-            panel1.Size = new Size(806, 3);
+            panel1.Size = new Size(849, 3);
             panel1.TabIndex = 7;
             // 
             // panel2
@@ -434,17 +314,143 @@
             // panel3
             // 
             panel3.BackColor = Color.Gainsboro;
-            panel3.Location = new Point(215, 72);
+            panel3.Location = new Point(240, 70);
             panel3.Name = "panel3";
-            panel3.Size = new Size(3, 393);
+            panel3.Size = new Size(3, 455);
             panel3.TabIndex = 8;
+            panel3.Paint += panel3_Paint;
+            // 
+            // lblDashboard
+            // 
+            lblDashboard.BackColor = Color.FromArgb(255, 128, 0);
+            lblDashboard.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold);
+            lblDashboard.ForeColor = Color.FromArgb(255, 128, 0);
+            lblDashboard.Location = new Point(-2, 72);
+            lblDashboard.Name = "lblDashboard";
+            lblDashboard.Size = new Size(242, 40);
+            lblDashboard.TabIndex = 55;
+            lblDashboard.Text = "Dashboard";
+            lblDashboard.Click += label15_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.FromArgb(255, 128, 0);
+            label16.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(26, 80);
+            label16.Name = "label16";
+            label16.Size = new Size(93, 23);
+            label16.TabIndex = 14;
+            label16.Text = "Dashboard";
+            // 
+            // lblRequest
+            // 
+            lblRequest.AutoSize = true;
+            lblRequest.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRequest.Location = new Point(26, 126);
+            lblRequest.Name = "lblRequest";
+            lblRequest.Size = new Size(133, 23);
+            lblRequest.TabIndex = 44;
+            lblRequest.Text = "Rental Requests";
+            // 
+            // lblTransactions
+            // 
+            lblTransactions.AutoSize = true;
+            lblTransactions.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTransactions.Location = new Point(26, 170);
+            lblTransactions.Name = "lblTransactions";
+            lblTransactions.Size = new Size(158, 23);
+            lblTransactions.TabIndex = 45;
+            lblTransactions.Text = "Rental Transactions";
+            // 
+            // lblEquipmentManagement
+            // 
+            lblEquipmentManagement.AutoSize = true;
+            lblEquipmentManagement.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEquipmentManagement.Location = new Point(26, 259);
+            lblEquipmentManagement.Name = "lblEquipmentManagement";
+            lblEquipmentManagement.Size = new Size(201, 23);
+            lblEquipmentManagement.TabIndex = 47;
+            lblEquipmentManagement.Text = "Equipment Management";
+            // 
+            // lblReturnRecords
+            // 
+            lblReturnRecords.AutoSize = true;
+            lblReturnRecords.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblReturnRecords.Location = new Point(26, 214);
+            lblReturnRecords.Name = "lblReturnRecords";
+            lblReturnRecords.Size = new Size(128, 23);
+            lblReturnRecords.TabIndex = 46;
+            lblReturnRecords.Text = "Return Records";
+            // 
+            // lblGenerateReport
+            // 
+            lblGenerateReport.AutoSize = true;
+            lblGenerateReport.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblGenerateReport.Location = new Point(26, 397);
+            lblGenerateReport.Name = "lblGenerateReport";
+            lblGenerateReport.Size = new Size(144, 23);
+            lblGenerateReport.TabIndex = 56;
+            lblGenerateReport.Text = "Generate Reports";
+            // 
+            // lblDBbackup
+            // 
+            lblDBbackup.AutoSize = true;
+            lblDBbackup.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDBbackup.Location = new Point(26, 350);
+            lblDBbackup.Name = "lblDBbackup";
+            lblDBbackup.Size = new Size(208, 23);
+            lblDBbackup.TabIndex = 57;
+            lblDBbackup.Text = "Perform Database Backup";
+            // 
+            // lblViewAuditLogs
+            // 
+            lblViewAuditLogs.AutoSize = true;
+            lblViewAuditLogs.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblViewAuditLogs.Location = new Point(26, 306);
+            lblViewAuditLogs.Name = "lblViewAuditLogs";
+            lblViewAuditLogs.Size = new Size(133, 23);
+            lblViewAuditLogs.TabIndex = 48;
+            lblViewAuditLogs.Text = "View Audit Logs";
+            // 
+            // lblExit
+            // 
+            lblExit.AutoSize = true;
+            lblExit.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblExit.Location = new Point(26, 481);
+            lblExit.Name = "lblExit";
+            lblExit.Size = new Size(38, 23);
+            lblExit.TabIndex = 58;
+            lblExit.Text = "Exit";
+            // 
+            // lblLogOut
+            // 
+            lblLogOut.AutoSize = true;
+            lblLogOut.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogOut.Location = new Point(26, 440);
+            lblLogOut.Name = "lblLogOut";
+            lblLogOut.Size = new Size(72, 23);
+            lblLogOut.TabIndex = 59;
+            lblLogOut.Text = "Log Out";
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(852, 524);
+            Controls.Add(lblLogOut);
+            Controls.Add(lblExit);
+            Controls.Add(lblViewAuditLogs);
+            Controls.Add(lblDBbackup);
+            Controls.Add(lblGenerateReport);
+            Controls.Add(lblReturnRecords);
+            Controls.Add(lblEquipmentManagement);
+            Controls.Add(lblTransactions);
+            Controls.Add(lblRequest);
+            Controls.Add(label16);
+            Controls.Add(lblDashboard);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(dataGridView2);
@@ -453,12 +459,11 @@
             Controls.Add(lblRecentEq);
             Controls.Add(pnlInfo);
             Controls.Add(flowLayoutPanel2);
-            Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
-            flowLayoutPanel1.ResumeLayout(false);
+            Load += Dashboard_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             pnlInfo.ResumeLayout(false);
@@ -471,8 +476,6 @@
         }
 
         #endregion
-
-        private FlowLayoutPanel flowLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel2;
         private Label lblName;
         private Label lblPosition;
@@ -489,16 +492,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button button1;
-        private Button btnReturnRequest;
-        private Button btnRentalTransactions;
-        private Button btnReturnRecords;
-        private Button btnEquipmentManagement;
-        private Button btnAuditLogs;
-        private Button btnDbBackup;
-        private Button btnGenerateReport;
-        private Button btnLogout;
-        private Button btnExit;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
@@ -508,5 +501,16 @@
         private Label label12;
         private Label label11;
         private Label label10;
+        private Label lblDashboard;
+        private Label label16;
+        private Label lblRequest;
+        private Label lblTransactions;
+        private Label lblEquipmentManagement;
+        private Label lblReturnRecords;
+        private Label lblGenerateReport;
+        private Label lblDBbackup;
+        private Label lblViewAuditLogs;
+        private Label lblExit;
+        private Label lblLogOut;
     }
 }

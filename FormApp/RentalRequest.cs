@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FormApp
 {
-    public partial class RentalRequest: Form
+    public partial class RentalRequest : Form
     {
         public RentalRequest()
         {
             InitializeComponent();
+        }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,7 +15,9 @@ namespace FormApp
         public Dashboard()
         {
             InitializeComponent();
+
         }
+
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -82,6 +84,31 @@ namespace FormApp
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblRecentEq_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

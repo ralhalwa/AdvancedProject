@@ -21,5 +21,10 @@ namespace FormApp
         {
 
         }
+
+        private void ReturnRecords_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
