@@ -298,3 +298,7 @@ C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\refint
 C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.pdb
 C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.genruntimeconfig.cache
 C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\ref\FormApp.dll
+C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.RentalRequest.resources
+C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.EquipmentManagement.resources
+C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.RentalTransactions.resources
+C:\Users\Sharmin\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.ReturnRecords.resources

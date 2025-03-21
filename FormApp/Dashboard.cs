@@ -19,7 +19,7 @@ namespace FormApp
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -30,6 +30,58 @@ namespace FormApp
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RentalRequest r = new RentalRequest();
+            r.Show();
+
+        }
+
+        private void btnRentalTransactions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RentalTransactions t = new RentalTransactions();
+            t.Show();
+        }
+
+        private void btnRentalRecords_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReturnRecords ret = new ReturnRecords();
+            ret.Show();
+        }
+
+        private void btnEquipmentManagement_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EquipmentManagement eq = new EquipmentManagement();
+            eq.Show();
+        }
+
+        private void btnAuditLogs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void btnDbBackup_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

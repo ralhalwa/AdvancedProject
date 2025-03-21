@@ -31,19 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             flowLayoutPanel1 = new FlowLayoutPanel();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
+            btnReturnRequest = new Button();
+            btnRentalTransactions = new Button();
+            btnReturnRecords = new Button();
+            btnEquipmentManagement = new Button();
+            btnAuditLogs = new Button();
+            btnDbBackup = new Button();
+            btnGenerateReport = new Button();
+            btnLogout = new Button();
+            btnExit = new Button();
             flowLayoutPanel2 = new FlowLayoutPanel();
             lblName = new Label();
             lblPosition = new Label();
             pnlInfo = new Panel();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
@@ -59,12 +65,6 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             pnlInfo.SuspendLayout();
@@ -76,15 +76,15 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button2);
-            flowLayoutPanel1.Controls.Add(button3);
-            flowLayoutPanel1.Controls.Add(button4);
-            flowLayoutPanel1.Controls.Add(button5);
-            flowLayoutPanel1.Controls.Add(button6);
-            flowLayoutPanel1.Controls.Add(button7);
-            flowLayoutPanel1.Controls.Add(button8);
-            flowLayoutPanel1.Controls.Add(button9);
-            flowLayoutPanel1.Controls.Add(button10);
+            flowLayoutPanel1.Controls.Add(btnReturnRequest);
+            flowLayoutPanel1.Controls.Add(btnRentalTransactions);
+            flowLayoutPanel1.Controls.Add(btnReturnRecords);
+            flowLayoutPanel1.Controls.Add(btnEquipmentManagement);
+            flowLayoutPanel1.Controls.Add(btnAuditLogs);
+            flowLayoutPanel1.Controls.Add(btnDbBackup);
+            flowLayoutPanel1.Controls.Add(btnGenerateReport);
+            flowLayoutPanel1.Controls.Add(btnLogout);
+            flowLayoutPanel1.Controls.Add(btnExit);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(-2, 60);
             flowLayoutPanel1.Margin = new Padding(10);
@@ -104,87 +104,95 @@
             button1.Text = "Dashboard";
             button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnReturnRequest
             // 
-            button2.Location = new Point(3, 53);
-            button2.Name = "button2";
-            button2.Size = new Size(208, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Rental Requests";
-            button2.UseVisualStyleBackColor = true;
+            btnReturnRequest.Location = new Point(3, 53);
+            btnReturnRequest.Name = "btnReturnRequest";
+            btnReturnRequest.Size = new Size(208, 29);
+            btnReturnRequest.TabIndex = 1;
+            btnReturnRequest.Text = "Rental Requests";
+            btnReturnRequest.UseVisualStyleBackColor = true;
+            btnReturnRequest.Click += button2_Click;
             // 
-            // button3
+            // btnRentalTransactions
             // 
-            button3.Location = new Point(3, 88);
-            button3.Name = "button3";
-            button3.Size = new Size(208, 29);
-            button3.TabIndex = 2;
-            button3.Text = "Rental Transactions";
-            button3.UseVisualStyleBackColor = true;
+            btnRentalTransactions.Location = new Point(3, 88);
+            btnRentalTransactions.Name = "btnRentalTransactions";
+            btnRentalTransactions.Size = new Size(208, 29);
+            btnRentalTransactions.TabIndex = 2;
+            btnRentalTransactions.Text = "Rental Transactions";
+            btnRentalTransactions.UseVisualStyleBackColor = true;
+            btnRentalTransactions.Click += btnRentalTransactions_Click;
             // 
-            // button4
+            // btnReturnRecords
             // 
-            button4.Location = new Point(3, 123);
-            button4.Name = "button4";
-            button4.Size = new Size(208, 29);
-            button4.TabIndex = 3;
-            button4.Text = "Rental Records";
-            button4.UseVisualStyleBackColor = true;
+            btnReturnRecords.Location = new Point(3, 123);
+            btnReturnRecords.Name = "btnReturnRecords";
+            btnReturnRecords.Size = new Size(208, 29);
+            btnReturnRecords.TabIndex = 3;
+            btnReturnRecords.Text = "Return Records";
+            btnReturnRecords.UseVisualStyleBackColor = true;
+            btnReturnRecords.Click += btnRentalRecords_Click;
             // 
-            // button5
+            // btnEquipmentManagement
             // 
-            button5.Location = new Point(3, 158);
-            button5.Name = "button5";
-            button5.Size = new Size(208, 29);
-            button5.TabIndex = 4;
-            button5.Text = "Equipment Management";
-            button5.UseVisualStyleBackColor = true;
+            btnEquipmentManagement.Location = new Point(3, 158);
+            btnEquipmentManagement.Name = "btnEquipmentManagement";
+            btnEquipmentManagement.Size = new Size(208, 29);
+            btnEquipmentManagement.TabIndex = 4;
+            btnEquipmentManagement.Text = "Equipment Management";
+            btnEquipmentManagement.UseVisualStyleBackColor = true;
+            btnEquipmentManagement.Click += btnEquipmentManagement_Click;
             // 
-            // button6
+            // btnAuditLogs
             // 
-            button6.Location = new Point(3, 193);
-            button6.Name = "button6";
-            button6.Size = new Size(208, 29);
-            button6.TabIndex = 5;
-            button6.Text = "View Audit Logs";
-            button6.UseVisualStyleBackColor = true;
+            btnAuditLogs.Location = new Point(3, 193);
+            btnAuditLogs.Name = "btnAuditLogs";
+            btnAuditLogs.Size = new Size(208, 29);
+            btnAuditLogs.TabIndex = 5;
+            btnAuditLogs.Text = "View Audit Logs";
+            btnAuditLogs.UseVisualStyleBackColor = true;
+            btnAuditLogs.Click += btnAuditLogs_Click;
             // 
-            // button7
+            // btnDbBackup
             // 
-            button7.Location = new Point(3, 228);
-            button7.Name = "button7";
-            button7.Size = new Size(208, 29);
-            button7.TabIndex = 6;
-            button7.Text = "Perform Database Backup";
-            button7.UseVisualStyleBackColor = true;
+            btnDbBackup.Location = new Point(3, 228);
+            btnDbBackup.Name = "btnDbBackup";
+            btnDbBackup.Size = new Size(208, 29);
+            btnDbBackup.TabIndex = 6;
+            btnDbBackup.Text = "Perform Database Backup";
+            btnDbBackup.UseVisualStyleBackColor = true;
+            btnDbBackup.Click += btnDbBackup_Click;
             // 
-            // button8
+            // btnGenerateReport
             // 
-            button8.Location = new Point(3, 263);
-            button8.Name = "button8";
-            button8.Size = new Size(208, 29);
-            button8.TabIndex = 7;
-            button8.Text = "Generate Report";
-            button8.UseVisualStyleBackColor = true;
+            btnGenerateReport.Location = new Point(3, 263);
+            btnGenerateReport.Name = "btnGenerateReport";
+            btnGenerateReport.Size = new Size(208, 29);
+            btnGenerateReport.TabIndex = 7;
+            btnGenerateReport.Text = "Generate Report";
+            btnGenerateReport.UseVisualStyleBackColor = true;
+            btnGenerateReport.Click += btnGenerateReport_Click;
             // 
-            // button9
+            // btnLogout
             // 
-            button9.Location = new Point(3, 298);
-            button9.Name = "button9";
-            button9.Size = new Size(208, 29);
-            button9.TabIndex = 8;
-            button9.Text = "Log Out";
-            button9.UseVisualStyleBackColor = true;
+            btnLogout.Location = new Point(3, 298);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(208, 29);
+            btnLogout.TabIndex = 8;
+            btnLogout.Text = "Log Out";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // button10
+            // btnExit
             // 
-            button10.Location = new Point(3, 333);
-            button10.Name = "button10";
-            button10.Size = new Size(208, 29);
-            button10.TabIndex = 9;
-            button10.Text = "Exit";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
+            btnExit.Location = new Point(3, 333);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(208, 29);
+            btnExit.TabIndex = 9;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += button10_Click;
             // 
             // flowLayoutPanel2
             // 
@@ -237,6 +245,62 @@
             pnlInfo.Name = "pnlInfo";
             pnlInfo.Size = new Size(568, 152);
             pnlInfo.TabIndex = 2;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(498, 126);
+            label14.Name = "label14";
+            label14.Size = new Size(18, 20);
+            label14.TabIndex = 13;
+            label14.Text = "...";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(498, 94);
+            label13.Name = "label13";
+            label13.Size = new Size(18, 20);
+            label13.TabIndex = 12;
+            label13.Text = "...";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(498, 62);
+            label12.Name = "label12";
+            label12.Size = new Size(18, 20);
+            label12.TabIndex = 11;
+            label12.Text = "...";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(222, 126);
+            label11.Name = "label11";
+            label11.Size = new Size(18, 20);
+            label11.TabIndex = 10;
+            label11.Text = "...";
+            label11.Click += label11_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(222, 94);
+            label10.Name = "label10";
+            label10.Size = new Size(18, 20);
+            label10.TabIndex = 9;
+            label10.Text = "...";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(222, 62);
+            label9.Name = "label9";
+            label9.Size = new Size(18, 20);
+            label9.TabIndex = 8;
+            label9.Text = "...";
+            label9.Click += label9_Click;
             // 
             // label8
             // 
@@ -375,62 +439,6 @@
             panel3.Size = new Size(3, 393);
             panel3.TabIndex = 8;
             // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(222, 62);
-            label9.Name = "label9";
-            label9.Size = new Size(18, 20);
-            label9.TabIndex = 8;
-            label9.Text = "...";
-            label9.Click += label9_Click;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(222, 94);
-            label10.Name = "label10";
-            label10.Size = new Size(18, 20);
-            label10.TabIndex = 9;
-            label10.Text = "...";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(222, 126);
-            label11.Name = "label11";
-            label11.Size = new Size(18, 20);
-            label11.TabIndex = 10;
-            label11.Text = "...";
-            label11.Click += label11_Click;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(498, 62);
-            label12.Name = "label12";
-            label12.Size = new Size(18, 20);
-            label12.TabIndex = 11;
-            label12.Text = "...";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(498, 94);
-            label13.Name = "label13";
-            label13.Size = new Size(18, 20);
-            label13.TabIndex = 12;
-            label13.Text = "...";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(498, 126);
-            label14.Name = "label14";
-            label14.Size = new Size(18, 20);
-            label14.TabIndex = 13;
-            label14.Text = "...";
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -482,15 +490,15 @@
         private Label label2;
         private Label label1;
         private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
+        private Button btnReturnRequest;
+        private Button btnRentalTransactions;
+        private Button btnReturnRecords;
+        private Button btnEquipmentManagement;
+        private Button btnAuditLogs;
+        private Button btnDbBackup;
+        private Button btnGenerateReport;
+        private Button btnLogout;
+        private Button btnExit;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
