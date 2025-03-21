@@ -1,146 +1,158 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\AdvancedProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\formapp\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\20250315143443_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250315143443_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\20250314140952_addimagetoequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250314140952_addimagetoequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\dell\\documents\\advancedproject\\helloworld\\views\\signup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\signup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\20250311030055_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250311030055_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\20250313121639_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250313121639_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\20250314165418_addstatusseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\20250314165418_addstatusseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250314165418_addstatusseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\dell\\documents\\advancedproject\\classlibrary\\migrations\\20250315143443_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250315143443_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\20250314140952_addimagetoequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250314140952_addimagetoequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\helloworld\\views\\signup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\signup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\20250311030055_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250311030055_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\dbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\custom_pc_bh\\source\\repos\\advancedproject\\classlibrary\\migrations\\20250313121639_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250313121639_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,15 +162,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Models\\Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Models\\Equipment.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Models\\Equipment.cs",
               "RelativeToolTip": "HelloWorld\\Models\\Equipment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -190,102 +202,163 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T18:08:05.541Z",
+              "DocumentIndex": 1,
+              "Title": "AddEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AddEquipment.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeToolTip": "FormApp\\Forms\\AddEquipment.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAywB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:18:37.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
-              "RelativeDocumentMoniker": "HelloWorld\\Views\\Equipment\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
-              "RelativeToolTip": "HelloWorld\\Views\\Equipment\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T17:46:36.891Z",
-              "EditorCaption": ""
+              "Title": "AddEquipment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AddEquipment.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\AddEquipment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T11:54:48.254Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FeedBack.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\FeedBack.cs",
-              "RelativeDocumentMoniker": "HelloWorld\\Controllers\\FeedBack.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\FeedBack.cs",
-              "RelativeToolTip": "HelloWorld\\Controllers\\FeedBack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Form1.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\FormApp\\Forms\\Form1.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:46:19.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FeedBack.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\Models\\FeedBack.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
-              "RelativeToolTip": "ClassLibrary\\Models\\FeedBack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:41:49.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T11:54:07.637Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T18:08:05.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "RelativeDocumentMoniker": "HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "RelativeToolTip": "HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T17:46:36.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FeedBack.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\FeedBack.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Controllers\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\FeedBack.cs",
+              "RelativeToolTip": "HelloWorld\\Controllers\\FeedBack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:46:19.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FeedBack.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\FeedBack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:41:49.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "RentalRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\RentalRequest.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\RentalRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:40:42.375Z",
+              "WhenOpened": "2025-03-15T17:40:42.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "RelativeDocumentMoniker": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "RelativeToolTip": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAC4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T17:31:45.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Program.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Program.cs",
+              "RelativeToolTip": "HelloWorld\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T11:35:42.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
-              "RelativeDocumentMoniker": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
-              "RelativeToolTip": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAC4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T17:31:45.977Z",
+              "Title": "20250315143443_new.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250315143443_new.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250315143443_new.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250315143443_new.cs",
+              "RelativeToolTip": "ClassLibrary\\Migrations\\20250315143443_new.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T14:34:44.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20250315143443_new.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250315143443_new.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250315143443_new.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250315143443_new.cs",
-              "RelativeToolTip": "ClassLibrary\\Migrations\\20250315143443_new.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T14:34:44.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 5,
               "Title": "20250314165418_AddStatusSeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250314165418_AddStatusSeedData.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -293,37 +366,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Equipment\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Equipment\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T14:17:03.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T14:17:03.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "EquipmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\EquipmentController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\EquipmentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:13:37.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T14:13:37.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "20250314140952_AddImageToEquipment.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250314140952_AddImageToEquipment.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,11 +402,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Equipment.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Equipment.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,24 +414,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\AccountController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T14:09:09.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T14:09:09.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Profile\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Profile\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Profile\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Profile\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Profile\\Index.cshtml",
               "ViewState": "AgIAACIAAAAAAAAAAAAowEAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -368,37 +438,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "SignInController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\SignInController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\SignInController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:47:51.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T12:47:51.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABkAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T13:03:39.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T13:03:39.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\SignUp\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\SignUp\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\SignUp\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\SignUp\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\SignUp\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\SignUp\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAIBJwB0AAACcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -406,50 +474,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\BaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:28:12.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T13:28:12.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\HomeController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T10:42:28.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T10:42:28.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwBEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:47:40.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T12:47:40.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -457,24 +522,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "SignUpController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\SignUpController.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\SignUpController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:25:43.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T13:25:43.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -482,11 +546,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -494,11 +558,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -506,11 +570,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "DBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Context\\DBContext.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
               "RelativeToolTip": "ClassLibrary\\Context\\DBContext.cs",
               "ViewState": "AgIAAKwAAAAAAAAAAAAgwMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -518,11 +582,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\UserRole.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -530,36 +594,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\SignIn\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\SignIn\\Index.cshtml",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T11:06:35.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T11:06:35.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Program.cs",
-              "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\Program.cs",
-              "RelativeToolTip": "HelloWorld\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T11:35:42.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "DBContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\DBContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -567,11 +618,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\appsettings.json",
               "RelativeDocumentMoniker": "HelloWorld\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\HelloWorld\\appsettings.json",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\HelloWorld\\appsettings.json",
               "RelativeToolTip": "HelloWorld\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -579,11 +630,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "ClassLibrary.csproj",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\Source\\Repos\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
               "RelativeDocumentMoniker": "ClassLibrary\\ClassLibrary.csproj",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\Source\\Repos\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
               "RelativeToolTip": "ClassLibrary\\ClassLibrary.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -591,11 +642,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "20250313121639_test.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250313121639_test.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250313121639_test.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250313121639_test.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250313121639_test.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250313121639_test.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250313121639_test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -603,15 +654,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "20250311030055_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\Dell\\Documents\\AdvancedProject\\ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Custom_PC_bh\\source\\repos\\AdvancedProject\\ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250311030055_InitialMigration.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T10:49:40.637Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1382,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
