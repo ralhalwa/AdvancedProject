@@ -1,86 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 100,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Program.cs",
-              "RelativeDocumentMoniker": "FormApp\\Program.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Program.cs*",
-              "RelativeToolTip": "FormApp\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:53:44.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuditLogs.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs*",
-              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAApwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:41:51.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuditLogs.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs [Design]*",
-              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:24:15.148Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs [Design]*",
-              "RelativeToolTip": "FormApp\\Forms\\Login.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:25:20.871Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

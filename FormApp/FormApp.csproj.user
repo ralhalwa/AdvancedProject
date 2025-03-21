@@ -4,7 +4,19 @@
     <Compile Update="Forms\AuditLogs.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\CreateTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DatabaseBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\GenerateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UpdateTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
