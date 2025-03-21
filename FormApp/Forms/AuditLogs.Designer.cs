@@ -262,6 +262,7 @@
             Controls.Add(lblName);
             Name = "AuditLogs";
             Text = "Audit Logs";
+            Load += AuditLogs_Load;
             ((System.ComponentModel.ISupportInitialize)gridLogs).EndInit();
             ResumeLayout(false);
             PerformLayout();

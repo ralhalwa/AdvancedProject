@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace FormApp.Forms
 {
-    public partial class AuditLogs: Form
+    public partial class AuditLogs : Form
     {
         public AuditLogs()
         {
@@ -19,6 +19,14 @@ namespace FormApp.Forms
 
             // apply placeholder to the search bar
             PlaceholderService.SetPlaceholder(txtSearchBar, "Log ID");
+
+            // centering the form
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        private void AuditLogs_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

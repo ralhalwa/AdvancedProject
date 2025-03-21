@@ -7,6 +7,9 @@
     <Compile Update="Forms\CreateTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\DatabaseBackup.cs">
       <SubType>Form</SubType>
     </Compile>

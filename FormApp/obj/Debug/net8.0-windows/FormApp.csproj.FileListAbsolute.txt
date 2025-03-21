@@ -303,3 +303,14 @@ C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.GenerateReports.resources
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.CreateTransaction.resources
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.UpdateTransaction.resources
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.Dashboard.resources
