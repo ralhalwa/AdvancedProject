@@ -4,10 +4,19 @@
     <Compile Update="Forms\AddEquipment.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\CreateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CreateRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\EditEquipment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UpdateRecord.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

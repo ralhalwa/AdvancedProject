@@ -1,6 +1,6 @@
 ﻿namespace FormApp.Forms
 {
-    partial class EditEquipment
+    partial class CreateRecord
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label2 = new Label();
             label1 = new Label();
+            label2 = new Label();
             button1 = new Button();
             label3 = new Label();
             textBox1 = new TextBox();
+            comboBox1 = new ComboBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
             button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -54,6 +51,16 @@
             panel1.Size = new Size(800, 70);
             panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(114, 19);
+            label1.TabIndex = 1;
+            label1.Text = "Ahmed Awadhi";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -65,19 +72,10 @@
             label2.TabIndex = 1;
             label2.Text = "Manager";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(114, 19);
-            label1.TabIndex = 1;
-            label1.Text = "Ahmed Awadhi";
-            // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(249, 115, 22);
+            button1.Font = new Font("Calibri", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(12, 76);
             button1.Name = "button1";
@@ -92,53 +90,20 @@
             label3.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(310, 140);
             label3.Name = "label3";
-            label3.Size = new Size(185, 33);
+            label3.Size = new Size(174, 33);
             label3.TabIndex = 2;
-            label3.Text = "Edit Equipment";
+            label3.Text = "Create Record";
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.FromArgb(219, 219, 219);
             textBox1.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(245, 198);
+            textBox1.Location = new Point(245, 200);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(150, 22);
             textBox1.TabIndex = 3;
             textBox1.Text = "Equipment ID";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.FromArgb(219, 219, 219);
-            textBox2.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(405, 198);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 22);
-            textBox2.TabIndex = 4;
-            textBox2.Text = "Name";
-            // 
-            // textBox3
-            // 
-            textBox3.BackColor = Color.FromArgb(219, 219, 219);
-            textBox3.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(245, 227);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(310, 22);
-            textBox3.TabIndex = 5;
-            textBox3.Text = "Description";
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.FromArgb(219, 219, 219);
-            textBox4.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox4.Location = new Point(405, 256);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 22);
-            textBox4.TabIndex = 6;
-            textBox4.Text = "Price";
             // 
             // comboBox1
             // 
@@ -146,67 +111,62 @@
             comboBox1.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.ForeColor = Color.FromArgb(64, 64, 64);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(245, 256);
+            comboBox1.Location = new Point(405, 200);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(150, 22);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "Category";
+            comboBox1.TabIndex = 4;
+            comboBox1.Text = "Condition";
             // 
-            // comboBox2
+            // textBox2
             // 
-            comboBox2.BackColor = Color.FromArgb(219, 219, 219);
-            comboBox2.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(245, 285);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(150, 22);
-            comboBox2.TabIndex = 8;
-            comboBox2.Text = "Availability";
+            textBox2.BackColor = Color.FromArgb(219, 219, 219);
+            textBox2.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.ForeColor = Color.FromArgb(64, 64, 64);
+            textBox2.Location = new Point(245, 229);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(150, 22);
+            textBox2.TabIndex = 5;
+            textBox2.Text = "Return Date";
             // 
-            // comboBox3
+            // textBox3
             // 
-            comboBox3.BackColor = Color.FromArgb(219, 219, 219);
-            comboBox3.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(405, 285);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(150, 22);
-            comboBox3.TabIndex = 9;
-            comboBox3.Text = "Condition";
+            textBox3.BackColor = Color.FromArgb(219, 219, 219);
+            textBox3.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.ForeColor = Color.FromArgb(64, 64, 64);
+            textBox3.Location = new Point(405, 229);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(150, 22);
+            textBox3.TabIndex = 6;
+            textBox3.Text = "Late Fees";
             // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(249, 115, 22);
-            button2.Font = new Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Calibri", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(324, 314);
+            button2.Location = new Point(325, 257);
             button2.Name = "button2";
             button2.Size = new Size(150, 33);
-            button2.TabIndex = 10;
-            button2.Text = "Save Changes";
+            button2.TabIndex = 7;
+            button2.Text = "Create";
             button2.UseVisualStyleBackColor = false;
             // 
-            // EditEquipment
+            // CreateRecord
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
+            Controls.Add(comboBox1);
             Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(panel1);
-            Name = "EditEquipment";
-            Text = "EditEquipment";
+            Name = "CreateRecord";
+            Text = "CreateRecord";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -216,17 +176,14 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
         private Label label2;
+        private Label label1;
         private Button button1;
         private Label label3;
         private TextBox textBox1;
+        private ComboBox comboBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
         private Button button2;
     }
 }
