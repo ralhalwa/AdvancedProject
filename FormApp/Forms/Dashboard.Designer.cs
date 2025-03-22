@@ -57,6 +57,7 @@
             lblBackup.Size = new Size(332, 37);
             lblBackup.TabIndex = 56;
             lblBackup.Text = "Perform Database Backup";
+            lblBackup.Click += lblBackup_Click;
             // 
             // label2
             // 
@@ -75,6 +76,7 @@
             lblGenerateReports.Size = new Size(230, 37);
             lblGenerateReports.TabIndex = 54;
             lblGenerateReports.Text = "Generate Reports";
+            lblGenerateReports.Click += lblGenerateReports_Click;
             // 
             // lblPerformDBBackup
             // 

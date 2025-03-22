@@ -42,5 +42,19 @@ namespace FormApp.Forms
             auditLogs.Show();
             this.Hide();
         }
+
+        private void lblBackup_Click(object sender, EventArgs e)
+        {
+            DatabaseBackup databaseBackup = new DatabaseBackup();
+            databaseBackup.Show();
+            this.Hide();
+        }
+
+        private void lblGenerateReports_Click(object sender, EventArgs e)
+        {
+            GenerateReports generateReports = new GenerateReports();
+            generateReports.Show();
+            this.Hide();
+        }
     }
 }
