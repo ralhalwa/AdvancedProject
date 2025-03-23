@@ -14,9 +14,6 @@ namespace FormApp.Forms
 {
     public partial class CreateTransaction : Form
     {
-        // connection string
-        string connectionString = "Server = (localdb)\\MSSQLLocalDB; Database = NewDB; Trusted_Connection = True; ";
-
         public CreateTransaction()
         {
             InitializeComponent();
@@ -39,7 +36,6 @@ namespace FormApp.Forms
             PlaceholderService.SetPlaceholder(txtUserID, "User ID");
             PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date");
             PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date");
-            PlaceholderService.SetPlaceholder(txtPeriod, "Period");
             PlaceholderService.SetPlaceholder(txtFee, "Fee");
             PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
 
@@ -53,7 +49,7 @@ namespace FormApp.Forms
 
         private void LoadDropdowns()
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
             {
                 conn.Open();
 
@@ -104,7 +100,6 @@ namespace FormApp.Forms
                 if (string.IsNullOrWhiteSpace(txtUserID.Text) ||
                     string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
                     string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
-                    string.IsNullOrWhiteSpace(txtPeriod.Text) ||
                     string.IsNullOrWhiteSpace(txtFee.Text) ||
                     string.IsNullOrWhiteSpace(txtDeposit.Text) ||
                     Convert.ToInt32(cmbRentalStatus.SelectedValue) == -1 ||
@@ -114,21 +109,21 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // user ID validation (must be integer)
+                // validate user ID (has to be numeric)
                 if (!int.TryParse(txtUserID.Text.Trim(), out int userId))
                 {
                     MessageBox.Show("Please enter a valid numeric User ID.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // check if user ID exists in the user table
+                // check if user exists in the db
                 if (!UserExists(userId))
                 {
                     MessageBox.Show("User ID does not exist in the system.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // parse and validate pickup and return dates
+                // parse Dates
                 if (!DateTime.TryParse(txtPickupDate.Text.Trim(), out DateTime pickupDate))
                 {
                     MessageBox.Show("Please enter a valid Pickup Date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -141,20 +136,16 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // return date must be later than pickup date
                 if (returnDate <= pickupDate)
                 {
                     MessageBox.Show("Return Date must be later than Pickup Date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // validate numbers
-                if (!decimal.TryParse(txtPeriod.Text.Trim(), out decimal period))
-                {
-                    MessageBox.Show("Please enter a valid numeric period.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                // calculate period
+                int period = (returnDate - pickupDate).Days;
 
+                // validate fee and deposit
                 if (!decimal.TryParse(txtFee.Text.Trim(), out decimal fee))
                 {
                     MessageBox.Show("Please enter a valid numeric fee.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -167,7 +158,6 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // deposit should not be greater than fee
                 if (deposit > fee)
                 {
                     MessageBox.Show("Deposit cannot be greater than the fee.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -181,7 +171,7 @@ namespace FormApp.Forms
                 string query = "INSERT INTO Rental_Transaction (UserID, RentalStatus, Pickup, ReturnDate, Period, Fee, Deposit, PaymentStatus) " +
                                "VALUES (@UserID, @RentalStatus, @Pickup, @ReturnDate, @Period, @Fee, @Deposit, @PaymentStatus)";
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
                 {
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -213,7 +203,6 @@ namespace FormApp.Forms
             txtUserID.Clear();
             txtPickupDate.Clear();
             txtReturnDate.Clear();
-            txtPeriod.Clear();
             txtFee.Clear();
             txtDeposit.Clear();
             cmbRentalStatus.SelectedIndex = 0; // back to placeholder
@@ -223,7 +212,7 @@ namespace FormApp.Forms
         // check if user exists
         private bool UserExists(int userId)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
             {
                 conn.Open();
                 string query = "SELECT COUNT(*) FROM dbo.[User] WHERE ID = @UserID";
