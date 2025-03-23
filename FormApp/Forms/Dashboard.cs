@@ -56,5 +56,12 @@ namespace FormApp.Forms
             generateReports.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CreateTransaction ct = new CreateTransaction();
+            ct.Show();
+            this.Hide();
+        }
     }
 }

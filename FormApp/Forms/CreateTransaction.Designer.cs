@@ -105,6 +105,7 @@
             // 
             // cmbRentalStatus
             // 
+            cmbRentalStatus.BackColor = Color.WhiteSmoke;
             cmbRentalStatus.FormattingEnabled = true;
             cmbRentalStatus.Location = new Point(706, 326);
             cmbRentalStatus.Name = "cmbRentalStatus";
@@ -145,6 +146,7 @@
             // 
             // cmbPaymentStatus
             // 
+            cmbPaymentStatus.BackColor = Color.WhiteSmoke;
             cmbPaymentStatus.FormattingEnabled = true;
             cmbPaymentStatus.Location = new Point(706, 578);
             cmbPaymentStatus.Name = "cmbPaymentStatus";
@@ -170,6 +172,7 @@
             btnCreate.TabIndex = 46;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
+            btnCreate.Click += btnCreate_Click;
             // 
             // CreateTransaction
             // 

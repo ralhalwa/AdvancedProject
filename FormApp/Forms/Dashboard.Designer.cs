@@ -44,6 +44,7 @@
             lblRole = new Label();
             lblName = new Label();
             label3 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // lblBackup
@@ -207,12 +208,23 @@
             label3.TabIndex = 57;
             label3.Text = "Dashboard";
             // 
+            // button1
+            // 
+            button1.Location = new Point(421, 146);
+            button1.Name = "button1";
+            button1.Size = new Size(291, 46);
+            button1.TabIndex = 58;
+            button1.Text = "Create Transaction";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1385, 838);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(lblBackup);
             Controls.Add(label2);
@@ -254,5 +266,6 @@
         private Label lblRole;
         private Label lblName;
         private Label label3;
+        private Button button1;
     }
 }
