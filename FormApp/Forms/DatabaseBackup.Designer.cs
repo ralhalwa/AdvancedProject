@@ -31,7 +31,7 @@
             lblGenerateReports = new Label();
             lblPerformDBBackup = new Label();
             gridBackupLogs = new DataGridView();
-            btnSearch = new Button();
+            btnInitiateBackup = new Button();
             lblExit = new Label();
             lblLogOut = new Label();
             lblAuditLogs = new Label();
@@ -77,17 +77,18 @@
             gridBackupLogs.Size = new Size(1013, 630);
             gridBackupLogs.TabIndex = 31;
             // 
-            // btnSearch
+            // btnInitiateBackup
             // 
-            btnSearch.BackColor = Color.FromArgb(249, 115, 22);
-            btnSearch.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(388, 150);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(299, 46);
-            btnSearch.TabIndex = 30;
-            btnSearch.Text = "Initiate New Backup";
-            btnSearch.UseVisualStyleBackColor = false;
+            btnInitiateBackup.BackColor = Color.FromArgb(249, 115, 22);
+            btnInitiateBackup.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInitiateBackup.ForeColor = Color.White;
+            btnInitiateBackup.Location = new Point(388, 150);
+            btnInitiateBackup.Name = "btnInitiateBackup";
+            btnInitiateBackup.Size = new Size(299, 46);
+            btnInitiateBackup.TabIndex = 30;
+            btnInitiateBackup.Text = "Initiate New Backup";
+            btnInitiateBackup.UseVisualStyleBackColor = false;
+            btnInitiateBackup.Click += btnInitiateBackup_Click;
             // 
             // lblExit
             // 
@@ -237,7 +238,7 @@
             Controls.Add(lblGenerateReports);
             Controls.Add(lblPerformDBBackup);
             Controls.Add(gridBackupLogs);
-            Controls.Add(btnSearch);
+            Controls.Add(btnInitiateBackup);
             Controls.Add(lblExit);
             Controls.Add(lblLogOut);
             Controls.Add(lblAuditLogs);
@@ -263,7 +264,7 @@
         private Label lblGenerateReports;
         private Label lblPerformDBBackup;
         private DataGridView gridBackupLogs;
-        private Button btnSearch;
+        private Button btnInitiateBackup;
         private Label lblExit;
         private Label lblLogOut;
         private Label lblAuditLogs;

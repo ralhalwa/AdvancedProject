@@ -63,5 +63,12 @@ namespace FormApp.Forms
             ct.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UpdateTransaction ut = new UpdateTransaction(1);
+            ut.Show();
+            this.Hide();
+        }
     }
 }

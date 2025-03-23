@@ -32,7 +32,6 @@
             cmbPaymentStatus = new ComboBox();
             txtDeposit = new TextBox();
             txtFee = new TextBox();
-            txtPeriod = new TextBox();
             txtReturnDate = new TextBox();
             txtPickupDate = new TextBox();
             cmbRentalStatus = new ComboBox();
@@ -55,19 +54,20 @@
             btnUpdate.TabIndex = 60;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // cmbPaymentStatus
             // 
             cmbPaymentStatus.FormattingEnabled = true;
-            cmbPaymentStatus.Location = new Point(707, 581);
+            cmbPaymentStatus.Location = new Point(430, 581);
             cmbPaymentStatus.Name = "cmbPaymentStatus";
-            cmbPaymentStatus.Size = new Size(260, 40);
+            cmbPaymentStatus.Size = new Size(537, 40);
             cmbPaymentStatus.TabIndex = 59;
             // 
             // txtDeposit
             // 
             txtDeposit.BackColor = Color.WhiteSmoke;
-            txtDeposit.Location = new Point(430, 581);
+            txtDeposit.Location = new Point(707, 518);
             txtDeposit.Name = "txtDeposit";
             txtDeposit.Size = new Size(260, 39);
             txtDeposit.TabIndex = 58;
@@ -75,18 +75,10 @@
             // txtFee
             // 
             txtFee.BackColor = Color.WhiteSmoke;
-            txtFee.Location = new Point(707, 518);
+            txtFee.Location = new Point(430, 518);
             txtFee.Name = "txtFee";
             txtFee.Size = new Size(260, 39);
             txtFee.TabIndex = 57;
-            // 
-            // txtPeriod
-            // 
-            txtPeriod.BackColor = Color.WhiteSmoke;
-            txtPeriod.Location = new Point(430, 518);
-            txtPeriod.Name = "txtPeriod";
-            txtPeriod.Size = new Size(260, 39);
-            txtPeriod.TabIndex = 56;
             // 
             // txtReturnDate
             // 
@@ -181,7 +173,6 @@
             Controls.Add(cmbPaymentStatus);
             Controls.Add(txtDeposit);
             Controls.Add(txtFee);
-            Controls.Add(txtPeriod);
             Controls.Add(txtReturnDate);
             Controls.Add(txtPickupDate);
             Controls.Add(cmbRentalStatus);
@@ -204,7 +195,6 @@
         private ComboBox cmbPaymentStatus;
         private TextBox txtDeposit;
         private TextBox txtFee;
-        private TextBox txtPeriod;
         private TextBox txtReturnDate;
         private TextBox txtPickupDate;
         private ComboBox cmbRentalStatus;
