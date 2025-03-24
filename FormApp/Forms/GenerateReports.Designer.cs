@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             lblPerformDBBackup = new Label();
-            btnSearch = new Button();
+            btnMostRentedEquipment = new Button();
             lblExit = new Label();
             lblLogOut = new Label();
             lblAuditLogs = new Label();
@@ -42,10 +42,12 @@
             lblDivider = new Label();
             lblRole = new Label();
             lblName = new Label();
-            button1 = new Button();
-            pnlReports = new Panel();
+            btnActiveCustomers = new Button();
             label2 = new Label();
             lblGenerateReports = new Label();
+            btnDownload = new Button();
+            gridReports = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)gridReports).BeginInit();
             SuspendLayout();
             // 
             // lblPerformDBBackup
@@ -58,17 +60,18 @@
             lblPerformDBBackup.TabIndex = 32;
             lblPerformDBBackup.Text = "Perform Database Backup";
             // 
-            // btnSearch
+            // btnMostRentedEquipment
             // 
-            btnSearch.BackColor = Color.FromArgb(249, 115, 22);
-            btnSearch.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(698, 150);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(339, 46);
-            btnSearch.TabIndex = 30;
-            btnSearch.Text = "Equipment Usage Report";
-            btnSearch.UseVisualStyleBackColor = false;
+            btnMostRentedEquipment.BackColor = Color.FromArgb(249, 115, 22);
+            btnMostRentedEquipment.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMostRentedEquipment.ForeColor = Color.White;
+            btnMostRentedEquipment.Location = new Point(618, 150);
+            btnMostRentedEquipment.Name = "btnMostRentedEquipment";
+            btnMostRentedEquipment.Size = new Size(306, 46);
+            btnMostRentedEquipment.TabIndex = 30;
+            btnMostRentedEquipment.Text = "Most Rented Equipment";
+            btnMostRentedEquipment.UseVisualStyleBackColor = false;
+            btnMostRentedEquipment.Click += btnMostRentedEquipment_Click;
             // 
             // lblExit
             // 
@@ -187,24 +190,18 @@
             lblName.TabIndex = 17;
             lblName.Text = "Name";
             // 
-            // button1
+            // btnActiveCustomers
             // 
-            button1.BackColor = Color.FromArgb(249, 115, 22);
-            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(385, 150);
-            button1.Name = "button1";
-            button1.Size = new Size(307, 46);
-            button1.TabIndex = 34;
-            button1.Text = "Category Rental Trends";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // pnlReports
-            // 
-            pnlReports.Location = new Point(379, 211);
-            pnlReports.Name = "pnlReports";
-            pnlReports.Size = new Size(1005, 631);
-            pnlReports.TabIndex = 35;
+            btnActiveCustomers.BackColor = Color.FromArgb(249, 115, 22);
+            btnActiveCustomers.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnActiveCustomers.ForeColor = Color.White;
+            btnActiveCustomers.Location = new Point(385, 150);
+            btnActiveCustomers.Name = "btnActiveCustomers";
+            btnActiveCustomers.Size = new Size(227, 46);
+            btnActiveCustomers.TabIndex = 34;
+            btnActiveCustomers.Text = "Active Customers";
+            btnActiveCustomers.UseVisualStyleBackColor = false;
+            btnActiveCustomers.Click += btnActiveCustomers_Click;
             // 
             // label2
             // 
@@ -226,18 +223,41 @@
             lblGenerateReports.TabIndex = 37;
             lblGenerateReports.Text = "Generate Reports";
             // 
+            // btnDownload
+            // 
+            btnDownload.BackColor = Color.Black;
+            btnDownload.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDownload.ForeColor = Color.White;
+            btnDownload.Location = new Point(930, 150);
+            btnDownload.Name = "btnDownload";
+            btnDownload.Size = new Size(212, 46);
+            btnDownload.TabIndex = 38;
+            btnDownload.Text = "Download";
+            btnDownload.UseVisualStyleBackColor = false;
+            btnDownload.Click += btnDownload_Click;
+            // 
+            // gridReports
+            // 
+            gridReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridReports.Location = new Point(371, 215);
+            gridReports.Name = "gridReports";
+            gridReports.RowHeadersWidth = 82;
+            gridReports.Size = new Size(1013, 625);
+            gridReports.TabIndex = 39;
+            // 
             // GenerateReports
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1385, 838);
+            Controls.Add(gridReports);
+            Controls.Add(btnDownload);
             Controls.Add(lblGenerateReports);
             Controls.Add(label2);
-            Controls.Add(pnlReports);
-            Controls.Add(button1);
+            Controls.Add(btnActiveCustomers);
             Controls.Add(lblPerformDBBackup);
-            Controls.Add(btnSearch);
+            Controls.Add(btnMostRentedEquipment);
             Controls.Add(lblExit);
             Controls.Add(lblLogOut);
             Controls.Add(lblAuditLogs);
@@ -253,13 +273,14 @@
             Name = "GenerateReports";
             Text = "Generate Reports";
             Load += GenerateReports_Load;
+            ((System.ComponentModel.ISupportInitialize)gridReports).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label lblPerformDBBackup;
-        private Button btnSearch;
+        private Button btnMostRentedEquipment;
         private Label lblExit;
         private Label lblLogOut;
         private Label lblAuditLogs;
@@ -272,9 +293,10 @@
         private Label lblDivider;
         private Label lblRole;
         private Label lblName;
-        private Button button1;
-        private Panel pnlReports;
+        private Button btnActiveCustomers;
         private Label label2;
         private Label lblGenerateReports;
+        private Button btnDownload;
+        private DataGridView gridReports;
     }
 }
