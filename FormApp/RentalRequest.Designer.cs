@@ -35,10 +35,9 @@
             panel3 = new Panel();
             panel1 = new Panel();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            requestId = new TextBox();
             btnSearch = new Button();
-            btnFilter = new Button();
-            dataGridView1 = new DataGridView();
+            RentalRequestGrid = new DataGridView();
             btnAccept = new Button();
             btnReject = new Button();
             lblLogOut = new Label();
@@ -52,9 +51,10 @@
             label16 = new Label();
             lblDashboard = new Label();
             lblExit = new Label();
+            btnFilter = new Button();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RentalRequestGrid).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -113,14 +113,14 @@
             panel2.Size = new Size(3, 383);
             panel2.TabIndex = 8;
             // 
-            // textBox1
+            // requestId
             // 
-            textBox1.ForeColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(264, 77);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(355, 27);
-            textBox1.TabIndex = 11;
-            textBox1.Text = "Rental Request ID";
+            requestId.ForeColor = SystemColors.ScrollBar;
+            requestId.Location = new Point(264, 77);
+            requestId.Name = "requestId";
+            requestId.Size = new Size(355, 27);
+            requestId.TabIndex = 11;
+            requestId.Text = "Rental Request ID";
             // 
             // btnSearch
             // 
@@ -132,26 +132,17 @@
             btnSearch.TabIndex = 12;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // btnFilter
+            // RentalRequestGrid
             // 
-            btnFilter.BackColor = Color.FromArgb(255, 128, 0);
-            btnFilter.ForeColor = Color.White;
-            btnFilter.Location = new Point(736, 77);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(94, 29);
-            btnFilter.TabIndex = 13;
-            btnFilter.Text = "Filter";
-            btnFilter.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(264, 127);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(566, 320);
-            dataGridView1.TabIndex = 14;
+            RentalRequestGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            RentalRequestGrid.Location = new Point(264, 127);
+            RentalRequestGrid.Name = "RentalRequestGrid";
+            RentalRequestGrid.RowHeadersWidth = 51;
+            RentalRequestGrid.Size = new Size(566, 320);
+            RentalRequestGrid.TabIndex = 14;
+            RentalRequestGrid.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnAccept
             // 
@@ -291,6 +282,18 @@
             lblExit.TabIndex = 70;
             lblExit.Text = "Exit";
             // 
+            // btnFilter
+            // 
+            btnFilter.BackColor = Color.FromArgb(255, 128, 0);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(736, 77);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(94, 29);
+            btnFilter.TabIndex = 13;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
+            // 
             // RentalRequest
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -310,10 +313,10 @@
             Controls.Add(lblDashboard);
             Controls.Add(btnReject);
             Controls.Add(btnAccept);
-            Controls.Add(dataGridView1);
+            Controls.Add(RentalRequestGrid);
             Controls.Add(btnFilter);
             Controls.Add(btnSearch);
-            Controls.Add(textBox1);
+            Controls.Add(requestId);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(panel3);
@@ -321,10 +324,11 @@
             Name = "RentalRequest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RentalRequest";
+            Load += RentalRequest_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RentalRequestGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -337,10 +341,9 @@
         private Panel panel3;
         private Panel panel1;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox requestId;
         private Button btnSearch;
-        private Button btnFilter;
-        private DataGridView dataGridView1;
+        private DataGridView RentalRequestGrid;
         private Button btnAccept;
         private Button btnReject;
         private Label lblLogOut;
@@ -354,5 +357,6 @@
         private Label label16;
         private Label lblDashboard;
         private Label lblExit;
+        private Button btnFilter;
     }
 }

@@ -3,28 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\models\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\models\\availablestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\availablestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\formapp\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\classes\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\classes\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\classes\\placeholderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\classes\\placeholderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\formapp\\classes\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\classes\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\classlibrary\\models\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\advancedproject\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,6 +122,69 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RentalTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalTransactions.cs",
+              "RelativeDocumentMoniker": "FormApp\\RentalTransactions.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalTransactions.cs",
+              "RelativeToolTip": "FormApp\\RentalTransactions.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAwGgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T23:53:21.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentalTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\RentalTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\RentalTransaction.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:32:08.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReturnRecords.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\ReturnRecords.cs",
+              "RelativeDocumentMoniker": "FormApp\\ReturnRecords.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\ReturnRecords.cs [Design]",
+              "RelativeToolTip": "FormApp\\ReturnRecords.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:33:51.025Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentalRequest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs",
+              "RelativeDocumentMoniker": "FormApp\\RentalRequest.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs [Design]",
+              "RelativeToolTip": "FormApp\\RentalRequest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T13:28:21.993Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RentalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs",
+              "RelativeDocumentMoniker": "FormApp\\RentalRequest.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs",
+              "RelativeToolTip": "FormApp\\RentalRequest.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T01:07:27.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "RentalTransactions.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalTransactions.cs",
@@ -82,7 +197,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Dashboard.cs",
+              "RelativeToolTip": "FormApp\\Dashboard.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAawKMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T00:10:24.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Dashboard.cs",
               "RelativeDocumentMoniker": "FormApp\\Dashboard.cs",
@@ -94,31 +222,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReturnRecords.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "ReturnRecords.cs",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\ReturnRecords.cs",
               "RelativeDocumentMoniker": "FormApp\\ReturnRecords.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\ReturnRecords.cs [Design]",
-              "RelativeToolTip": "FormApp\\ReturnRecords.cs [Design]",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\ReturnRecords.cs",
+              "RelativeToolTip": "FormApp\\ReturnRecords.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAawEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:33:51.025Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-24T00:32:35.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RentalRequest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs",
-              "RelativeDocumentMoniker": "FormApp\\RentalRequest.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\RentalRequest.cs [Design]",
-              "RelativeToolTip": "FormApp\\RentalRequest.cs [Design]",
+              "DocumentIndex": 9,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Context\\DBContext.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "RelativeToolTip": "ClassLibrary\\Context\\DBContext.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:28:21.993Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-24T00:16:08.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "AvailableStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\AvailableStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\AvailableStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:46:32.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\Equipment.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwDgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:44:27.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "EquipmentManagement.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\EquipmentManagement.cs",
               "RelativeDocumentMoniker": "FormApp\\EquipmentManagement.cs",
@@ -130,20 +286,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\UserSession.cs",
+              "RelativeDocumentMoniker": "FormApp\\Classes\\UserSession.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\UserSession.cs",
+              "RelativeToolTip": "FormApp\\Classes\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:55:18.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Program.cs",
               "RelativeDocumentMoniker": "FormApp\\Program.cs",
               "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Program.cs",
               "RelativeToolTip": "FormApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T13:44:14.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
+              "Title": "PlaceholderService.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\PlaceholderService.cs",
+              "RelativeDocumentMoniker": "FormApp\\Classes\\PlaceholderService.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\PlaceholderService.cs",
+              "RelativeToolTip": "FormApp\\Classes\\PlaceholderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:55:33.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\DBConnection.cs",
+              "RelativeDocumentMoniker": "FormApp\\Classes\\DBConnection.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\FormApp\\Classes\\DBConnection.cs",
+              "RelativeToolTip": "FormApp\\Classes\\DBConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:18:37.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FeedBack.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\FeedBack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:52:02.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DocumentType.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\DocumentType.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\DocumentType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:51:55.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\AdvancedProject\\HelloWorld\\Program.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
@@ -151,7 +372,8 @@
               "RelativeToolTip": "HelloWorld\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:44:05.517Z"
+              "WhenOpened": "2025-03-21T13:44:05.517Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -34,9 +34,9 @@
             lblPosition = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            txtReturnRecordId = new TextBox();
             btnSearch = new Button();
-            dataGridView1 = new DataGridView();
+            ReturnRecordGrid = new DataGridView();
             btnUpdate = new Button();
             btnDelete = new Button();
             btnCreate = new Button();
@@ -53,7 +53,7 @@
             lblDashboard = new Label();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ReturnRecordGrid).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -104,14 +104,14 @@
             panel2.Size = new Size(3, 383);
             panel2.TabIndex = 8;
             // 
-            // textBox1
+            // txtReturnRecordId
             // 
-            textBox1.ForeColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(289, 86);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(376, 27);
-            textBox1.TabIndex = 18;
-            textBox1.Text = "Rental Record ID";
+            txtReturnRecordId.ForeColor = SystemColors.ScrollBar;
+            txtReturnRecordId.Location = new Point(289, 86);
+            txtReturnRecordId.Name = "txtReturnRecordId";
+            txtReturnRecordId.Size = new Size(376, 27);
+            txtReturnRecordId.TabIndex = 18;
+            txtReturnRecordId.Text = "Rental Record ID";
             // 
             // btnSearch
             // 
@@ -123,15 +123,16 @@
             btnSearch.TabIndex = 19;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // dataGridView1
+            // ReturnRecordGrid
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(273, 132);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(558, 305);
-            dataGridView1.TabIndex = 21;
+            ReturnRecordGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ReturnRecordGrid.Location = new Point(273, 132);
+            ReturnRecordGrid.Name = "ReturnRecordGrid";
+            ReturnRecordGrid.RowHeadersWidth = 51;
+            ReturnRecordGrid.Size = new Size(558, 305);
+            ReturnRecordGrid.TabIndex = 21;
             // 
             // btnUpdate
             // 
@@ -154,6 +155,7 @@
             btnDelete.TabIndex = 25;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnCreate
             // 
@@ -299,19 +301,20 @@
             Controls.Add(btnUpdate);
             Controls.Add(btnDelete);
             Controls.Add(btnCreate);
-            Controls.Add(dataGridView1);
+            Controls.Add(ReturnRecordGrid);
             Controls.Add(btnSearch);
-            Controls.Add(textBox1);
+            Controls.Add(txtReturnRecordId);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ReturnRecords";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ReturnRecords";
+            Load += ReturnRecords_Load_1;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ReturnRecordGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -323,9 +326,9 @@
         private Label lblPosition;
         private Panel panel1;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txtReturnRecordId;
         private Button btnSearch;
-        private DataGridView dataGridView1;
+        private DataGridView ReturnRecordGrid;
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnCreate;

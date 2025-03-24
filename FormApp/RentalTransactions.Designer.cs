@@ -35,13 +35,12 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            btnReject = new Button();
+            btnDelete = new Button();
             btnCreate = new Button();
-            dataGridView1 = new DataGridView();
-            btnFilter = new Button();
+            transactionGrid = new DataGridView();
             btnSearch = new Button();
-            textBox1 = new TextBox();
-            btnAccept = new Button();
+            txtTransactionID = new TextBox();
+            btnUpdate = new Button();
             lblLogOut = new Label();
             lblExit = new Label();
             lblViewAuditLogs = new Label();
@@ -54,9 +53,10 @@
             label16 = new Label();
             lblDashboard = new Label();
             label1 = new Label();
+            btnFilter = new Button();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)transactionGrid).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -70,6 +70,7 @@
             flowLayoutPanel2.Padding = new Padding(3);
             flowLayoutPanel2.Size = new Size(854, 65);
             flowLayoutPanel2.TabIndex = 2;
+            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
             // lblName
             // 
@@ -116,47 +117,38 @@
             panel3.TabIndex = 10;
             panel3.Paint += panel3_Paint;
             // 
-            // btnReject
+            // btnDelete
             // 
-            btnReject.BackColor = Color.Red;
-            btnReject.ForeColor = Color.White;
-            btnReject.Location = new Point(562, 442);
-            btnReject.Name = "btnReject";
-            btnReject.Size = new Size(123, 39);
-            btnReject.TabIndex = 22;
-            btnReject.Text = "Reject";
-            btnReject.UseVisualStyleBackColor = false;
+            btnDelete.BackColor = Color.Red;
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(558, 467);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(123, 39);
+            btnDelete.TabIndex = 22;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnCreate
             // 
             btnCreate.BackColor = Color.Black;
             btnCreate.ForeColor = Color.White;
-            btnCreate.Location = new Point(269, 442);
+            btnCreate.Location = new Point(269, 467);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(123, 39);
             btnCreate.TabIndex = 21;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // transactionGrid
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(269, 139);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(567, 290);
-            dataGridView1.TabIndex = 20;
-            // 
-            // btnFilter
-            // 
-            btnFilter.BackColor = Color.FromArgb(255, 128, 0);
-            btnFilter.ForeColor = Color.White;
-            btnFilter.Location = new Point(742, 87);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(94, 29);
-            btnFilter.TabIndex = 19;
-            btnFilter.Text = "Filter";
-            btnFilter.UseVisualStyleBackColor = false;
+            transactionGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            transactionGrid.Location = new Point(273, 146);
+            transactionGrid.Name = "transactionGrid";
+            transactionGrid.RowHeadersWidth = 51;
+            transactionGrid.Size = new Size(567, 305);
+            transactionGrid.TabIndex = 20;
+            transactionGrid.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnSearch
             // 
@@ -168,26 +160,27 @@
             btnSearch.TabIndex = 18;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // textBox1
+            // txtTransactionID
             // 
-            textBox1.ForeColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(293, 87);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(320, 27);
-            textBox1.TabIndex = 17;
-            textBox1.Text = "Transaction ID";
+            txtTransactionID.ForeColor = SystemColors.ScrollBar;
+            txtTransactionID.Location = new Point(293, 87);
+            txtTransactionID.Name = "txtTransactionID";
+            txtTransactionID.Size = new Size(343, 27);
+            txtTransactionID.TabIndex = 17;
+            txtTransactionID.Text = "Transaction ID";
             // 
-            // btnAccept
+            // btnUpdate
             // 
-            btnAccept.BackColor = Color.Black;
-            btnAccept.ForeColor = Color.White;
-            btnAccept.Location = new Point(414, 442);
-            btnAccept.Name = "btnAccept";
-            btnAccept.Size = new Size(123, 39);
-            btnAccept.TabIndex = 23;
-            btnAccept.Text = "Accept";
-            btnAccept.UseVisualStyleBackColor = false;
+            btnUpdate.BackColor = Color.Black;
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(414, 467);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(123, 39);
+            btnUpdate.TabIndex = 23;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
             // 
             // lblLogOut
             // 
@@ -316,12 +309,25 @@
             label1.TabIndex = 71;
             label1.Text = "Dashboard";
             // 
+            // btnFilter
+            // 
+            btnFilter.BackColor = Color.FromArgb(255, 128, 0);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(746, 87);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(94, 29);
+            btnFilter.TabIndex = 72;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
+            // 
             // RentalTransactions
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(852, 524);
+            Controls.Add(btnFilter);
             Controls.Add(lblLogOut);
             Controls.Add(lblExit);
             Controls.Add(lblViewAuditLogs);
@@ -333,13 +339,12 @@
             Controls.Add(lblRequest);
             Controls.Add(label16);
             Controls.Add(lblDashboard);
-            Controls.Add(btnAccept);
-            Controls.Add(btnReject);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnDelete);
             Controls.Add(btnCreate);
-            Controls.Add(dataGridView1);
-            Controls.Add(btnFilter);
+            Controls.Add(transactionGrid);
             Controls.Add(btnSearch);
-            Controls.Add(textBox1);
+            Controls.Add(txtTransactionID);
             Controls.Add(panel1);
             Controls.Add(panel3);
             Controls.Add(flowLayoutPanel2);
@@ -352,7 +357,7 @@
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)transactionGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -365,13 +370,12 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Button btnReject;
+        private Button btnDelete;
         private Button btnCreate;
-        private DataGridView dataGridView1;
-        private Button btnFilter;
+        private DataGridView transactionGrid;
         private Button btnSearch;
-        private TextBox textBox1;
-        private Button btnAccept;
+        private TextBox txtTransactionID;
+        private Button btnUpdate;
         private Label lblLogOut;
         private Label lblExit;
         private Label lblViewAuditLogs;
@@ -384,5 +388,6 @@
         private Label label16;
         private Label lblDashboard;
         private Label label1;
+        private Button btnFilter;
     }
 }

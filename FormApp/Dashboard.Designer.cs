@@ -37,14 +37,14 @@
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
+            lblavEq = new Label();
+            lbleqTotal = new Label();
+            lblOverdue = new Label();
+            lblActiveRental = new Label();
+            lblPending = new Label();
+            lblRentedEq = new Label();
+            lblTotalEq = new Label();
+            lblAvailableEq = new Label();
             label2 = new Label();
             label1 = new Label();
             lblRecentEq = new Label();
@@ -110,14 +110,14 @@
             pnlInfo.Controls.Add(label13);
             pnlInfo.Controls.Add(label12);
             pnlInfo.Controls.Add(label11);
-            pnlInfo.Controls.Add(label10);
-            pnlInfo.Controls.Add(label9);
-            pnlInfo.Controls.Add(label8);
-            pnlInfo.Controls.Add(label7);
-            pnlInfo.Controls.Add(label6);
-            pnlInfo.Controls.Add(label5);
-            pnlInfo.Controls.Add(label4);
-            pnlInfo.Controls.Add(label3);
+            pnlInfo.Controls.Add(lblavEq);
+            pnlInfo.Controls.Add(lbleqTotal);
+            pnlInfo.Controls.Add(lblOverdue);
+            pnlInfo.Controls.Add(lblActiveRental);
+            pnlInfo.Controls.Add(lblPending);
+            pnlInfo.Controls.Add(lblRentedEq);
+            pnlInfo.Controls.Add(lblTotalEq);
+            pnlInfo.Controls.Add(lblAvailableEq);
             pnlInfo.Controls.Add(label2);
             pnlInfo.Controls.Add(label1);
             pnlInfo.Location = new Point(260, 76);
@@ -162,78 +162,79 @@
             label11.Text = "...";
             label11.Click += label11_Click;
             // 
-            // label10
+            // lblavEq
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(222, 94);
-            label10.Name = "label10";
-            label10.Size = new Size(18, 20);
-            label10.TabIndex = 9;
-            label10.Text = "...";
+            lblavEq.AutoSize = true;
+            lblavEq.Location = new Point(222, 94);
+            lblavEq.Name = "lblavEq";
+            lblavEq.Size = new Size(18, 20);
+            lblavEq.TabIndex = 9;
+            lblavEq.Text = "...";
             // 
-            // label9
+            // lbleqTotal
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(222, 62);
-            label9.Name = "label9";
-            label9.Size = new Size(18, 20);
-            label9.TabIndex = 8;
-            label9.Text = "...";
-            label9.Click += label9_Click;
+            lbleqTotal.AutoSize = true;
+            lbleqTotal.Location = new Point(222, 62);
+            lbleqTotal.Name = "lbleqTotal";
+            lbleqTotal.Size = new Size(18, 20);
+            lbleqTotal.TabIndex = 8;
+            lbleqTotal.Text = "...";
+            lbleqTotal.Click += label9_Click;
             // 
-            // label8
+            // lblOverdue
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(325, 126);
-            label8.Name = "label8";
-            label8.Size = new Size(128, 20);
-            label8.TabIndex = 7;
-            label8.Text = "Overdue Requests";
+            lblOverdue.AutoSize = true;
+            lblOverdue.Location = new Point(325, 126);
+            lblOverdue.Name = "lblOverdue";
+            lblOverdue.Size = new Size(128, 20);
+            lblOverdue.TabIndex = 7;
+            lblOverdue.Text = "Overdue Requests";
+            lblOverdue.Click += lblOverdue_Click;
             // 
-            // label7
+            // lblActiveRental
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(325, 62);
-            label7.Name = "label7";
-            label7.Size = new Size(102, 20);
-            label7.TabIndex = 6;
-            label7.Text = "Active Rentals";
+            lblActiveRental.AutoSize = true;
+            lblActiveRental.Location = new Point(325, 62);
+            lblActiveRental.Name = "lblActiveRental";
+            lblActiveRental.Size = new Size(102, 20);
+            lblActiveRental.TabIndex = 6;
+            lblActiveRental.Text = "Active Rentals";
             // 
-            // label6
+            // lblPending
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(325, 94);
-            label6.Name = "label6";
-            label6.Size = new Size(125, 20);
-            label6.TabIndex = 5;
-            label6.Text = "Pending Requests";
+            lblPending.AutoSize = true;
+            lblPending.Location = new Point(325, 94);
+            lblPending.Name = "lblPending";
+            lblPending.Size = new Size(125, 20);
+            lblPending.TabIndex = 5;
+            lblPending.Text = "Pending Requests";
             // 
-            // label5
+            // lblRentedEq
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(10, 126);
-            label5.Name = "label5";
-            label5.Size = new Size(132, 20);
-            label5.TabIndex = 4;
-            label5.Text = "Rented Equipment";
+            lblRentedEq.AutoSize = true;
+            lblRentedEq.Location = new Point(10, 126);
+            lblRentedEq.Name = "lblRentedEq";
+            lblRentedEq.Size = new Size(132, 20);
+            lblRentedEq.TabIndex = 4;
+            lblRentedEq.Text = "Rented Equipment";
             // 
-            // label4
+            // lblTotalEq
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(10, 62);
-            label4.Name = "label4";
-            label4.Size = new Size(108, 20);
-            label4.TabIndex = 3;
-            label4.Text = "Total Summary";
+            lblTotalEq.AutoSize = true;
+            lblTotalEq.Location = new Point(10, 62);
+            lblTotalEq.Name = "lblTotalEq";
+            lblTotalEq.Size = new Size(108, 20);
+            lblTotalEq.TabIndex = 3;
+            lblTotalEq.Text = "Total Summary";
             // 
-            // label3
+            // lblAvailableEq
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(10, 94);
-            label3.Name = "label3";
-            label3.Size = new Size(147, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Available Equipment";
+            lblAvailableEq.AutoSize = true;
+            lblAvailableEq.Location = new Point(10, 94);
+            lblAvailableEq.Name = "lblAvailableEq";
+            lblAvailableEq.Size = new Size(147, 20);
+            lblAvailableEq.TabIndex = 2;
+            lblAvailableEq.Text = "Available Equipment";
             // 
             // label2
             // 
@@ -353,6 +354,7 @@
             lblRequest.Size = new Size(133, 23);
             lblRequest.TabIndex = 44;
             lblRequest.Text = "Rental Requests";
+            lblRequest.Click += lblRequest_Click;
             // 
             // lblTransactions
             // 
@@ -363,6 +365,7 @@
             lblTransactions.Size = new Size(158, 23);
             lblTransactions.TabIndex = 45;
             lblTransactions.Text = "Rental Transactions";
+            lblTransactions.Click += lblTransactions_Click;
             // 
             // lblEquipmentManagement
             // 
@@ -383,6 +386,7 @@
             lblReturnRecords.Size = new Size(128, 23);
             lblReturnRecords.TabIndex = 46;
             lblReturnRecords.Text = "Return Records";
+            lblReturnRecords.Click += lblReturnRecords_Click;
             // 
             // lblGenerateReport
             // 
@@ -484,23 +488,23 @@
         private DataGridView dataGridView1;
         private Label lblRecentRentalReq;
         private DataGridView dataGridView2;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
+        private Label lblOverdue;
+        private Label lblActiveRental;
+        private Label lblPending;
+        private Label lblRentedEq;
+        private Label lblTotalEq;
+        private Label lblAvailableEq;
         private Label label2;
         private Label label1;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Label label9;
+        private Label lbleqTotal;
         private Label label14;
         private Label label13;
         private Label label12;
         private Label label11;
-        private Label label10;
+        private Label lblavEq;
         private Label lblDashboard;
         private Label label16;
         private Label lblRequest;
