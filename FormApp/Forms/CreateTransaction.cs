@@ -1,4 +1,6 @@
-﻿using FormApp.Classes;
+﻿using ClassLibrary.Models;
+using ClassLibrary.Persistence;
+using FormApp.Classes;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,13 @@ namespace FormApp.Forms
 {
     public partial class CreateTransaction : Form
     {
+        private readonly DBContext _context;
+
         public CreateTransaction()
         {
             InitializeComponent();
+
+            _context = new DBContext();
 
             lblName.Text = UserSession.FullName;
 
@@ -34,8 +40,8 @@ namespace FormApp.Forms
 
             // setting placeholders
             PlaceholderService.SetPlaceholder(txtUserID, "User ID");
-            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date");
-            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date");
+            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date (YYYY-MM-DD)");
+            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date (YYYY-MM-DD)");
             PlaceholderService.SetPlaceholder(txtFee, "Fee");
             PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
 
@@ -49,46 +55,30 @@ namespace FormApp.Forms
 
         private void LoadDropdowns()
         {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
-            {
-                conn.Open();
+            // rental Status dropdown
+            var rentalStatuses = _context.RentalStatuses
+                .Select(rs => new { rs.Id, rs.Status })
+                .ToList();
 
-                // load rental status
-                SqlCommand rentalCmd = new SqlCommand("SELECT ID, Status FROM Rental_Status", conn);
-                SqlDataAdapter rentalAdapter = new SqlDataAdapter(rentalCmd);
-                DataTable rentalTable = new DataTable();
-                rentalAdapter.Fill(rentalTable);
+            rentalStatuses.Insert(0, new { Id = -1, Status = "Rental Status" });
 
-                // add placeholder
-                DataRow rentalPlaceholder = rentalTable.NewRow();
-                rentalPlaceholder["ID"] = -1;
-                rentalPlaceholder["Status"] = "Rental Status";
-                rentalTable.Rows.InsertAt(rentalPlaceholder, 0);
+            cmbRentalStatus.DataSource = rentalStatuses;
+            cmbRentalStatus.DisplayMember = "Status";
+            cmbRentalStatus.ValueMember = "Id";
 
-                cmbRentalStatus.DataSource = rentalTable;
-                cmbRentalStatus.DisplayMember = "Status";
-                cmbRentalStatus.ValueMember = "ID";
+            // payment Status dropdown
+            var paymentStatuses = _context.PaymentStatuses
+                .Select(ps => new { ps.Id, ps.Status })
+                .ToList();
 
-                // load payment status
-                SqlCommand paymentCmd = new SqlCommand("SELECT ID, Status FROM Payment_Status", conn);
-                SqlDataAdapter paymentAdapter = new SqlDataAdapter(paymentCmd);
-                DataTable paymentTable = new DataTable();
-                paymentAdapter.Fill(paymentTable);
+            paymentStatuses.Insert(0, new { Id = -1, Status = "Payment Status" });
 
-                // add placeholder
-                DataRow paymentPlaceholder = paymentTable.NewRow();
-                paymentPlaceholder["ID"] = -1;
-                paymentPlaceholder["Status"] = "Payment Status";
-                paymentTable.Rows.InsertAt(paymentPlaceholder, 0);
+            cmbPaymentStatus.DataSource = paymentStatuses;
+            cmbPaymentStatus.DisplayMember = "Status";
+            cmbPaymentStatus.ValueMember = "Id";
 
-                cmbPaymentStatus.DataSource = paymentTable;
-                cmbPaymentStatus.DisplayMember = "Status";
-                cmbPaymentStatus.ValueMember = "ID";
-
-                // set both dropdowns to show placeholder
-                cmbRentalStatus.SelectedIndex = 0;
-                cmbPaymentStatus.SelectedIndex = 0;
-            }
+            cmbRentalStatus.SelectedIndex = 0;
+            cmbPaymentStatus.SelectedIndex = 0;
         }
 
         // when the create button is clicked
@@ -96,7 +86,7 @@ namespace FormApp.Forms
         {
             try
             {
-                // empty field check
+                // Validate inputs
                 if (string.IsNullOrWhiteSpace(txtUserID.Text) ||
                     string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
                     string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
@@ -109,21 +99,18 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // validate user ID (has to be numeric)
                 if (!int.TryParse(txtUserID.Text.Trim(), out int userId))
                 {
                     MessageBox.Show("Please enter a valid numeric User ID.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // check if user exists in the db
-                if (!UserExists(userId))
+                if (!_context.Users.Any(u => u.Id == userId))
                 {
                     MessageBox.Show("User ID does not exist in the system.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // parse Dates
                 if (!DateTime.TryParse(txtPickupDate.Text.Trim(), out DateTime pickupDate))
                 {
                     MessageBox.Show("Please enter a valid Pickup Date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -142,10 +129,8 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // calculate period
                 int period = (returnDate - pickupDate).Days;
 
-                // validate fee and deposit
                 if (!decimal.TryParse(txtFee.Text.Trim(), out decimal fee))
                 {
                     MessageBox.Show("Please enter a valid numeric fee.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -167,29 +152,23 @@ namespace FormApp.Forms
                 int rentalStatusId = Convert.ToInt32(cmbRentalStatus.SelectedValue);
                 int paymentStatusId = Convert.ToInt32(cmbPaymentStatus.SelectedValue);
 
-                // SQL insert statement
-                string query = "INSERT INTO Rental_Transaction (UserID, RentalStatus, Pickup, ReturnDate, Period, Fee, Deposit, PaymentStatus) " +
-                               "VALUES (@UserID, @RentalStatus, @Pickup, @ReturnDate, @Period, @Fee, @Deposit, @PaymentStatus)";
-
-                using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
+                var newTransaction = new RentalTransaction
                 {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@UserID", userId);
-                        cmd.Parameters.AddWithValue("@RentalStatus", rentalStatusId);
-                        cmd.Parameters.AddWithValue("@Pickup", pickupDate);
-                        cmd.Parameters.AddWithValue("@ReturnDate", returnDate);
-                        cmd.Parameters.AddWithValue("@Period", period);
-                        cmd.Parameters.AddWithValue("@Fee", fee);
-                        cmd.Parameters.AddWithValue("@Deposit", deposit);
-                        cmd.Parameters.AddWithValue("@PaymentStatus", paymentStatusId);
+                    UserId = userId,
+                    RentalStatus = rentalStatusId,
+                    Pickup = pickupDate,
+                    ReturnDate = returnDate,
+                    Period = period,
+                    Fee = fee,
+                    Deposit = deposit,
+                    PaymentStatus = paymentStatusId
+                };
 
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Transaction created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearFields();
-                    }
-                }
+                _context.RentalTransactions.Add(newTransaction);
+                _context.SaveChanges();
+
+                MessageBox.Show("Transaction created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearFields();
             }
             catch (Exception ex)
             {
@@ -205,24 +184,16 @@ namespace FormApp.Forms
             txtReturnDate.Clear();
             txtFee.Clear();
             txtDeposit.Clear();
-            cmbRentalStatus.SelectedIndex = 0; // back to placeholder
-            cmbPaymentStatus.SelectedIndex = 0; // back to placeholder
-        }
 
-        // check if user exists
-        private bool UserExists(int userId)
-        {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM dbo.[User] WHERE ID = @UserID";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@UserID", userId);
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0;
-                }
-            }
+            // reapply placeholders
+            PlaceholderService.SetPlaceholder(txtUserID, "User ID");
+            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date (YYYY-MM-DD)");
+            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date (YYYY-MM-DD)");
+            PlaceholderService.SetPlaceholder(txtFee, "Fee");
+            PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
+
+            cmbRentalStatus.SelectedIndex = 0;
+            cmbPaymentStatus.SelectedIndex = 0;
         }
     }
 }

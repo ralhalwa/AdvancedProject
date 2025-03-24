@@ -10,14 +10,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary.Persistence;
+using ClassLibrary.Models;
 
 namespace FormApp.Forms
 {
     public partial class DatabaseBackup : Form
     {
+        private readonly DBContext _context;
+
         public DatabaseBackup()
         {
             InitializeComponent();
+
+            // initialize db context
+            _context = new DBContext();
 
             // display user info
             lblName.Text = UserSession.FullName;
@@ -40,18 +47,6 @@ namespace FormApp.Forms
             LoadBackupLogs(); // load past backups on form load
         }
 
-        private void PerformDatabaseBackup()
-        {
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Backup failed:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnInitiateBackup_Click(object sender, EventArgs e)
         {
             using (FolderBrowserDialog folderDialog = new FolderBrowserDialog())
@@ -71,29 +66,26 @@ namespace FormApp.Forms
         {
             try
             {
-                // build the backup file path
                 string backupFileName = $"NewDB_Backup_{DateTime.Now:yyyyMMdd_HHmmss}.bak";
                 string backupFullPath = Path.Combine(folderPath, backupFileName);
 
-                // SQL command to backup the DB
                 string backupQuery = $"BACKUP DATABASE [NewDB] TO DISK = @path";
 
-                using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
+                using (var conn = new Microsoft.Data.SqlClient.SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=NewDB;Trusted_Connection=True;"))
                 {
                     conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(backupQuery, conn))
+                    using (var cmd = new Microsoft.Data.SqlClient.SqlCommand(backupQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@path", backupFullPath);
                         cmd.ExecuteNonQuery();
                     }
                 }
 
-                // log the backup
+                // log the backup using DBContext
                 LogBackup(UserSession.UserID, backupFullPath);
 
-                // display success message
                 MessageBox.Show("Backup completed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadBackupLogs(); // refresh the grid view
+                LoadBackupLogs(); // refresh logs
             }
             catch (Exception ex)
             {
@@ -104,40 +96,50 @@ namespace FormApp.Forms
         // inserting a new backup log
         private void LogBackup(int userId, string filePath)
         {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
+            try
             {
-                conn.Open();
-                string insertQuery = @"INSERT INTO Log (UserID, Action, TimeStamp, AffectedData, Source)
-                                       VALUES (@UserID, @Action, @TimeStamp, @AffectedData, @Source)";
-
-                using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                var log = new Log
                 {
-                    cmd.Parameters.AddWithValue("@UserID", userId);
-                    cmd.Parameters.AddWithValue("@Action", "Performed Backup");
-                    cmd.Parameters.AddWithValue("@TimeStamp", DateTime.Now);
-                    cmd.Parameters.AddWithValue("@AffectedData", "Entire Database");
-                    cmd.Parameters.AddWithValue("@Source", filePath);
-                    cmd.ExecuteNonQuery();
-                }
+                    UserId = userId,
+                    Action = "Performed Backup",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = "Entire Database",
+                    Source = filePath
+                };
+
+                _context.Logs.Add(log);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to log the backup:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         // filling the grid view with backup logs
         private void LoadBackupLogs()
         {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
+            try
             {
-                conn.Open();
-                string query = "SELECT ID, UserID, Action, TimeStamp, AffectedData, Source " +
-                               "FROM Log WHERE Action = 'Performed Backup' ORDER BY TimeStamp DESC";
+                var backupLogs = _context.Logs
+                    .Where(log => log.Action == "Performed Backup")
+                    .OrderByDescending(log => log.TimeStamp)
+                    .Select(log => new
+                    {
+                        log.Id,
+                        log.UserId,
+                        log.Action,
+                        log.TimeStamp,
+                        log.AffectedData,
+                        log.Source
+                    })
+                    .ToList();
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                {
-                    DataTable table = new DataTable();
-                    adapter.Fill(table);
-                    gridBackupLogs.DataSource = table;
-                }
+                gridBackupLogs.DataSource = backupLogs;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to load backup logs:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

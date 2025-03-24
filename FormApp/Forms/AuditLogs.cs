@@ -10,19 +10,36 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
+using ClassLibrary.Persistence;
 
 namespace FormApp.Forms
 {
     public partial class AuditLogs : Form
     {
-        // connection string
-        private string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=NewDB;Trusted_Connection=True;";
+        private readonly DBContext _context;
+
         public AuditLogs()
         {
             InitializeComponent();
 
+            // instantiate DBContext
+            _context = new DBContext();
+
             // apply placeholder to the search bar
             PlaceholderService.SetPlaceholder(txtSearchBar, "Log ID");
+
+            // displaying user info
+            lblName.Text = UserSession.FullName;
+
+            if (UserSession.RoleID == 1)
+            {
+                lblRole.Text = "Admin";
+            }
+
+            else if (UserSession.RoleID == 2)
+            {
+                lblRole.Text = "Manager";
+            }
 
             // centering the form
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -36,25 +53,26 @@ namespace FormApp.Forms
         // load the grid view and filter logs by id
         private void LoadLogs(string searchId = "")
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            var logsQuery = _context.Logs.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchId) && int.TryParse(searchId, out int id))
             {
-                string query = "SELECT ID, UserID, Action, TimeStamp, AffectedData,Source FROM Log";
-
-                if (!string.IsNullOrWhiteSpace(searchId))
-                {
-                    query += " WHERE ID = @ID";
-                }
-
-                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                if (!string.IsNullOrWhiteSpace(searchId))
-                {
-                    adapter.SelectCommand.Parameters.AddWithValue("@ID", searchId);
-                }
-
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                gridLogs.DataSource = dt;
+                logsQuery = logsQuery.Where(log => log.Id == id);
             }
+
+            var logList = logsQuery
+                .Select(log => new
+                {
+                    log.Id,
+                    log.UserId,
+                    log.Action,
+                    log.TimeStamp,
+                    log.AffectedData,
+                    log.Source
+                })
+                .ToList();
+
+            gridLogs.DataSource = logList;
         }
 
         // search button click event
