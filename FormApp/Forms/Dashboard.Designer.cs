@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             lblBackup = new Label();
-            label2 = new Label();
             lblGenerateReports = new Label();
             lblPerformDBBackup = new Label();
             lblExit = new Label();
@@ -43,9 +42,13 @@
             lblDivider = new Label();
             lblRole = new Label();
             lblName = new Label();
-            label3 = new Label();
+            lblDashboard = new Label();
             button1 = new Button();
             button2 = new Button();
+            flowSidebar = new FlowLayoutPanel();
+            panelSidebarHighlight = new Panel();
+            flowSidebar.SuspendLayout();
+            panelSidebarHighlight.SuspendLayout();
             SuspendLayout();
             // 
             // lblBackup
@@ -54,28 +57,22 @@
             lblBackup.BackColor = Color.Transparent;
             lblBackup.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBackup.ForeColor = Color.Black;
-            lblBackup.Location = new Point(34, 548);
+            lblBackup.Location = new Point(3, 378);
             lblBackup.Name = "lblBackup";
-            lblBackup.Size = new Size(332, 37);
+            lblBackup.Padding = new Padding(25, 25, 0, 0);
+            lblBackup.Size = new Size(357, 62);
             lblBackup.TabIndex = 56;
             lblBackup.Text = "Perform Database Backup";
             lblBackup.Click += lblBackup_Click;
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.FromArgb(249, 115, 22);
-            label2.Location = new Point(-5, 128);
-            label2.Name = "label2";
-            label2.Size = new Size(384, 64);
-            label2.TabIndex = 55;
             // 
             // lblGenerateReports
             // 
             lblGenerateReports.AutoSize = true;
             lblGenerateReports.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGenerateReports.Location = new Point(34, 618);
+            lblGenerateReports.Location = new Point(3, 440);
             lblGenerateReports.Name = "lblGenerateReports";
-            lblGenerateReports.Size = new Size(230, 37);
+            lblGenerateReports.Padding = new Padding(25, 25, 0, 0);
+            lblGenerateReports.Size = new Size(255, 62);
             lblGenerateReports.TabIndex = 54;
             lblGenerateReports.Text = "Generate Reports";
             lblGenerateReports.Click += lblGenerateReports_Click;
@@ -84,7 +81,7 @@
             // 
             lblPerformDBBackup.AutoSize = true;
             lblPerformDBBackup.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPerformDBBackup.Location = new Point(34, 546);
+            lblPerformDBBackup.Location = new Point(532, 635);
             lblPerformDBBackup.Name = "lblPerformDBBackup";
             lblPerformDBBackup.Size = new Size(0, 37);
             lblPerformDBBackup.TabIndex = 53;
@@ -93,9 +90,10 @@
             // 
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExit.Location = new Point(34, 761);
+            lblExit.Location = new Point(3, 564);
             lblExit.Name = "lblExit";
-            lblExit.Size = new Size(62, 37);
+            lblExit.Padding = new Padding(25, 25, 0, 0);
+            lblExit.Size = new Size(87, 62);
             lblExit.TabIndex = 50;
             lblExit.Text = "Exit";
             // 
@@ -103,9 +101,10 @@
             // 
             lblLogOut.AutoSize = true;
             lblLogOut.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogOut.Location = new Point(34, 687);
+            lblLogOut.Location = new Point(3, 502);
             lblLogOut.Name = "lblLogOut";
-            lblLogOut.Size = new Size(115, 37);
+            lblLogOut.Padding = new Padding(25, 25, 0, 0);
+            lblLogOut.Size = new Size(140, 62);
             lblLogOut.TabIndex = 49;
             lblLogOut.Text = "Log Out";
             // 
@@ -113,9 +112,10 @@
             // 
             lblAuditLogs.AutoSize = true;
             lblAuditLogs.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAuditLogs.Location = new Point(34, 476);
+            lblAuditLogs.Location = new Point(3, 316);
             lblAuditLogs.Name = "lblAuditLogs";
-            lblAuditLogs.Size = new Size(213, 37);
+            lblAuditLogs.Padding = new Padding(25, 25, 0, 0);
+            lblAuditLogs.Size = new Size(238, 62);
             lblAuditLogs.TabIndex = 48;
             lblAuditLogs.Text = "View Audit Logs";
             lblAuditLogs.Click += lblAuditLogs_Click;
@@ -124,9 +124,10 @@
             // 
             lblEquipmentManagement.AutoSize = true;
             lblEquipmentManagement.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEquipmentManagement.Location = new Point(34, 407);
+            lblEquipmentManagement.Location = new Point(3, 254);
             lblEquipmentManagement.Name = "lblEquipmentManagement";
-            lblEquipmentManagement.Size = new Size(320, 37);
+            lblEquipmentManagement.Padding = new Padding(25, 25, 0, 0);
+            lblEquipmentManagement.Size = new Size(345, 62);
             lblEquipmentManagement.TabIndex = 47;
             lblEquipmentManagement.Text = "Equipment Management";
             // 
@@ -134,9 +135,10 @@
             // 
             lblReturnRecords.AutoSize = true;
             lblReturnRecords.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReturnRecords.Location = new Point(34, 340);
+            lblReturnRecords.Location = new Point(3, 192);
             lblReturnRecords.Name = "lblReturnRecords";
-            lblReturnRecords.Size = new Size(203, 37);
+            lblReturnRecords.Padding = new Padding(25, 25, 0, 0);
+            lblReturnRecords.Size = new Size(228, 62);
             lblReturnRecords.TabIndex = 46;
             lblReturnRecords.Text = "Return Records";
             // 
@@ -144,9 +146,10 @@
             // 
             lblRentalTransactions.AutoSize = true;
             lblRentalTransactions.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalTransactions.Location = new Point(34, 275);
+            lblRentalTransactions.Location = new Point(3, 130);
             lblRentalTransactions.Name = "lblRentalTransactions";
-            lblRentalTransactions.Size = new Size(254, 37);
+            lblRentalTransactions.Padding = new Padding(25, 25, 0, 0);
+            lblRentalTransactions.Size = new Size(279, 62);
             lblRentalTransactions.TabIndex = 45;
             lblRentalTransactions.Text = "Rental Transactions";
             // 
@@ -154,9 +157,10 @@
             // 
             lblRentalRequests.AutoSize = true;
             lblRentalRequests.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalRequests.Location = new Point(34, 209);
+            lblRentalRequests.Location = new Point(3, 68);
             lblRentalRequests.Name = "lblRentalRequests";
-            lblRentalRequests.Size = new Size(211, 37);
+            lblRentalRequests.Padding = new Padding(25, 25, 0, 0);
+            lblRentalRequests.Size = new Size(236, 62);
             lblRentalRequests.TabIndex = 44;
             lblRentalRequests.Text = "Rental Requests";
             // 
@@ -165,7 +169,7 @@
             label1.BackColor = Color.FromArgb(236, 236, 236);
             label1.Location = new Point(377, 128);
             label1.Name = "label1";
-            label1.Size = new Size(2, 670);
+            label1.Size = new Size(2, 720);
             label1.TabIndex = 42;
             // 
             // lblDivider
@@ -197,17 +201,18 @@
             lblName.TabIndex = 39;
             lblName.Text = "Name";
             // 
-            // label3
+            // lblDashboard
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(249, 115, 22);
-            label3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(34, 141);
-            label3.Name = "label3";
-            label3.Size = new Size(150, 37);
-            label3.TabIndex = 57;
-            label3.Text = "Dashboard";
+            lblDashboard.AutoSize = true;
+            lblDashboard.BackColor = Color.Transparent;
+            lblDashboard.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDashboard.ForeColor = Color.White;
+            lblDashboard.Location = new Point(3, -14);
+            lblDashboard.Name = "lblDashboard";
+            lblDashboard.Padding = new Padding(25, 25, 0, 0);
+            lblDashboard.Size = new Size(175, 62);
+            lblDashboard.TabIndex = 57;
+            lblDashboard.Text = "Dashboard";
             // 
             // button1
             // 
@@ -229,26 +234,44 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // flowSidebar
+            // 
+            flowSidebar.Controls.Add(panelSidebarHighlight);
+            flowSidebar.Controls.Add(lblRentalRequests);
+            flowSidebar.Controls.Add(lblRentalTransactions);
+            flowSidebar.Controls.Add(lblReturnRecords);
+            flowSidebar.Controls.Add(lblEquipmentManagement);
+            flowSidebar.Controls.Add(lblAuditLogs);
+            flowSidebar.Controls.Add(lblBackup);
+            flowSidebar.Controls.Add(lblGenerateReports);
+            flowSidebar.Controls.Add(lblLogOut);
+            flowSidebar.Controls.Add(lblExit);
+            flowSidebar.FlowDirection = FlowDirection.TopDown;
+            flowSidebar.Location = new Point(-5, 126);
+            flowSidebar.Name = "flowSidebar";
+            flowSidebar.Size = new Size(384, 731);
+            flowSidebar.TabIndex = 60;
+            flowSidebar.WrapContents = false;
+            // 
+            // panelSidebarHighlight
+            // 
+            panelSidebarHighlight.BackColor = Color.FromArgb(249, 115, 22);
+            panelSidebarHighlight.Controls.Add(lblDashboard);
+            panelSidebarHighlight.Location = new Point(3, 3);
+            panelSidebarHighlight.Name = "panelSidebarHighlight";
+            panelSidebarHighlight.Size = new Size(381, 62);
+            panelSidebarHighlight.TabIndex = 57;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1385, 838);
+            Controls.Add(flowSidebar);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label3);
-            Controls.Add(lblBackup);
-            Controls.Add(label2);
-            Controls.Add(lblGenerateReports);
             Controls.Add(lblPerformDBBackup);
-            Controls.Add(lblExit);
-            Controls.Add(lblLogOut);
-            Controls.Add(lblAuditLogs);
-            Controls.Add(lblEquipmentManagement);
-            Controls.Add(lblReturnRecords);
-            Controls.Add(lblRentalTransactions);
-            Controls.Add(lblRentalRequests);
             Controls.Add(label1);
             Controls.Add(lblDivider);
             Controls.Add(lblRole);
@@ -256,6 +279,10 @@
             Name = "Dashboard";
             Text = "Dashboard";
             Load += Dashboard_Load;
+            flowSidebar.ResumeLayout(false);
+            flowSidebar.PerformLayout();
+            panelSidebarHighlight.ResumeLayout(false);
+            panelSidebarHighlight.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -263,7 +290,6 @@
         #endregion
 
         private Label lblBackup;
-        private Label label2;
         private Label lblGenerateReports;
         private Label lblPerformDBBackup;
         private Label lblExit;
@@ -277,8 +303,10 @@
         private Label lblDivider;
         private Label lblRole;
         private Label lblName;
-        private Label label3;
+        private Label lblDashboard;
         private Button button1;
         private Button button2;
+        private FlowLayoutPanel flowSidebar;
+        private Panel panelSidebarHighlight;
     }
 }

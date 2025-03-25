@@ -16,6 +16,7 @@ namespace FormApp.Forms
         public Dashboard()
         {
             InitializeComponent();
+
             lblName.Text = UserSession.FullName;
 
             if (UserSession.RoleID == 1)
@@ -33,7 +34,28 @@ namespace FormApp.Forms
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            SidebarHelper.AdjustSidebarForRole(
+        UserSession.RoleID,
+        new List<Label> {
+            lblDashboard,
+            lblRentalRequests,
+            lblRentalTransactions,
+            lblReturnRecords,
+            lblEquipmentManagement,
+            lblAuditLogs,
+            lblPerformDBBackup,
+            lblGenerateReports,
+            lblLogOut,
+            lblExit
+        },
+        new List<Label> {
+            lblAuditLogs,
+            lblPerformDBBackup,
+            lblGenerateReports
+        },
+        topStart: lblDashboard.Top, // or a fixed value like 120
+        verticalSpacing: 10
+    );
         }
 
         private void lblAuditLogs_Click(object sender, EventArgs e)
@@ -69,6 +91,23 @@ namespace FormApp.Forms
             UpdateTransaction ut = new UpdateTransaction(1);
             ut.Show();
             this.Hide();
+        }
+
+        private void HighlightSidebar(Label selected)
+        {
+            foreach (Control ctrl in flowSidebar.Controls)
+            {
+                if (ctrl is Label lbl)
+                {
+                    lbl.BackColor = Color.Transparent; // Default background
+                    lbl.ForeColor = Color.Black;
+                    lbl.Font = new Font(lbl.Font, FontStyle.Regular);
+                }
+            }
+
+            selected.BackColor = Color.Orange;  // Highlight selected
+            selected.ForeColor = Color.White;
+            selected.Font = new Font(selected.Font, FontStyle.Bold);
         }
     }
 }

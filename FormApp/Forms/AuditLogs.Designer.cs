@@ -46,7 +46,7 @@
             lblPerformDBBackup = new Label();
             lblGenerateReports = new Label();
             label2 = new Label();
-            label3 = new Label();
+            lblViewAuditLogs = new Label();
             ((System.ComponentModel.ISupportInitialize)gridLogs).BeginInit();
             SuspendLayout();
             // 
@@ -224,17 +224,17 @@
             label2.Size = new Size(384, 64);
             label2.TabIndex = 17;
             // 
-            // label3
+            // lblViewAuditLogs
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(249, 115, 22);
-            label3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(31, 482);
-            label3.Name = "label3";
-            label3.Size = new Size(213, 37);
-            label3.TabIndex = 18;
-            label3.Text = "View Audit Logs";
+            lblViewAuditLogs.AutoSize = true;
+            lblViewAuditLogs.BackColor = Color.FromArgb(249, 115, 22);
+            lblViewAuditLogs.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblViewAuditLogs.ForeColor = Color.White;
+            lblViewAuditLogs.Location = new Point(31, 482);
+            lblViewAuditLogs.Name = "lblViewAuditLogs";
+            lblViewAuditLogs.Size = new Size(213, 37);
+            lblViewAuditLogs.TabIndex = 18;
+            lblViewAuditLogs.Text = "View Audit Logs";
             // 
             // AuditLogs
             // 
@@ -242,7 +242,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1385, 838);
-            Controls.Add(label3);
+            Controls.Add(lblViewAuditLogs);
             Controls.Add(label2);
             Controls.Add(lblGenerateReports);
             Controls.Add(lblPerformDBBackup);
@@ -289,6 +289,6 @@
         private Label lblPerformDBBackup;
         private Label lblGenerateReports;
         private Label label2;
-        private Label label3;
+        private Label lblViewAuditLogs;
     }
 }

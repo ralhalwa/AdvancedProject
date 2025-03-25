@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Persistence;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
 
 namespace FormApp.Forms
 {
@@ -36,6 +37,8 @@ namespace FormApp.Forms
                 lblRole.Text = "Manager";
             }
 
+            gridReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -50,12 +53,12 @@ namespace FormApp.Forms
             {
                 var customers = _context.Users
                     .Where(u => u.RoleId == 3)
-                    .Select(u => new
+                    .Select(u => new Dictionary<string, object>
                     {
-                        FullName = u.Fname + " " + u.Lname,
-                        u.Email,
-                        TotalRentals = u.RentalTransactions.Count,
-                        TotalSpent = u.RentalTransactions.Sum(t => (decimal?)t.Fee) ?? 0
+                        { "Full Name", u.Fname + " " + u.Lname },
+                        { "Email", u.Email },
+                        { "Total Rentals", u.RentalTransactions.Count },
+                        { "Total Spent", u.RentalTransactions.Sum(t => (decimal?)t.Fee) ?? 0 }
                     })
                     .ToList();
 
@@ -73,23 +76,25 @@ namespace FormApp.Forms
             try
             {
                 var equipmentData = _context.RentalRequests
-               .Where(r => r.Equipment != null)
-               .GroupBy(r => new
-               {
-                   r.Equipment.Name,
-                   Category = r.Equipment.Category.Name
-               })
-               .Select(g => new
-               {
-                   EquipmentName = g.Key.Name,
-                   Category = g.Key.Category,
-                   RentalCount = g.Count()
-               })
-               .OrderByDescending(e => e.RentalCount)
-               .ToList();
+                    .Include(r => r.Equipment)               
+                    .ThenInclude(e => e.Category)            
+                    .AsEnumerable()
+                    .Where(r => r.Equipment != null && r.Equipment.Category != null) 
+                    .GroupBy(r => new
+                    {
+                        r.Equipment.Name,
+                        Category = r.Equipment.Category.Name
+                    })
+                    .Select(g => new Dictionary<string, object>
+                    {
+                { "Equipment Name", g.Key.Name },
+                { "Category", g.Key.Category },
+                { "Rental Count", g.Count() }
+                    })
+                    .OrderByDescending(e => (int)e["Rental Count"])
+                    .ToList();
 
                 gridReports.DataSource = new BindingSource { DataSource = ToDataTable(equipmentData) };
-
                 currentReport = "MostRentedEquipment";
             }
             catch (Exception ex)
@@ -147,19 +152,25 @@ namespace FormApp.Forms
             File.WriteAllLines(filePath, lines);
         }
 
-        private DataTable ToDataTable<T>(IList<T> data)
+        private DataTable ToDataTable(List<Dictionary<string, object>> data)
         {
-            PropertyDescriptorCollection props = TypeDescriptor.GetProperties(typeof(T));
             DataTable table = new DataTable();
 
-            foreach (PropertyDescriptor prop in props)
-                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+            if (data == null || data.Count == 0)
+                return table;
 
-            foreach (T item in data)
+            foreach (var key in data[0].Keys)
+            {
+                table.Columns.Add(key);
+            }
+
+            foreach (var dict in data)
             {
                 DataRow row = table.NewRow();
-                foreach (PropertyDescriptor prop in props)
-                    row[prop.Name] = prop.GetValue(item) ?? DBNull.Value;
+                foreach (var key in dict.Keys)
+                {
+                    row[key] = dict[key] ?? DBNull.Value;
+                }
                 table.Rows.Add(row);
             }
 
