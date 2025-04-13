@@ -257,6 +257,19 @@ namespace ClassLibrary.Migrations
                     b.HasIndex("ConditionId");
 
                     b.ToTable("Equipment");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AvailableId = 1,
+                            CategoryId = 1,
+                            ConditionId = 1,
+                            Description = "Sample equipment description",
+                            Image = new byte[0],
+                            Name = "Mariam",
+                            Price = 100.00m
+                        });
                 });
 
             modelBuilder.Entity("ClassLibrary.Models.FeedBack", b =>

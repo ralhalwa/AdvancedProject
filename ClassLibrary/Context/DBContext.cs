@@ -87,6 +87,19 @@ public partial class DBContext : DbContext
          new Category { Id = 3, Name = "Construction" },
          new Category { Id = 4, Name = "Event Supplies" }
         );
+        modelBuilder.Entity<Equipment>().HasData(
+            new Equipment
+            {
+                Id = 1,
+                Name = "Mariam",
+                Description = "Sample equipment description",
+                CategoryId = 1,
+                Price = 100.00m,
+                AvailableId = 1,
+                ConditionId = 1,
+                Image = new byte[0] // Empty byte array; you can replace this with actual image data
+            }
+        );
 
 
         modelBuilder.Entity<Document>(entity =>

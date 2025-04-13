@@ -17,10 +17,12 @@ namespace FormApp
     public partial class Dashboard : Form
 
     {
+        private DBContext context;
 
         public Dashboard()
         {
             InitializeComponent();
+            context = new DBContext();
 
 
             lblName.Text = UserSession.FullName;
@@ -62,7 +64,7 @@ namespace FormApp
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RentalRequest r = new RentalRequest();
+            RentalRequests r = new RentalRequests();
             r.Show();
 
         }
@@ -133,7 +135,15 @@ namespace FormApp
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            recentlyAddedEquipmentGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            recentlyAddedEquipmentGrid.MultiSelect = false;
+            recentlyAddedEquipmentGrid.ReadOnly = true;
 
+            latestRentalRequestGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            latestRentalRequestGrid.MultiSelect = false;
+            latestRentalRequestGrid.ReadOnly = true;
+
+            LoadDashboardData();
         }
 
 
@@ -160,8 +170,85 @@ namespace FormApp
         private void lblRequest_Click(object sender, EventArgs e)
         {
             this.Hide();
-                RentalRequest ret = new RentalRequest();
+            RentalRequests ret = new RentalRequests();
             ret.Show();
+        }
+
+
+
+        private void LoadDashboardData()
+        {
+            try
+            {
+                // Equipment Summary
+                lbleqTotal.Text = context.Equipment.Count().ToString();
+
+                lblavEq.Text = context.Equipment
+                    .Where(e => e.AvailableId == 1)
+                    .Count().ToString();
+
+                lblrentedEquipment.Text = context.Equipment
+                    .Where(e => e.AvailableId == 2)
+                    .Count().ToString();
+
+                // Rental Summary
+                lblActiveRentals.Text = context.RentalTransactions.Count().ToString();
+
+                lblPendingRequests.Text = context.RentalRequests
+                    .Where(r => r.RentalStatus1.Status == "Pending")
+                    .Count().ToString();
+
+                lblOverdueRequests.Text = context.RentalTransactions
+                    .Where(r => r.ReturnDate < DateTime.Today)
+                    .Count().ToString();
+
+                // Recently Added Equipment - Top 5
+                var recentEquipment = context.Equipment
+                    .OrderByDescending(e => e.Id)
+                    .Take(5)
+                    .Select(e => new
+                    {
+                        e.Id,
+                        e.Name,
+                        e.Description,
+                        Category = e.Category.Name,
+                        Availability = e.Available.Status,
+                        Condition = e.Condition.Status
+                    }).ToList();
+
+                recentlyAddedEquipmentGrid.DataSource = recentEquipment;
+
+                // Latest Rental Requests - Top 5
+                var latestRequests = context.RentalRequests
+                    .OrderByDescending(r => r.Id)
+                    .Take(5)
+                    .Select(r => new
+                    {
+                        r.Id,
+                        EquipmentName = r.Equipment.Name,
+                        r.StartDate,
+                        r.ReturnDate,
+                        Status = r.RentalStatus1.Status
+                    }).ToList();
+
+                latestRentalRequestGrid.DataSource = latestRequests;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading dashboard data: " + ex.Message);
+            }
+        }
+
+        private void lblEquipmentManagement_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EquipmentManagement eq = new EquipmentManagement();
+            eq.Show();
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

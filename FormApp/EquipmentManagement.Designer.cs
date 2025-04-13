@@ -37,10 +37,10 @@
             btnEdit = new Button();
             btnDelete = new Button();
             btnAdd = new Button();
-            dataGridView1 = new DataGridView();
-            btnFilter = new Button();
+            eqGrid = new DataGridView();
+            btnRefresh = new Button();
             btnSearch = new Button();
-            textBox1 = new TextBox();
+            txtSearch = new TextBox();
             lblLogOut = new Label();
             lblExit = new Label();
             lblViewAuditLogs = new Label();
@@ -55,7 +55,7 @@
             panel3 = new Panel();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)eqGrid).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -116,6 +116,7 @@
             btnEdit.TabIndex = 30;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
@@ -127,6 +128,7 @@
             btnDelete.TabIndex = 29;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -138,26 +140,28 @@
             btnAdd.TabIndex = 28;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
-            // dataGridView1
+            // eqGrid
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(284, 134);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(543, 316);
-            dataGridView1.TabIndex = 27;
+            eqGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            eqGrid.Location = new Point(284, 134);
+            eqGrid.Name = "eqGrid";
+            eqGrid.RowHeadersWidth = 51;
+            eqGrid.Size = new Size(543, 316);
+            eqGrid.TabIndex = 27;
             // 
-            // btnFilter
+            // btnRefresh
             // 
-            btnFilter.BackColor = Color.FromArgb(255, 128, 0);
-            btnFilter.ForeColor = Color.White;
-            btnFilter.Location = new Point(733, 82);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(94, 29);
-            btnFilter.TabIndex = 26;
-            btnFilter.Text = "Filter";
-            btnFilter.UseVisualStyleBackColor = false;
+            btnRefresh.BackColor = Color.FromArgb(255, 128, 0);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Location = new Point(733, 82);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(94, 29);
+            btnRefresh.TabIndex = 26;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // btnSearch
             // 
@@ -169,15 +173,16 @@
             btnSearch.TabIndex = 25;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.ForeColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(284, 84);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(320, 27);
-            textBox1.TabIndex = 24;
-            textBox1.Text = "Equipment ID";
+            txtSearch.ForeColor = SystemColors.ScrollBar;
+            txtSearch.Location = new Point(284, 84);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(320, 27);
+            txtSearch.TabIndex = 24;
+            txtSearch.Text = "Equipment ID";
             // 
             // lblLogOut
             // 
@@ -188,6 +193,7 @@
             lblLogOut.Size = new Size(72, 23);
             lblLogOut.TabIndex = 70;
             lblLogOut.Text = "Log Out";
+            lblLogOut.Click += lblLogOut_Click;
             // 
             // lblExit
             // 
@@ -198,6 +204,7 @@
             lblExit.Size = new Size(38, 23);
             lblExit.TabIndex = 69;
             lblExit.Text = "Exit";
+            lblExit.Click += lblExit_Click;
             // 
             // lblViewAuditLogs
             // 
@@ -208,6 +215,7 @@
             lblViewAuditLogs.Size = new Size(133, 23);
             lblViewAuditLogs.TabIndex = 65;
             lblViewAuditLogs.Text = "View Audit Logs";
+            lblViewAuditLogs.Click += lblViewAuditLogs_Click;
             // 
             // lblDBbackup
             // 
@@ -218,6 +226,7 @@
             lblDBbackup.Size = new Size(208, 23);
             lblDBbackup.TabIndex = 68;
             lblDBbackup.Text = "Perform Database Backup";
+            lblDBbackup.Click += lblDBbackup_Click;
             // 
             // lblGenerateReport
             // 
@@ -228,6 +237,7 @@
             lblGenerateReport.Size = new Size(144, 23);
             lblGenerateReport.TabIndex = 67;
             lblGenerateReport.Text = "Generate Reports";
+            lblGenerateReport.Click += lblGenerateReport_Click;
             // 
             // lblReturnRecords
             // 
@@ -260,6 +270,7 @@
             lblTransactions.Size = new Size(158, 23);
             lblTransactions.TabIndex = 62;
             lblTransactions.Text = "Rental Transactions";
+            lblTransactions.Click += lblTransactions_Click;
             // 
             // lblRequest
             // 
@@ -270,6 +281,7 @@
             lblRequest.Size = new Size(133, 23);
             lblRequest.TabIndex = 61;
             lblRequest.Text = "Rental Requests";
+            lblRequest.Click += lblRequest_Click;
             // 
             // label16
             // 
@@ -282,6 +294,7 @@
             label16.Size = new Size(93, 23);
             label16.TabIndex = 60;
             label16.Text = "Dashboard";
+            label16.Click += label16_Click;
             // 
             // lblDashboard
             // 
@@ -323,20 +336,21 @@
             Controls.Add(btnEdit);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
-            Controls.Add(dataGridView1);
-            Controls.Add(btnFilter);
+            Controls.Add(eqGrid);
+            Controls.Add(btnRefresh);
             Controls.Add(btnSearch);
-            Controls.Add(textBox1);
+            Controls.Add(txtSearch);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EquipmentManagement";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EquipmentManagement";
+            Load += EquipmentManagement_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)eqGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -351,10 +365,10 @@
         private Button btnEdit;
         private Button btnDelete;
         private Button btnAdd;
-        private DataGridView dataGridView1;
-        private Button btnFilter;
+        private DataGridView eqGrid;
+        private Button btnRefresh;
         private Button btnSearch;
-        private TextBox textBox1;
+        private TextBox txtSearch;
         private Label lblLogOut;
         private Label lblExit;
         private Label lblViewAuditLogs;

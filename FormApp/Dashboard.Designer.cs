@@ -33,10 +33,10 @@
             lblName = new Label();
             lblPosition = new Label();
             pnlInfo = new Panel();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
+            lblOverdueRequests = new Label();
+            lblPendingRequests = new Label();
+            lblActiveRentals = new Label();
+            lblrentedEquipment = new Label();
             lblavEq = new Label();
             lbleqTotal = new Label();
             lblOverdue = new Label();
@@ -48,9 +48,9 @@
             label2 = new Label();
             label1 = new Label();
             lblRecentEq = new Label();
-            dataGridView1 = new DataGridView();
+            recentlyAddedEquipmentGrid = new DataGridView();
             lblRecentRentalReq = new Label();
-            dataGridView2 = new DataGridView();
+            latestRentalRequestGrid = new DataGridView();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -67,8 +67,8 @@
             lblLogOut = new Label();
             flowLayoutPanel2.SuspendLayout();
             pnlInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)recentlyAddedEquipmentGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)latestRentalRequestGrid).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -106,10 +106,10 @@
             // 
             // pnlInfo
             // 
-            pnlInfo.Controls.Add(label14);
-            pnlInfo.Controls.Add(label13);
-            pnlInfo.Controls.Add(label12);
-            pnlInfo.Controls.Add(label11);
+            pnlInfo.Controls.Add(lblOverdueRequests);
+            pnlInfo.Controls.Add(lblPendingRequests);
+            pnlInfo.Controls.Add(lblActiveRentals);
+            pnlInfo.Controls.Add(lblrentedEquipment);
             pnlInfo.Controls.Add(lblavEq);
             pnlInfo.Controls.Add(lbleqTotal);
             pnlInfo.Controls.Add(lblOverdue);
@@ -125,42 +125,42 @@
             pnlInfo.Size = new Size(571, 161);
             pnlInfo.TabIndex = 2;
             // 
-            // label14
+            // lblOverdueRequests
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(498, 126);
-            label14.Name = "label14";
-            label14.Size = new Size(18, 20);
-            label14.TabIndex = 13;
-            label14.Text = "...";
+            lblOverdueRequests.AutoSize = true;
+            lblOverdueRequests.Location = new Point(498, 126);
+            lblOverdueRequests.Name = "lblOverdueRequests";
+            lblOverdueRequests.Size = new Size(18, 20);
+            lblOverdueRequests.TabIndex = 13;
+            lblOverdueRequests.Text = "...";
             // 
-            // label13
+            // lblPendingRequests
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(498, 94);
-            label13.Name = "label13";
-            label13.Size = new Size(18, 20);
-            label13.TabIndex = 12;
-            label13.Text = "...";
+            lblPendingRequests.AutoSize = true;
+            lblPendingRequests.Location = new Point(498, 94);
+            lblPendingRequests.Name = "lblPendingRequests";
+            lblPendingRequests.Size = new Size(18, 20);
+            lblPendingRequests.TabIndex = 12;
+            lblPendingRequests.Text = "...";
             // 
-            // label12
+            // lblActiveRentals
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(498, 62);
-            label12.Name = "label12";
-            label12.Size = new Size(18, 20);
-            label12.TabIndex = 11;
-            label12.Text = "...";
+            lblActiveRentals.AutoSize = true;
+            lblActiveRentals.Location = new Point(498, 62);
+            lblActiveRentals.Name = "lblActiveRentals";
+            lblActiveRentals.Size = new Size(18, 20);
+            lblActiveRentals.TabIndex = 11;
+            lblActiveRentals.Text = "...";
             // 
-            // label11
+            // lblrentedEquipment
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(222, 126);
-            label11.Name = "label11";
-            label11.Size = new Size(18, 20);
-            label11.TabIndex = 10;
-            label11.Text = "...";
-            label11.Click += label11_Click;
+            lblrentedEquipment.AutoSize = true;
+            lblrentedEquipment.Location = new Point(222, 126);
+            lblrentedEquipment.Name = "lblrentedEquipment";
+            lblrentedEquipment.Size = new Size(18, 20);
+            lblrentedEquipment.TabIndex = 10;
+            lblrentedEquipment.Text = "...";
+            lblrentedEquipment.Click += label11_Click;
             // 
             // lblavEq
             // 
@@ -267,14 +267,14 @@
             lblRecentEq.Text = "Recently Added Equipment";
             lblRecentEq.Click += lblRecentEq_Click;
             // 
-            // dataGridView1
+            // recentlyAddedEquipmentGrid
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(260, 285);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(556, 88);
-            dataGridView1.TabIndex = 4;
+            recentlyAddedEquipmentGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            recentlyAddedEquipmentGrid.Location = new Point(260, 285);
+            recentlyAddedEquipmentGrid.Name = "recentlyAddedEquipmentGrid";
+            recentlyAddedEquipmentGrid.RowHeadersWidth = 51;
+            recentlyAddedEquipmentGrid.Size = new Size(556, 88);
+            recentlyAddedEquipmentGrid.TabIndex = 4;
             // 
             // lblRecentRentalReq
             // 
@@ -286,14 +286,14 @@
             lblRecentRentalReq.TabIndex = 5;
             lblRecentRentalReq.Text = "Latest Rental Request";
             // 
-            // dataGridView2
+            // latestRentalRequestGrid
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(260, 414);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(556, 90);
-            dataGridView2.TabIndex = 6;
+            latestRentalRequestGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            latestRentalRequestGrid.Location = new Point(260, 414);
+            latestRentalRequestGrid.Name = "latestRentalRequestGrid";
+            latestRentalRequestGrid.RowHeadersWidth = 51;
+            latestRentalRequestGrid.Size = new Size(556, 90);
+            latestRentalRequestGrid.TabIndex = 6;
             // 
             // panel1
             // 
@@ -376,6 +376,7 @@
             lblEquipmentManagement.Size = new Size(201, 23);
             lblEquipmentManagement.TabIndex = 47;
             lblEquipmentManagement.Text = "Equipment Management";
+            lblEquipmentManagement.Click += lblEquipmentManagement_Click;
             // 
             // lblReturnRecords
             // 
@@ -427,6 +428,7 @@
             lblExit.Size = new Size(38, 23);
             lblExit.TabIndex = 58;
             lblExit.Text = "Exit";
+            lblExit.Click += lblExit_Click;
             // 
             // lblLogOut
             // 
@@ -457,9 +459,9 @@
             Controls.Add(lblDashboard);
             Controls.Add(panel3);
             Controls.Add(panel1);
-            Controls.Add(dataGridView2);
+            Controls.Add(latestRentalRequestGrid);
             Controls.Add(lblRecentRentalReq);
-            Controls.Add(dataGridView1);
+            Controls.Add(recentlyAddedEquipmentGrid);
             Controls.Add(lblRecentEq);
             Controls.Add(pnlInfo);
             Controls.Add(flowLayoutPanel2);
@@ -472,8 +474,8 @@
             flowLayoutPanel2.PerformLayout();
             pnlInfo.ResumeLayout(false);
             pnlInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)recentlyAddedEquipmentGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)latestRentalRequestGrid).EndInit();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -485,9 +487,9 @@
         private Label lblPosition;
         private Panel pnlInfo;
         private Label lblRecentEq;
-        private DataGridView dataGridView1;
+        private DataGridView recentlyAddedEquipmentGrid;
         private Label lblRecentRentalReq;
-        private DataGridView dataGridView2;
+        private DataGridView latestRentalRequestGrid;
         private Label lblOverdue;
         private Label lblActiveRental;
         private Label lblPending;
@@ -500,10 +502,10 @@
         private Panel panel2;
         private Panel panel3;
         private Label lbleqTotal;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
+        private Label lblOverdueRequests;
+        private Label lblPendingRequests;
+        private Label lblActiveRentals;
+        private Label lblrentedEquipment;
         private Label lblavEq;
         private Label lblDashboard;
         private Label label16;

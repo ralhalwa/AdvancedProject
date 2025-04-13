@@ -51,6 +51,8 @@
             lblRequest = new Label();
             label16 = new Label();
             lblDashboard = new Label();
+            btnRefresh = new Button();
+            lblExit = new Label();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ReturnRecordGrid).BeginInit();
@@ -107,9 +109,9 @@
             // txtReturnRecordId
             // 
             txtReturnRecordId.ForeColor = SystemColors.ScrollBar;
-            txtReturnRecordId.Location = new Point(289, 86);
+            txtReturnRecordId.Location = new Point(273, 86);
             txtReturnRecordId.Name = "txtReturnRecordId";
-            txtReturnRecordId.Size = new Size(376, 27);
+            txtReturnRecordId.Size = new Size(305, 27);
             txtReturnRecordId.TabIndex = 18;
             txtReturnRecordId.Text = "Rental Record ID";
             // 
@@ -117,9 +119,9 @@
             // 
             btnSearch.BackColor = Color.FromArgb(255, 128, 0);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(705, 82);
+            btnSearch.Location = new Point(597, 83);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(126, 35);
+            btnSearch.Size = new Size(113, 35);
             btnSearch.TabIndex = 19;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
@@ -144,6 +146,7 @@
             btnUpdate.TabIndex = 26;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -167,6 +170,7 @@
             btnCreate.TabIndex = 24;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
+            btnCreate.Click += btnCreate_Click;
             // 
             // panel3
             // 
@@ -185,6 +189,7 @@
             lblLogOut.Size = new Size(72, 23);
             lblLogOut.TabIndex = 69;
             lblLogOut.Text = "Log Out";
+            lblLogOut.Click += lblLogOut_Click;
             // 
             // lblViewAuditLogs
             // 
@@ -195,6 +200,7 @@
             lblViewAuditLogs.Size = new Size(133, 23);
             lblViewAuditLogs.TabIndex = 65;
             lblViewAuditLogs.Text = "View Audit Logs";
+            lblViewAuditLogs.Click += lblViewAuditLogs_Click;
             // 
             // lblDBbackup
             // 
@@ -205,6 +211,7 @@
             lblDBbackup.Size = new Size(208, 23);
             lblDBbackup.TabIndex = 68;
             lblDBbackup.Text = "Perform Database Backup";
+            lblDBbackup.Click += lblDBbackup_Click;
             // 
             // lblGenerateReport
             // 
@@ -215,6 +222,7 @@
             lblGenerateReport.Size = new Size(144, 23);
             lblGenerateReport.TabIndex = 67;
             lblGenerateReport.Text = "Generate Reports";
+            lblGenerateReport.Click += lblGenerateReport_Click;
             // 
             // lblReturnRecords
             // 
@@ -237,6 +245,7 @@
             lblEquipmentManagement.Size = new Size(201, 23);
             lblEquipmentManagement.TabIndex = 64;
             lblEquipmentManagement.Text = "Equipment Management";
+            lblEquipmentManagement.Click += lblEquipmentManagement_Click;
             // 
             // lblTransactions
             // 
@@ -257,6 +266,7 @@
             lblRequest.Size = new Size(133, 23);
             lblRequest.TabIndex = 61;
             lblRequest.Text = "Rental Requests";
+            lblRequest.Click += lblRequest_Click;
             // 
             // label16
             // 
@@ -269,6 +279,7 @@
             label16.Size = new Size(93, 23);
             label16.TabIndex = 60;
             label16.Text = "Dashboard";
+            label16.Click += label16_Click;
             // 
             // lblDashboard
             // 
@@ -281,12 +292,37 @@
             lblDashboard.TabIndex = 66;
             lblDashboard.Text = "Dashboard";
             // 
+            // btnRefresh
+            // 
+            btnRefresh.BackColor = Color.FromArgb(255, 128, 0);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Location = new Point(716, 82);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(115, 35);
+            btnRefresh.TabIndex = 70;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
+            // 
+            // lblExit
+            // 
+            lblExit.AutoSize = true;
+            lblExit.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblExit.Location = new Point(31, 492);
+            lblExit.Name = "lblExit";
+            lblExit.Size = new Size(38, 23);
+            lblExit.TabIndex = 71;
+            lblExit.Text = "Exit";
+            lblExit.Click += lblExit_Click;
+            // 
             // ReturnRecords
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(852, 524);
+            Controls.Add(lblExit);
+            Controls.Add(btnRefresh);
             Controls.Add(lblLogOut);
             Controls.Add(lblViewAuditLogs);
             Controls.Add(lblDBbackup);
@@ -343,5 +379,7 @@
         private Label lblRequest;
         private Label label16;
         private Label lblDashboard;
+        private Button btnRefresh;
+        private Label lblExit;
     }
 }

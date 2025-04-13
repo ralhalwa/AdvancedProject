@@ -54,6 +54,5 @@ public partial class Equipment
     public virtual ICollection<ReturnRecord> ReturnRecords { get; set; } = new List<ReturnRecord>();
 
     public byte[] Image { get; set; } = null!;
-    [NotMapped]
-    public object AvailableStatus { get; set; }
+
 }
