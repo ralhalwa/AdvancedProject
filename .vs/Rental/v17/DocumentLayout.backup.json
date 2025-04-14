@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +27,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RentalTransactions.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAnwPMAAAAgAAAAAAAAAA==",
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs [Design]*",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:21:24.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T16:39:34.6Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RentalTransactions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs [Design]",
+              "Title": "AuditLogs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:20:59.96Z",
+              "WhenOpened": "2025-04-14T16:27:33.19Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerateReports.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\GenerateReports.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\GenerateReports.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T16:26:41.943Z",
               "EditorCaption": " [Design]"
             }
           ]

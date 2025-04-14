@@ -51,10 +51,6 @@
             recentlyAddedEquipmentGrid = new DataGridView();
             lblRecentRentalReq = new Label();
             latestRentalRequestGrid = new DataGridView();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            lblDashboard = new Label();
             label16 = new Label();
             lblRequest = new Label();
             lblTransactions = new Label();
@@ -65,10 +61,15 @@
             lblViewAuditLogs = new Label();
             lblExit = new Label();
             lblLogOut = new Label();
+            sidebarPanel = new FlowLayoutPanel();
+            panel1 = new Panel();
+            label3 = new Label();
+            lblDivider = new Label();
             flowLayoutPanel2.SuspendLayout();
             pnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)recentlyAddedEquipmentGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)latestRentalRequestGrid).BeginInit();
+            sidebarPanel.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             flowLayoutPanel2.Controls.Add(lblName);
             flowLayoutPanel2.Controls.Add(lblPosition);
             flowLayoutPanel2.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel2.Location = new Point(-3, 2);
+            flowLayoutPanel2.Location = new Point(9, 15);
             flowLayoutPanel2.Margin = new Padding(0, 6, 0, 0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Padding = new Padding(5);
@@ -87,7 +88,6 @@
             // 
             // lblName
             // 
-            lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblName.Location = new Point(10, 5);
             lblName.Margin = new Padding(5, 0, 5, 0);
@@ -98,7 +98,6 @@
             // 
             // lblPosition
             // 
-            lblPosition.AutoSize = true;
             lblPosition.Location = new Point(10, 55);
             lblPosition.Margin = new Padding(5, 0, 5, 0);
             lblPosition.Name = "lblPosition";
@@ -122,7 +121,7 @@
             pnlInfo.Controls.Add(lblAvailableEq);
             pnlInfo.Controls.Add(label2);
             pnlInfo.Controls.Add(label1);
-            pnlInfo.Location = new Point(422, 122);
+            pnlInfo.Location = new Point(425, 139);
             pnlInfo.Margin = new Padding(5);
             pnlInfo.Name = "pnlInfo";
             pnlInfo.Size = new Size(928, 258);
@@ -277,7 +276,7 @@
             // 
             lblRecentEq.AutoSize = true;
             lblRecentEq.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRecentEq.Location = new Point(422, 414);
+            lblRecentEq.Location = new Point(425, 431);
             lblRecentEq.Margin = new Padding(5, 0, 5, 0);
             lblRecentEq.Name = "lblRecentEq";
             lblRecentEq.Size = new Size(373, 38);
@@ -288,7 +287,7 @@
             // recentlyAddedEquipmentGrid
             // 
             recentlyAddedEquipmentGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            recentlyAddedEquipmentGrid.Location = new Point(422, 456);
+            recentlyAddedEquipmentGrid.Location = new Point(425, 473);
             recentlyAddedEquipmentGrid.Margin = new Padding(5);
             recentlyAddedEquipmentGrid.Name = "recentlyAddedEquipmentGrid";
             recentlyAddedEquipmentGrid.RowHeadersWidth = 51;
@@ -299,7 +298,7 @@
             // 
             lblRecentRentalReq.AutoSize = true;
             lblRecentRentalReq.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRecentRentalReq.Location = new Point(422, 621);
+            lblRecentRentalReq.Location = new Point(425, 638);
             lblRecentRentalReq.Margin = new Padding(5, 0, 5, 0);
             lblRecentRentalReq.Name = "lblRecentRentalReq";
             lblRecentRentalReq.Size = new Size(298, 38);
@@ -309,62 +308,20 @@
             // latestRentalRequestGrid
             // 
             latestRentalRequestGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            latestRentalRequestGrid.Location = new Point(422, 662);
+            latestRentalRequestGrid.Location = new Point(425, 679);
             latestRentalRequestGrid.Margin = new Padding(5);
             latestRentalRequestGrid.Name = "latestRentalRequestGrid";
             latestRentalRequestGrid.RowHeadersWidth = 51;
             latestRentalRequestGrid.Size = new Size(904, 144);
             latestRentalRequestGrid.TabIndex = 6;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Gainsboro;
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(-3, 96);
-            panel1.Margin = new Padding(5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1380, 5);
-            panel1.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Gainsboro;
-            panel2.Location = new Point(353, 3);
-            panel2.Margin = new Padding(5);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(5, 613);
-            panel2.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Gainsboro;
-            panel3.Location = new Point(390, 112);
-            panel3.Margin = new Padding(5);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(5, 728);
-            panel3.TabIndex = 8;
-            panel3.Paint += panel3_Paint;
-            // 
-            // lblDashboard
-            // 
-            lblDashboard.BackColor = Color.FromArgb(255, 128, 0);
-            lblDashboard.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold);
-            lblDashboard.ForeColor = Color.FromArgb(255, 128, 0);
-            lblDashboard.Location = new Point(-3, 115);
-            lblDashboard.Margin = new Padding(5, 0, 5, 0);
-            lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(393, 64);
-            lblDashboard.TabIndex = 55;
-            lblDashboard.Text = "Dashboard";
-            lblDashboard.Click += label15_Click;
-            // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.BackColor = Color.FromArgb(255, 128, 0);
+            label16.BackColor = Color.FromArgb(249, 115, 22);
             label16.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(42, 128);
+            label16.Location = new Point(29, 12);
             label16.Margin = new Padding(5, 0, 5, 0);
             label16.Name = "label16";
             label16.Size = new Size(150, 37);
@@ -375,8 +332,8 @@
             // 
             lblRequest.AutoSize = true;
             lblRequest.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRequest.Location = new Point(42, 202);
-            lblRequest.Margin = new Padding(5, 0, 5, 0);
+            lblRequest.Location = new Point(30, 78);
+            lblRequest.Margin = new Padding(30, 8, 15, 20);
             lblRequest.Name = "lblRequest";
             lblRequest.Size = new Size(217, 38);
             lblRequest.TabIndex = 44;
@@ -387,8 +344,8 @@
             // 
             lblTransactions.AutoSize = true;
             lblTransactions.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTransactions.Location = new Point(42, 272);
-            lblTransactions.Margin = new Padding(5, 0, 5, 0);
+            lblTransactions.Location = new Point(30, 144);
+            lblTransactions.Margin = new Padding(30, 8, 15, 20);
             lblTransactions.Name = "lblTransactions";
             lblTransactions.Size = new Size(260, 38);
             lblTransactions.TabIndex = 45;
@@ -399,8 +356,8 @@
             // 
             lblEquipmentManagement.AutoSize = true;
             lblEquipmentManagement.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEquipmentManagement.Location = new Point(42, 414);
-            lblEquipmentManagement.Margin = new Padding(5, 0, 5, 0);
+            lblEquipmentManagement.Location = new Point(30, 276);
+            lblEquipmentManagement.Margin = new Padding(30, 8, 15, 20);
             lblEquipmentManagement.Name = "lblEquipmentManagement";
             lblEquipmentManagement.Size = new Size(333, 38);
             lblEquipmentManagement.TabIndex = 47;
@@ -411,8 +368,8 @@
             // 
             lblReturnRecords.AutoSize = true;
             lblReturnRecords.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReturnRecords.Location = new Point(42, 342);
-            lblReturnRecords.Margin = new Padding(5, 0, 5, 0);
+            lblReturnRecords.Location = new Point(30, 210);
+            lblReturnRecords.Margin = new Padding(30, 8, 15, 20);
             lblReturnRecords.Name = "lblReturnRecords";
             lblReturnRecords.Size = new Size(208, 38);
             lblReturnRecords.TabIndex = 46;
@@ -423,8 +380,8 @@
             // 
             lblGenerateReport.AutoSize = true;
             lblGenerateReport.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGenerateReport.Location = new Point(42, 635);
-            lblGenerateReport.Margin = new Padding(5, 0, 5, 0);
+            lblGenerateReport.Location = new Point(30, 474);
+            lblGenerateReport.Margin = new Padding(30, 8, 15, 20);
             lblGenerateReport.Name = "lblGenerateReport";
             lblGenerateReport.Size = new Size(239, 38);
             lblGenerateReport.TabIndex = 56;
@@ -435,8 +392,8 @@
             // 
             lblDBbackup.AutoSize = true;
             lblDBbackup.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDBbackup.Location = new Point(42, 560);
-            lblDBbackup.Margin = new Padding(5, 0, 5, 0);
+            lblDBbackup.Location = new Point(30, 408);
+            lblDBbackup.Margin = new Padding(30, 8, 15, 20);
             lblDBbackup.Name = "lblDBbackup";
             lblDBbackup.Size = new Size(348, 38);
             lblDBbackup.TabIndex = 57;
@@ -447,8 +404,8 @@
             // 
             lblViewAuditLogs.AutoSize = true;
             lblViewAuditLogs.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblViewAuditLogs.Location = new Point(42, 490);
-            lblViewAuditLogs.Margin = new Padding(5, 0, 5, 0);
+            lblViewAuditLogs.Location = new Point(30, 342);
+            lblViewAuditLogs.Margin = new Padding(30, 8, 15, 20);
             lblViewAuditLogs.Name = "lblViewAuditLogs";
             lblViewAuditLogs.Size = new Size(223, 38);
             lblViewAuditLogs.TabIndex = 48;
@@ -459,8 +416,8 @@
             // 
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExit.Location = new Point(42, 770);
-            lblExit.Margin = new Padding(5, 0, 5, 0);
+            lblExit.Location = new Point(30, 606);
+            lblExit.Margin = new Padding(30, 8, 15, 20);
             lblExit.Name = "lblExit";
             lblExit.Size = new Size(63, 38);
             lblExit.TabIndex = 58;
@@ -471,33 +428,69 @@
             // 
             lblLogOut.AutoSize = true;
             lblLogOut.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogOut.Location = new Point(42, 704);
-            lblLogOut.Margin = new Padding(5, 0, 5, 0);
+            lblLogOut.Location = new Point(30, 540);
+            lblLogOut.Margin = new Padding(30, 8, 15, 20);
             lblLogOut.Name = "lblLogOut";
             lblLogOut.Size = new Size(120, 38);
             lblLogOut.TabIndex = 59;
             lblLogOut.Text = "Log Out";
             lblLogOut.Click += lblLogOut_Click;
             // 
+            // sidebarPanel
+            // 
+            sidebarPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            sidebarPanel.Controls.Add(panel1);
+            sidebarPanel.Controls.Add(lblRequest);
+            sidebarPanel.Controls.Add(lblTransactions);
+            sidebarPanel.Controls.Add(lblReturnRecords);
+            sidebarPanel.Controls.Add(lblEquipmentManagement);
+            sidebarPanel.Controls.Add(lblViewAuditLogs);
+            sidebarPanel.Controls.Add(lblDBbackup);
+            sidebarPanel.Controls.Add(lblGenerateReport);
+            sidebarPanel.Controls.Add(lblLogOut);
+            sidebarPanel.Controls.Add(lblExit);
+            sidebarPanel.FlowDirection = FlowDirection.TopDown;
+            sidebarPanel.Location = new Point(-7, 133);
+            sidebarPanel.MinimumSize = new Size(379, 706);
+            sidebarPanel.Name = "sidebarPanel";
+            sidebarPanel.Size = new Size(379, 706);
+            sidebarPanel.TabIndex = 60;
+            sidebarPanel.WrapContents = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(249, 115, 22);
+            panel1.Controls.Add(label16);
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(393, 64);
+            panel1.TabIndex = 63;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(236, 236, 236);
+            label3.Location = new Point(374, 130);
+            label3.Name = "label3";
+            label3.Size = new Size(2, 710);
+            label3.TabIndex = 61;
+            // 
+            // lblDivider
+            // 
+            lblDivider.BackColor = Color.FromArgb(236, 236, 236);
+            lblDivider.Location = new Point(-8, 128);
+            lblDivider.Name = "lblDivider";
+            lblDivider.Size = new Size(1395, 2);
+            lblDivider.TabIndex = 62;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1384, 838);
-            Controls.Add(lblLogOut);
-            Controls.Add(lblExit);
-            Controls.Add(lblViewAuditLogs);
-            Controls.Add(lblDBbackup);
-            Controls.Add(lblGenerateReport);
-            Controls.Add(lblReturnRecords);
-            Controls.Add(lblEquipmentManagement);
-            Controls.Add(lblTransactions);
-            Controls.Add(lblRequest);
-            Controls.Add(label16);
-            Controls.Add(lblDashboard);
-            Controls.Add(panel3);
-            Controls.Add(panel1);
+            ClientSize = new Size(1385, 838);
+            Controls.Add(lblDivider);
+            Controls.Add(label3);
+            Controls.Add(sidebarPanel);
             Controls.Add(latestRentalRequestGrid);
             Controls.Add(lblRecentRentalReq);
             Controls.Add(recentlyAddedEquipmentGrid);
@@ -511,12 +504,14 @@
             Text = "Dashboard";
             Load += Dashboard_Load;
             flowLayoutPanel2.ResumeLayout(false);
-            flowLayoutPanel2.PerformLayout();
             pnlInfo.ResumeLayout(false);
             pnlInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)recentlyAddedEquipmentGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)latestRentalRequestGrid).EndInit();
+            sidebarPanel.ResumeLayout(false);
+            sidebarPanel.PerformLayout();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -538,16 +533,12 @@
         private Label lblAvailableEq;
         private Label label2;
         private Label label1;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
         private Label lbleqTotal;
         private Label lblOverdueRequests;
         private Label lblPendingRequests;
         private Label lblActiveRentals;
         private Label lblrentedEquipment;
         private Label lblavEq;
-        private Label lblDashboard;
         private Label label16;
         private Label lblRequest;
         private Label lblTransactions;
@@ -558,5 +549,9 @@
         private Label lblViewAuditLogs;
         private Label lblExit;
         private Label lblLogOut;
+        private FlowLayoutPanel sidebarPanel;
+        private Label label3;
+        private Label lblDivider;
+        private Panel panel1;
     }
 }

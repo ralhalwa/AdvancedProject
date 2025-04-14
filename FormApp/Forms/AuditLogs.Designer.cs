@@ -45,9 +45,12 @@
             gridLogs = new DataGridView();
             lblPerformDBBackup = new Label();
             lblGenerateReports = new Label();
-            label2 = new Label();
             lblViewAuditLogs = new Label();
+            slowbarFlowPanel = new FlowLayoutPanel();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)gridLogs).BeginInit();
+            slowbarFlowPanel.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblName
@@ -91,7 +94,8 @@
             // 
             lblDashboard.AutoSize = true;
             lblDashboard.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDashboard.Location = new Point(31, 147);
+            lblDashboard.Location = new Point(30, 15);
+            lblDashboard.Margin = new Padding(30, 15, 15, 20);
             lblDashboard.Name = "lblDashboard";
             lblDashboard.Size = new Size(150, 37);
             lblDashboard.TabIndex = 4;
@@ -102,7 +106,8 @@
             // 
             lblRentalRequests.AutoSize = true;
             lblRentalRequests.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalRequests.Location = new Point(31, 211);
+            lblRentalRequests.Location = new Point(30, 80);
+            lblRentalRequests.Margin = new Padding(30, 8, 15, 20);
             lblRentalRequests.Name = "lblRentalRequests";
             lblRentalRequests.Size = new Size(211, 37);
             lblRentalRequests.TabIndex = 5;
@@ -113,7 +118,8 @@
             // 
             lblRentalTransactions.AutoSize = true;
             lblRentalTransactions.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalTransactions.Location = new Point(31, 277);
+            lblRentalTransactions.Location = new Point(30, 145);
+            lblRentalTransactions.Margin = new Padding(30, 8, 15, 20);
             lblRentalTransactions.Name = "lblRentalTransactions";
             lblRentalTransactions.Size = new Size(254, 37);
             lblRentalTransactions.TabIndex = 6;
@@ -124,7 +130,8 @@
             // 
             lblReturnRecords.AutoSize = true;
             lblReturnRecords.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReturnRecords.Location = new Point(31, 342);
+            lblReturnRecords.Location = new Point(30, 210);
+            lblReturnRecords.Margin = new Padding(30, 8, 15, 20);
             lblReturnRecords.Name = "lblReturnRecords";
             lblReturnRecords.Size = new Size(203, 37);
             lblReturnRecords.TabIndex = 7;
@@ -135,7 +142,8 @@
             // 
             lblEquipmentManagement.AutoSize = true;
             lblEquipmentManagement.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEquipmentManagement.Location = new Point(31, 409);
+            lblEquipmentManagement.Location = new Point(30, 275);
+            lblEquipmentManagement.Margin = new Padding(30, 8, 15, 20);
             lblEquipmentManagement.Name = "lblEquipmentManagement";
             lblEquipmentManagement.Size = new Size(320, 37);
             lblEquipmentManagement.TabIndex = 8;
@@ -146,7 +154,7 @@
             // 
             lblAuditLogs.AutoSize = true;
             lblAuditLogs.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAuditLogs.Location = new Point(31, 478);
+            lblAuditLogs.Location = new Point(1525, 457);
             lblAuditLogs.Name = "lblAuditLogs";
             lblAuditLogs.Size = new Size(0, 37);
             lblAuditLogs.TabIndex = 9;
@@ -155,7 +163,8 @@
             // 
             lblLogOut.AutoSize = true;
             lblLogOut.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogOut.Location = new Point(31, 689);
+            lblLogOut.Location = new Point(30, 540);
+            lblLogOut.Margin = new Padding(30, 8, 15, 20);
             lblLogOut.Name = "lblLogOut";
             lblLogOut.Size = new Size(115, 37);
             lblLogOut.TabIndex = 10;
@@ -166,7 +175,8 @@
             // 
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExit.Location = new Point(31, 763);
+            lblExit.Location = new Point(30, 605);
+            lblExit.Margin = new Padding(30, 8, 15, 20);
             lblExit.Name = "lblExit";
             lblExit.Size = new Size(62, 37);
             lblExit.TabIndex = 11;
@@ -197,17 +207,18 @@
             // gridLogs
             // 
             gridLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridLogs.Location = new Point(374, 211);
+            gridLogs.Location = new Point(378, 211);
             gridLogs.Name = "gridLogs";
             gridLogs.RowHeadersWidth = 82;
-            gridLogs.Size = new Size(1013, 628);
+            gridLogs.Size = new Size(1009, 628);
             gridLogs.TabIndex = 14;
             // 
             // lblPerformDBBackup
             // 
             lblPerformDBBackup.AutoSize = true;
             lblPerformDBBackup.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPerformDBBackup.Location = new Point(31, 548);
+            lblPerformDBBackup.Location = new Point(30, 410);
+            lblPerformDBBackup.Margin = new Padding(30, 8, 15, 20);
             lblPerformDBBackup.Name = "lblPerformDBBackup";
             lblPerformDBBackup.Size = new Size(332, 37);
             lblPerformDBBackup.TabIndex = 15;
@@ -218,20 +229,13 @@
             // 
             lblGenerateReports.AutoSize = true;
             lblGenerateReports.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGenerateReports.Location = new Point(31, 620);
+            lblGenerateReports.Location = new Point(30, 475);
+            lblGenerateReports.Margin = new Padding(30, 8, 15, 20);
             lblGenerateReports.Name = "lblGenerateReports";
             lblGenerateReports.Size = new Size(230, 37);
             lblGenerateReports.TabIndex = 16;
             lblGenerateReports.Text = "Generate Reports";
             lblGenerateReports.Click += lblGenerateReports_Click;
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.FromArgb(249, 115, 22);
-            label2.Location = new Point(-8, 469);
-            label2.Name = "label2";
-            label2.Size = new Size(384, 64);
-            label2.TabIndex = 17;
             // 
             // lblViewAuditLogs
             // 
@@ -239,11 +243,42 @@
             lblViewAuditLogs.BackColor = Color.FromArgb(249, 115, 22);
             lblViewAuditLogs.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblViewAuditLogs.ForeColor = Color.White;
-            lblViewAuditLogs.Location = new Point(31, 482);
+            lblViewAuditLogs.Location = new Point(33, 12);
+            lblViewAuditLogs.Margin = new Padding(30, 8, 15, 20);
             lblViewAuditLogs.Name = "lblViewAuditLogs";
             lblViewAuditLogs.Size = new Size(213, 37);
             lblViewAuditLogs.TabIndex = 18;
             lblViewAuditLogs.Text = "View Audit Logs";
+            // 
+            // slowbarFlowPanel
+            // 
+            slowbarFlowPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            slowbarFlowPanel.Controls.Add(lblDashboard);
+            slowbarFlowPanel.Controls.Add(lblRentalRequests);
+            slowbarFlowPanel.Controls.Add(lblRentalTransactions);
+            slowbarFlowPanel.Controls.Add(lblReturnRecords);
+            slowbarFlowPanel.Controls.Add(lblEquipmentManagement);
+            slowbarFlowPanel.Controls.Add(panel1);
+            slowbarFlowPanel.Controls.Add(lblPerformDBBackup);
+            slowbarFlowPanel.Controls.Add(lblGenerateReports);
+            slowbarFlowPanel.Controls.Add(lblLogOut);
+            slowbarFlowPanel.Controls.Add(lblExit);
+            slowbarFlowPanel.FlowDirection = FlowDirection.TopDown;
+            slowbarFlowPanel.Location = new Point(-7, 133);
+            slowbarFlowPanel.MinimumSize = new Size(300, 700);
+            slowbarFlowPanel.Name = "slowbarFlowPanel";
+            slowbarFlowPanel.Size = new Size(379, 706);
+            slowbarFlowPanel.TabIndex = 19;
+            slowbarFlowPanel.WrapContents = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(249, 115, 22);
+            panel1.Controls.Add(lblViewAuditLogs);
+            panel1.Location = new Point(3, 335);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(384, 64);
+            panel1.TabIndex = 20;
             // 
             // AuditLogs
             // 
@@ -251,21 +286,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1385, 838);
-            Controls.Add(lblViewAuditLogs);
-            Controls.Add(label2);
-            Controls.Add(lblGenerateReports);
-            Controls.Add(lblPerformDBBackup);
+            Controls.Add(slowbarFlowPanel);
             Controls.Add(gridLogs);
             Controls.Add(btnSearch);
             Controls.Add(txtSearchBar);
-            Controls.Add(lblExit);
-            Controls.Add(lblLogOut);
             Controls.Add(lblAuditLogs);
-            Controls.Add(lblEquipmentManagement);
-            Controls.Add(lblReturnRecords);
-            Controls.Add(lblRentalTransactions);
-            Controls.Add(lblRentalRequests);
-            Controls.Add(lblDashboard);
             Controls.Add(label1);
             Controls.Add(lblDivider);
             Controls.Add(lblRole);
@@ -274,6 +299,10 @@
             Text = "Audit Logs";
             Load += AuditLogs_Load;
             ((System.ComponentModel.ISupportInitialize)gridLogs).EndInit();
+            slowbarFlowPanel.ResumeLayout(false);
+            slowbarFlowPanel.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -297,7 +326,8 @@
         private DataGridView gridLogs;
         private Label lblPerformDBBackup;
         private Label lblGenerateReports;
-        private Label label2;
         private Label lblViewAuditLogs;
+        private FlowLayoutPanel slowbarFlowPanel;
+        private Panel panel1;
     }
 }
