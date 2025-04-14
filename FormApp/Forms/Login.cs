@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Persistence;
-using BCrypt.Net;
 
 namespace FormApp.Forms
 {
