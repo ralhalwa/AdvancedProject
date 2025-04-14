@@ -1,4 +1,5 @@
 using ClassLibrary.Persistence;
+using FormApp.Forms;
 
 namespace FormApp
 {
@@ -15,7 +16,7 @@ namespace FormApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             
-            Application.Run(new Dashboard());
+            Application.Run(new Login());
         }
     }
 }

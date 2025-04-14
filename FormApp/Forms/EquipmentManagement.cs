@@ -1,5 +1,8 @@
 ﻿using ClassLibrary.Persistence;
+using FormApp.Classes;
+using FormApp.Forms;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Graph.Drives.Item.Items.Item.GetActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithInterval;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +22,14 @@ namespace FormApp
         {
             InitializeComponent();
             context = new DBContext();
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition,
+            lblViewAuditLogs,
+            lblDBbackup,
+            lblGenerateReport
+            );
         }
 
         private void EquipmentManagement_Load(object sender, EventArgs e)
@@ -149,48 +160,42 @@ namespace FormApp
 
         private void label16_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Dashboard dd = new Dashboard();
-            dd.Show();
+            FormHelper.NavigateTo<Dashboard>(this);
         }
 
         private void lblRequest_Click(object sender, EventArgs e)
         {
-            RentalRequests re = new RentalRequests();
-            re.Show();
+            FormHelper.NavigateTo<RentalRequests>(this);
         }
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //ViewAudit aa = new ViewAudit();
-            //aa.Show();
+            // display audit logs form
+            FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //dbBackup db = new dbBackup();
-            //db.Show();
+            // display database backup form
+            FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //GenReport gr = new GenReport();
-            //gr.Show();
+            // display generate reports form
+            FormHelper.NavigateTo<GenerateReports>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //perfrom loguut function
+            // return to login page
+            FormHelper.ConfirmAndLogout(this);
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
 
-            this.Close();
+            FormHelper.ExitApp();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -240,9 +245,13 @@ namespace FormApp
 
         private void lblTransactions_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RentalTransactions rt = new RentalTransactions();
-            rt.Show();
+            FormHelper.NavigateTo<RentalTransactions>(this);
+        }
+
+        private void lblReturnRecords_Click(object sender, EventArgs e)
+        {
+            // display return records form
+            FormHelper.NavigateTo<ReturnRecords>(this);
         }
     }
 }

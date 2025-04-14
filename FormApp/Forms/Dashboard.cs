@@ -28,19 +28,13 @@ namespace FormApp
 
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblPosition.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblPosition.Text = "Manager";
-
-                lblDBbackup.Hide();
-                lblViewAuditLogs.Hide();
-                lblGenerateReport.Hide();
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition,
+            lblViewAuditLogs,
+            lblDBbackup,
+            lblGenerateReport
+            );
 
 
         }
@@ -158,23 +152,17 @@ namespace FormApp
 
         private void lblTransactions_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RentalTransactions t = new RentalTransactions();
-            t.Show();
+            FormHelper.NavigateTo<RentalTransactions>(this);
         }
 
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ReturnRecords rr = new ReturnRecords();
-            rr.Show();
+            FormHelper.NavigateTo<ReturnRecords>(this);
         }
 
         private void lblRequest_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RentalRequests ret = new RentalRequests();
-            ret.Show();
+            FormHelper.NavigateTo<RentalRequests>(this);
         }
 
 
@@ -244,35 +232,32 @@ namespace FormApp
 
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EquipmentManagement eq = new EquipmentManagement();
-            eq.Show();
+            FormHelper.NavigateTo<EquipmentManagement>(this);
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormHelper.ExitApp();
         }
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AuditLogs auditLogs = new AuditLogs();
-            auditLogs.Show();
+            FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DatabaseBackup dbBackup = new DatabaseBackup();
-            dbBackup.Show();
+            FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            GenerateReports generateReports = new GenerateReports();
-            generateReports.Show();
+            FormHelper.NavigateTo<GenerateReports>(this);
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FormHelper.ConfirmAndLogout(this);
         }
     }
 }

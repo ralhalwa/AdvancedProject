@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj": {}
+    "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj": {
+    "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
         "projectName": "ClassLibrary",
-        "projectPath": "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+        "projectPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
         "packagesPath": "C:\\Users\\HUAWEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\obj\\",
+        "outputPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

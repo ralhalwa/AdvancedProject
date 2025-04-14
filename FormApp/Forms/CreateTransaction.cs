@@ -26,15 +26,10 @@ namespace FormApp.Forms
 
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblRole.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblRole.Text = "Manager";
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblRole
+            );
 
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -178,7 +173,7 @@ namespace FormApp.Forms
 
         // clear all form fields
         private void ClearFields()
-            {
+        {
             txtUserID.Clear();
             txtPickupDate.Clear();
             txtReturnDate.Clear();
@@ -194,6 +189,14 @@ namespace FormApp.Forms
 
             cmbRentalStatus.SelectedIndex = 0;
             cmbPaymentStatus.SelectedIndex = 0;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            // return to rental transactions form
+            this.Hide();
+            RentalTransactions rentalTransactions = new RentalTransactions();
+            rentalTransactions.Show();
         }
     }
 }

@@ -24,15 +24,10 @@ namespace FormApp.Forms
             // display user info
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblRole.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblRole.Text = "Manager";
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblRole
+            );
 
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -232,5 +227,12 @@ namespace FormApp.Forms
             }
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            // return to rental transactions form
+            this.Hide();
+            RentalTransactions rentalTransactions = new RentalTransactions();
+            rentalTransactions.Show();
+        }
     }
 }

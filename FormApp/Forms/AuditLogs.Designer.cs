@@ -96,6 +96,7 @@
             lblDashboard.Size = new Size(150, 37);
             lblDashboard.TabIndex = 4;
             lblDashboard.Text = "Dashboard";
+            lblDashboard.Click += lblDashboard_Click;
             // 
             // lblRentalRequests
             // 
@@ -106,6 +107,7 @@
             lblRentalRequests.Size = new Size(211, 37);
             lblRentalRequests.TabIndex = 5;
             lblRentalRequests.Text = "Rental Requests";
+            lblRentalRequests.Click += lblRentalRequests_Click;
             // 
             // lblRentalTransactions
             // 
@@ -116,6 +118,7 @@
             lblRentalTransactions.Size = new Size(254, 37);
             lblRentalTransactions.TabIndex = 6;
             lblRentalTransactions.Text = "Rental Transactions";
+            lblRentalTransactions.Click += lblRentalTransactions_Click;
             // 
             // lblReturnRecords
             // 
@@ -126,6 +129,7 @@
             lblReturnRecords.Size = new Size(203, 37);
             lblReturnRecords.TabIndex = 7;
             lblReturnRecords.Text = "Return Records";
+            lblReturnRecords.Click += lblReturnRecords_Click;
             // 
             // lblEquipmentManagement
             // 
@@ -136,6 +140,7 @@
             lblEquipmentManagement.Size = new Size(320, 37);
             lblEquipmentManagement.TabIndex = 8;
             lblEquipmentManagement.Text = "Equipment Management";
+            lblEquipmentManagement.Click += lblEquipmentManagement_Click;
             // 
             // lblAuditLogs
             // 
@@ -155,6 +160,7 @@
             lblLogOut.Size = new Size(115, 37);
             lblLogOut.TabIndex = 10;
             lblLogOut.Text = "Log Out";
+            lblLogOut.Click += lblLogOut_Click;
             // 
             // lblExit
             // 
@@ -165,6 +171,7 @@
             lblExit.Size = new Size(62, 37);
             lblExit.TabIndex = 11;
             lblExit.Text = "Exit";
+            lblExit.Click += lblExit_Click;
             // 
             // txtSearchBar
             // 
@@ -205,6 +212,7 @@
             lblPerformDBBackup.Size = new Size(332, 37);
             lblPerformDBBackup.TabIndex = 15;
             lblPerformDBBackup.Text = "Perform Database Backup";
+            lblPerformDBBackup.Click += lblPerformDBBackup_Click;
             // 
             // lblGenerateReports
             // 
@@ -215,6 +223,7 @@
             lblGenerateReports.Size = new Size(230, 37);
             lblGenerateReports.TabIndex = 16;
             lblGenerateReports.Text = "Generate Reports";
+            lblGenerateReports.Click += lblGenerateReports_Click;
             // 
             // label2
             // 

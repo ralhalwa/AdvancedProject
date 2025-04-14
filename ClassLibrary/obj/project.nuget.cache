@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5IwISZr/jJ8=",
+  "dgSpecHash": "YKQxfYoKvHE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HUAWEI\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+  "projectFilePath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HUAWEI\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\HUAWEI\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

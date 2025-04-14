@@ -27,15 +27,13 @@ namespace FormApp.Forms
 
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblRole.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblRole.Text = "Manager";
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblRole,
+            lblAuditLogs,
+            lblPerformDBBackup,
+            lblGenerateReports
+            );
 
             gridReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -76,10 +74,10 @@ namespace FormApp.Forms
             try
             {
                 var equipmentData = _context.RentalRequests
-                    .Include(r => r.Equipment)               
-                    .ThenInclude(e => e.Category)            
+                    .Include(r => r.Equipment)
+                    .ThenInclude(e => e.Category)
                     .AsEnumerable()
-                    .Where(r => r.Equipment != null && r.Equipment.Category != null) 
+                    .Where(r => r.Equipment != null && r.Equipment.Category != null)
                     .GroupBy(r => new
                     {
                         r.Equipment.Name,
@@ -175,6 +173,59 @@ namespace FormApp.Forms
             }
 
             return table;
+        }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+            // display dashboard
+            FormHelper.NavigateTo<Dashboard>(this);
+        }
+
+        private void lblRentalRequests_Click(object sender, EventArgs e)
+        {
+            // display rental requests form
+            FormHelper.NavigateTo<RentalRequests>(this);
+        }
+
+        private void lblRentalTransactions_Click(object sender, EventArgs e)
+        {
+            // display rental transactions form
+            FormHelper.NavigateTo<RentalTransactions>(this);
+        }
+
+        private void lblReturnRecords_Click(object sender, EventArgs e)
+        {
+            // display return records form
+            FormHelper.NavigateTo<ReturnRecords>(this);
+        }
+
+        private void lblEquipmentManagement_Click(object sender, EventArgs e)
+        {
+            // display equipment management form
+            FormHelper.NavigateTo<EquipmentManagement>(this);
+        }
+
+        private void lblAuditLogs_Click(object sender, EventArgs e)
+        {
+            // display audit logs form
+            FormHelper.NavigateTo<AuditLogs>(this);
+        }
+
+        private void lblPerformDBBackup_Click(object sender, EventArgs e)
+        {
+            // display database backup form
+            FormHelper.NavigateTo<DatabaseBackup>(this);
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            // return to login page
+            FormHelper.ConfirmAndLogout(this);
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            FormHelper.ExitApp();
         }
     }
 }

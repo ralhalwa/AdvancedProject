@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Models;
+using FormApp.Forms;
+using FormApp.Classes;
 
 
 namespace FormApp
@@ -21,6 +23,14 @@ namespace FormApp
         {
             InitializeComponent();
             context = new DBContext();
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition,
+            lblViewAuditLogs,
+            lblDBbackup,
+            lblGenerateReport
+            );
         }
 
         private void lblDashboard_Click(object sender, EventArgs e)
@@ -164,61 +174,54 @@ namespace FormApp
 
         private void label16_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Dashboard dd = new Dashboard();
-            dd.Show();
+            FormHelper.NavigateTo<Dashboard>(this);
 
         }
 
         private void lblTransactions_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RentalTransactions tt = new RentalTransactions();
-            tt.Show();
+            FormHelper.NavigateTo<RentalTransactions>(this);
         }
 
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ReturnRecords rr = new ReturnRecords();
-            rr.Show();
+            FormHelper.NavigateTo<ReturnRecords>(this);
 
         }
 
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EquipmentManagement eq = new EquipmentManagement();
-            eq.Show();
+            FormHelper.NavigateTo<EquipmentManagement>(this);
 
         }
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //ViewAudit Form
+            // display audit logs form
+            FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //dbBackup Form
+            // display database backup form
+            FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //GenerateReport form
+            // display generate reports form
+            FormHelper.NavigateTo<GenerateReports>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            //logout functionality
+            // return to login page
+            FormHelper.ConfirmAndLogout(this);
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormHelper.ExitApp();
         }
     }
 }

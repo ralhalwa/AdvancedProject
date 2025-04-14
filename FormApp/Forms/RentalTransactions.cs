@@ -1,5 +1,7 @@
 ﻿using ClassLibrary.Models;
 using ClassLibrary.Persistence;
+using FormApp.Classes;
+using FormApp.Forms;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,14 @@ namespace FormApp
         {
             InitializeComponent();
             context = new DBContext();
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition,
+            lblViewAuditLogs,
+            lblDBbackup,
+            lblGenerateReport
+            );
         }
 
         private void RentalTransactions_Load(object sender, EventArgs e)
@@ -202,16 +212,12 @@ namespace FormApp
 
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ReturnRecords rr = new ReturnRecords();
-            rr.Show();
+            FormHelper.NavigateTo<ReturnRecords>(this);
         }
 
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EquipmentManagement ee = new EquipmentManagement();
-            ee.Show();
+            FormHelper.NavigateTo<EquipmentManagement>(this);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -234,8 +240,10 @@ namespace FormApp
                 {
                     int id = Convert.ToInt32(transactionGrid.SelectedRows[0].Cells["Id"].Value);
 
-                    // UpdateTransactionForm updateForm = new UpdateTransactionForm(id);
-                    //    updateForm.ShowDialog();
+                    // display update transaction form
+                    this.Hide();
+                    UpdateTransaction updateTransaction = new UpdateTransaction(id);
+                    updateTransaction.Show();
                     LoadRentalTransactions();
                 }
                 else
@@ -251,56 +259,48 @@ namespace FormApp
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            this.Close();
-
-            //Create Form Navigation
+            // display create transaction form
+            FormHelper.NavigateTo<CreateTransaction>(this);
         }
 
         private void label16_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Dashboard dd = new Dashboard();
-            dd.Show();
+            FormHelper.NavigateTo<Dashboard>(this);
         }
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //AuditLog aa = new AuditLog();
-            //aa.Show();
+            // display audit logs form
+            FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //dbBackup db = new dbBackup();
-            //db.Show();
+            // display database backup form
+            FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
 
-            this.Hide();
-            //GenerateReport gg = new GenerateReport();
-            //gg.Show();
+            // display generate reports form
+            FormHelper.NavigateTo<GenerateReports>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //perfrom log out functionality
+            // return to login page
+            FormHelper.ConfirmAndLogout(this);
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormHelper.ExitApp();
         }
 
         private void lblRequest_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RentalRequests rr = new RentalRequests();
-            rr.Show();
+            FormHelper.NavigateTo<RentalRequests>(this);
         }
     }
 

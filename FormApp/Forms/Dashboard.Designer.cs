@@ -429,7 +429,7 @@
             lblGenerateReport.Size = new Size(239, 38);
             lblGenerateReport.TabIndex = 56;
             lblGenerateReport.Text = "Generate Reports";
-            lblGenerateReport.Click += this.lblGenerateReport_Click;
+            lblGenerateReport.Click += lblGenerateReport_Click;
             // 
             // lblDBbackup
             // 
@@ -477,6 +477,7 @@
             lblLogOut.Size = new Size(120, 38);
             lblLogOut.TabIndex = 59;
             lblLogOut.Text = "Log Out";
+            lblLogOut.Click += lblLogOut_Click;
             // 
             // Dashboard
             // 

@@ -7,9 +7,6 @@
     <Compile Update="Forms\EquipmentManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\AuditLogs.cs">
       <SubType>Form</SubType>
     </Compile>

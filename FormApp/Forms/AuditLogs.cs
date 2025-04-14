@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 using ClassLibrary.Persistence;
+using System.Reflection.Metadata.Ecma335;
 
 namespace FormApp.Forms
 {
@@ -31,15 +32,13 @@ namespace FormApp.Forms
             // displaying user info
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblRole.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblRole.Text = "Manager";
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblRole,
+            lblViewAuditLogs,
+            lblPerformDBBackup,
+            lblGenerateReports
+            );
 
             // centering the form
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -79,6 +78,58 @@ namespace FormApp.Forms
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadLogs(txtSearchBar.Text.Trim());
+        }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+            // display dashboard
+            FormHelper.NavigateTo<Dashboard>(this);
+        }
+
+        private void lblRentalRequests_Click(object sender, EventArgs e)
+        {
+            // display rental requests form
+            FormHelper.NavigateTo<RentalRequests>(this);
+        }
+
+        private void lblRentalTransactions_Click(object sender, EventArgs e)
+        {
+            // display rental transactions form
+            FormHelper.NavigateTo<RentalTransactions>(this);
+        }
+
+        private void lblReturnRecords_Click(object sender, EventArgs e)
+        {
+            // display return records form
+            FormHelper.NavigateTo<ReturnRecords>(this);
+        }
+
+        private void lblEquipmentManagement_Click(object sender, EventArgs e)
+        {
+            // display equipment management form
+            FormHelper.NavigateTo<EquipmentManagement>(this);
+        }
+
+        private void lblPerformDBBackup_Click(object sender, EventArgs e)
+        {
+            // display database backup form
+            FormHelper.NavigateTo<DatabaseBackup>(this);
+        }
+
+        private void lblGenerateReports_Click(object sender, EventArgs e)
+        {
+            // display generate reports form
+            FormHelper.NavigateTo<GenerateReports>(this);
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FormHelper.ConfirmAndLogout(this);
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            FormHelper.ExitApp();
         }
     }
 }

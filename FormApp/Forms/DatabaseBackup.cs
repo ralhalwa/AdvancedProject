@@ -29,15 +29,13 @@ namespace FormApp.Forms
             // display user info
             lblName.Text = UserSession.FullName;
 
-            if (UserSession.RoleID == 1)
-            {
-                lblRole.Text = "Admin";
-            }
-
-            else if (UserSession.RoleID == 2)
-            {
-                lblRole.Text = "Manager";
-            }
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblRole,
+            lblAuditLogs,
+            lblPerformDBBackup,
+            lblGenerateReports
+            );
 
             this.StartPosition = FormStartPosition.CenterScreen;
         }
@@ -141,6 +139,59 @@ namespace FormApp.Forms
             {
                 MessageBox.Show("Failed to load backup logs:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+            // display dashboard
+            FormHelper.NavigateTo<Dashboard>(this);
+        }
+
+        private void lblRentalRequests_Click(object sender, EventArgs e)
+        {
+            // display rental requests form
+            FormHelper.NavigateTo<RentalRequests>(this);
+        }
+
+        private void lblRentalTransactions_Click(object sender, EventArgs e)
+        {
+            // display rental transactions
+            FormHelper.NavigateTo<RentalTransactions>(this);
+        }
+
+        private void lblReturnRecords_Click(object sender, EventArgs e)
+        {
+            // display rental records
+            FormHelper.NavigateTo<ReturnRecords>(this);
+        }
+
+        private void lblEquipmentManagement_Click(object sender, EventArgs e)
+        {
+            // display equipment management form
+            FormHelper.NavigateTo<EquipmentManagement>(this);
+        }
+
+        private void lblAuditLogs_Click(object sender, EventArgs e)
+        {
+            // display audit logs form
+            FormHelper.NavigateTo<AuditLogs>(this);
+        }
+
+        private void lblGenerateReports_Click(object sender, EventArgs e)
+        {
+            // display generate reports form
+            FormHelper.NavigateTo<GenerateReports>(this);
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            // return to login page
+            FormHelper.ConfirmAndLogout(this);
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            FormHelper.ExitApp();
         }
     }
 }
