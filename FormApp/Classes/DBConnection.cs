@@ -8,7 +8,6 @@ namespace FormApp.Classes
 {
     public static class DBConnection
     {
-        public static readonly string ConnectionString =
-            @"Data Source=localhost;Initial Catalog=NewDB;Integrated Security=True;";
+        public static string ConnectionString = "Server = (localdb)\\MSSQLLocalDB; Database = NewDB; Trusted_Connection = True; ";
     }
 }
