@@ -4208,23 +4208,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HUAWEI\\.nuget\\packages\\": {},
+    "C:\\Users\\Sharmin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
       "projectName": "ClassLibrary",
-      "projectPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
-      "packagesPath": "C:\\Users\\HUAWEI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\ClassLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+      "packagesPath": "C:\\Users\\Sharmin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\HUAWEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sharmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

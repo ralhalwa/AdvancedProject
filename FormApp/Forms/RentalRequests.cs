@@ -148,22 +148,38 @@ namespace FormApp
                 return;
             }
 
-            int selectedId = Convert.ToInt32(RentalRequestGrid.SelectedRows[0].Cells["Id"].Value);
-
-            var result = MessageBox.Show("Are you sure you want to delete this request?", "Confirm", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
+            try
             {
-                using (var context = new DBContext())
+                int selectedId = Convert.ToInt32(RentalRequestGrid.SelectedRows[0].Cells["Id"].Value);
+
+                var request = context.RentalRequests
+                    .Include(r => r.RentalStatus1)
+                    .FirstOrDefault(r => r.Id == selectedId);
+
+                if (request != null)
                 {
-                    var request = context.RentalRequests.Find(selectedId);
-                    if (request != null)
+                    var rejectedStatus = context.RentalStatuses.FirstOrDefault(s => s.Status == "Rejected");
+
+                    if (rejectedStatus == null)
                     {
-                        context.RentalRequests.Remove(request);
-                        context.SaveChanges();
-                        MessageBox.Show("Request deleted.");
-                        LoadRentalRequest();
+                        MessageBox.Show("Rejected status not found in database.");
+                        return;
                     }
+
+                    request.RentalStatus = rejectedStatus.Id;
+                    context.SaveChanges();
+
+                    MessageBox.Show("Request rejected.");
+                    LoadRentalRequest();
                 }
+                else
+                {
+                    MessageBox.Show("Request not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
 
@@ -172,6 +188,7 @@ namespace FormApp
 
         }
 
+        
         private void label16_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<Dashboard>(this);

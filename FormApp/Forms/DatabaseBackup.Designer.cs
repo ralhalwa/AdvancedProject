@@ -56,10 +56,10 @@
             // 
             lblGenerateReports.AutoSize = true;
             lblGenerateReports.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGenerateReports.Location = new Point(30, 475);
-            lblGenerateReports.Margin = new Padding(30, 8, 15, 20);
+            lblGenerateReports.Location = new Point(18, 293);
+            lblGenerateReports.Margin = new Padding(18, 5, 9, 12);
             lblGenerateReports.Name = "lblGenerateReports";
-            lblGenerateReports.Size = new Size(230, 37);
+            lblGenerateReports.Size = new Size(144, 23);
             lblGenerateReports.TabIndex = 33;
             lblGenerateReports.Text = "Generate Reports";
             lblGenerateReports.Click += lblGenerateReports_Click;
@@ -68,18 +68,20 @@
             // 
             lblPerformDBBackup.AutoSize = true;
             lblPerformDBBackup.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPerformDBBackup.Location = new Point(1539, 548);
+            lblPerformDBBackup.Location = new Point(947, 342);
+            lblPerformDBBackup.Margin = new Padding(2, 0, 2, 0);
             lblPerformDBBackup.Name = "lblPerformDBBackup";
-            lblPerformDBBackup.Size = new Size(0, 37);
+            lblPerformDBBackup.Size = new Size(0, 23);
             lblPerformDBBackup.TabIndex = 32;
             // 
             // gridBackupLogs
             // 
             gridBackupLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridBackupLogs.Location = new Point(374, 211);
+            gridBackupLogs.Location = new Point(230, 132);
+            gridBackupLogs.Margin = new Padding(2, 2, 2, 2);
             gridBackupLogs.Name = "gridBackupLogs";
             gridBackupLogs.RowHeadersWidth = 82;
-            gridBackupLogs.Size = new Size(1013, 630);
+            gridBackupLogs.Size = new Size(623, 394);
             gridBackupLogs.TabIndex = 31;
             // 
             // btnInitiateBackup
@@ -87,9 +89,10 @@
             btnInitiateBackup.BackColor = Color.FromArgb(249, 115, 22);
             btnInitiateBackup.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInitiateBackup.ForeColor = Color.White;
-            btnInitiateBackup.Location = new Point(388, 150);
+            btnInitiateBackup.Location = new Point(239, 94);
+            btnInitiateBackup.Margin = new Padding(2, 2, 2, 2);
             btnInitiateBackup.Name = "btnInitiateBackup";
-            btnInitiateBackup.Size = new Size(299, 46);
+            btnInitiateBackup.Size = new Size(184, 29);
             btnInitiateBackup.TabIndex = 30;
             btnInitiateBackup.Text = "Initiate New Backup";
             btnInitiateBackup.UseVisualStyleBackColor = false;
@@ -99,10 +102,10 @@
             // 
             lblExit.AutoSize = true;
             lblExit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExit.Location = new Point(30, 605);
-            lblExit.Margin = new Padding(30, 8, 15, 20);
+            lblExit.Location = new Point(18, 373);
+            lblExit.Margin = new Padding(18, 5, 9, 12);
             lblExit.Name = "lblExit";
-            lblExit.Size = new Size(62, 37);
+            lblExit.Size = new Size(38, 23);
             lblExit.TabIndex = 28;
             lblExit.Text = "Exit";
             lblExit.Click += lblExit_Click;
@@ -111,10 +114,10 @@
             // 
             lblLogOut.AutoSize = true;
             lblLogOut.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogOut.Location = new Point(30, 540);
-            lblLogOut.Margin = new Padding(30, 8, 15, 20);
+            lblLogOut.Location = new Point(18, 333);
+            lblLogOut.Margin = new Padding(18, 5, 9, 12);
             lblLogOut.Name = "lblLogOut";
-            lblLogOut.Size = new Size(115, 37);
+            lblLogOut.Size = new Size(72, 23);
             lblLogOut.TabIndex = 27;
             lblLogOut.Text = "Log Out";
             lblLogOut.Click += lblLogOut_Click;
@@ -123,10 +126,10 @@
             // 
             lblAuditLogs.AutoSize = true;
             lblAuditLogs.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAuditLogs.Location = new Point(30, 340);
-            lblAuditLogs.Margin = new Padding(30, 8, 15, 20);
+            lblAuditLogs.Location = new Point(18, 209);
+            lblAuditLogs.Margin = new Padding(18, 5, 9, 12);
             lblAuditLogs.Name = "lblAuditLogs";
-            lblAuditLogs.Size = new Size(213, 37);
+            lblAuditLogs.Size = new Size(133, 23);
             lblAuditLogs.TabIndex = 26;
             lblAuditLogs.Text = "View Audit Logs";
             lblAuditLogs.Click += lblAuditLogs_Click;
@@ -135,10 +138,10 @@
             // 
             lblEquipmentManagement.AutoSize = true;
             lblEquipmentManagement.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEquipmentManagement.Location = new Point(30, 275);
-            lblEquipmentManagement.Margin = new Padding(30, 8, 15, 20);
+            lblEquipmentManagement.Location = new Point(18, 169);
+            lblEquipmentManagement.Margin = new Padding(18, 5, 9, 12);
             lblEquipmentManagement.Name = "lblEquipmentManagement";
-            lblEquipmentManagement.Size = new Size(320, 37);
+            lblEquipmentManagement.Size = new Size(201, 23);
             lblEquipmentManagement.TabIndex = 25;
             lblEquipmentManagement.Text = "Equipment Management";
             lblEquipmentManagement.Click += lblEquipmentManagement_Click;
@@ -147,10 +150,10 @@
             // 
             lblReturnRecords.AutoSize = true;
             lblReturnRecords.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReturnRecords.Location = new Point(30, 210);
-            lblReturnRecords.Margin = new Padding(30, 8, 15, 20);
+            lblReturnRecords.Location = new Point(18, 129);
+            lblReturnRecords.Margin = new Padding(18, 5, 9, 12);
             lblReturnRecords.Name = "lblReturnRecords";
-            lblReturnRecords.Size = new Size(203, 37);
+            lblReturnRecords.Size = new Size(128, 23);
             lblReturnRecords.TabIndex = 24;
             lblReturnRecords.Text = "Return Records";
             lblReturnRecords.Click += lblReturnRecords_Click;
@@ -159,10 +162,10 @@
             // 
             lblRentalTransactions.AutoSize = true;
             lblRentalTransactions.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalTransactions.Location = new Point(30, 145);
-            lblRentalTransactions.Margin = new Padding(30, 8, 15, 20);
+            lblRentalTransactions.Location = new Point(18, 89);
+            lblRentalTransactions.Margin = new Padding(18, 5, 9, 12);
             lblRentalTransactions.Name = "lblRentalTransactions";
-            lblRentalTransactions.Size = new Size(254, 37);
+            lblRentalTransactions.Size = new Size(158, 23);
             lblRentalTransactions.TabIndex = 23;
             lblRentalTransactions.Text = "Rental Transactions";
             lblRentalTransactions.Click += lblRentalTransactions_Click;
@@ -171,10 +174,10 @@
             // 
             lblRentalRequests.AutoSize = true;
             lblRentalRequests.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRentalRequests.Location = new Point(30, 80);
-            lblRentalRequests.Margin = new Padding(30, 8, 15, 20);
+            lblRentalRequests.Location = new Point(18, 49);
+            lblRentalRequests.Margin = new Padding(18, 5, 9, 12);
             lblRentalRequests.Name = "lblRentalRequests";
-            lblRentalRequests.Size = new Size(211, 37);
+            lblRentalRequests.Size = new Size(133, 23);
             lblRentalRequests.TabIndex = 22;
             lblRentalRequests.Text = "Rental Requests";
             lblRentalRequests.Click += lblRentalRequests_Click;
@@ -183,10 +186,10 @@
             // 
             lblDashboard.AutoSize = true;
             lblDashboard.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDashboard.Location = new Point(30, 15);
-            lblDashboard.Margin = new Padding(30, 15, 15, 20);
+            lblDashboard.Location = new Point(18, 9);
+            lblDashboard.Margin = new Padding(18, 9, 9, 12);
             lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(150, 37);
+            lblDashboard.Size = new Size(93, 23);
             lblDashboard.TabIndex = 21;
             lblDashboard.Text = "Dashboard";
             lblDashboard.Click += lblDashboard_Click;
@@ -194,17 +197,19 @@
             // label1
             // 
             label1.BackColor = Color.FromArgb(236, 236, 236);
-            label1.Location = new Point(374, 130);
+            label1.Location = new Point(230, 81);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(2, 670);
+            label1.Size = new Size(1, 419);
             label1.TabIndex = 20;
             // 
             // lblDivider
             // 
             lblDivider.BackColor = Color.FromArgb(236, 236, 236);
-            lblDivider.Location = new Point(-8, 128);
+            lblDivider.Location = new Point(-5, 80);
+            lblDivider.Margin = new Padding(2, 0, 2, 0);
             lblDivider.Name = "lblDivider";
-            lblDivider.Size = new Size(1395, 2);
+            lblDivider.Size = new Size(858, 1);
             lblDivider.TabIndex = 19;
             // 
             // lblRole
@@ -212,9 +217,10 @@
             lblRole.AutoSize = true;
             lblRole.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRole.ForeColor = Color.FromArgb(142, 142, 147);
-            lblRole.Location = new Point(31, 67);
+            lblRole.Location = new Point(19, 42);
+            lblRole.Margin = new Padding(2, 0, 2, 0);
             lblRole.Name = "lblRole";
-            lblRole.Size = new Size(61, 32);
+            lblRole.Size = new Size(39, 20);
             lblRole.TabIndex = 18;
             lblRole.Text = "Role";
             // 
@@ -222,9 +228,10 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI Semibold", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblName.Location = new Point(31, 23);
+            lblName.Location = new Point(19, 14);
+            lblName.Margin = new Padding(2, 0, 2, 0);
             lblName.Name = "lblName";
-            lblName.Size = new Size(95, 40);
+            lblName.Size = new Size(64, 25);
             lblName.TabIndex = 17;
             lblName.Text = "Name";
             // 
@@ -234,10 +241,10 @@
             lblBackup.BackColor = Color.FromArgb(249, 115, 22);
             lblBackup.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBackup.ForeColor = Color.White;
-            lblBackup.Location = new Point(29, 12);
-            lblBackup.Margin = new Padding(30, 8, 15, 20);
+            lblBackup.Location = new Point(18, 8);
+            lblBackup.Margin = new Padding(18, 5, 9, 12);
             lblBackup.Name = "lblBackup";
-            lblBackup.Size = new Size(332, 37);
+            lblBackup.Size = new Size(208, 23);
             lblBackup.TabIndex = 38;
             lblBackup.Text = "Perform Database Backup";
             // 
@@ -256,10 +263,11 @@
             flowLayoutPanel1.Controls.Add(lblLogOut);
             flowLayoutPanel1.Controls.Add(lblExit);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(-17, 133);
-            flowLayoutPanel1.MinimumSize = new Size(379, 706);
+            flowLayoutPanel1.Location = new Point(-10, 83);
+            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel1.MinimumSize = new Size(233, 441);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(390, 706);
+            flowLayoutPanel1.Size = new Size(240, 441);
             flowLayoutPanel1.TabIndex = 39;
             flowLayoutPanel1.WrapContents = false;
             // 
@@ -267,17 +275,18 @@
             // 
             panel1.BackColor = Color.FromArgb(249, 115, 22);
             panel1.Controls.Add(lblBackup);
-            panel1.Location = new Point(3, 400);
+            panel1.Location = new Point(2, 246);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(384, 64);
+            panel1.Size = new Size(236, 40);
             panel1.TabIndex = 40;
             // 
             // DatabaseBackup
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1385, 838);
+            ClientSize = new Size(852, 524);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblPerformDBBackup);
             Controls.Add(gridBackupLogs);
@@ -286,6 +295,7 @@
             Controls.Add(lblDivider);
             Controls.Add(lblRole);
             Controls.Add(lblName);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "DatabaseBackup";
             Text = "Database Backup";
             Load += DatabaseBackup_Load;

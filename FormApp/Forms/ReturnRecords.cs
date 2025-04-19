@@ -174,37 +174,42 @@ namespace FormApp
         {
             try
             {
-                if (ReturnRecordGrid.SelectedRows.Count > 0)
+                if (ReturnRecordGrid.SelectedRows.Count == 0)
                 {
-                    int id = Convert.ToInt32(ReturnRecordGrid.SelectedRows[0].Cells["Id"].Value);
+                    MessageBox.Show("Please select a record to edit.");
+                    return;
+                }
 
-                    // UpdateReturnRecordForm updateForm = new UpdateReturnRecordForm(id);
-                    //  updateForm.ShowDialog();
+                int id = Convert.ToInt32(ReturnRecordGrid.SelectedRows[0].Cells["Id"].Value);
+
+                // Find ReturnRecord from DB
+                var record = context.ReturnRecords
+                    .Include(r => r.EquipmentNavigation)
+                    .Include(r => r.ConditionNavigation)
+                    .FirstOrDefault(r => r.Id == id);
+
+                if (record != null)
+                {
+                    UpdateRecord updateForm = new UpdateRecord(record);
+                    updateForm.ShowDialog();
+
+                    //After editing → refresh data
                     LoadReturnRecord();
                 }
                 else
                 {
-                    MessageBox.Show("Please select a row to update.");
+                    MessageBox.Show("Record not found.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error updating record: " + ex.Message);
+                MessageBox.Show("Error opening edit form: " + ex.Message);
             }
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //  CreateReturnRecordForm createForm = new CreateReturnRecordForm();
-                // createForm.ShowDialog();
-                LoadReturnRecord();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error creating record: " + ex.Message);
-            }
+            FormHelper.NavigateTo<CreateRecord>(this);
         }
 
         private void label16_Click(object sender, EventArgs e)

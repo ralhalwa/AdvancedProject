@@ -200,9 +200,9 @@ namespace FormApp
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //AddEquipment ae = new AddEquipment();
-            //ae.Show();
+           
+
+            FormHelper.NavigateTo<AddEquipment>(this);
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -226,10 +226,10 @@ namespace FormApp
 
                 if (equipment != null)
                 {
-                    // EditEquipmentForm editForm = new EditEquipmentForm(equipment);
-                    //  editForm.ShowDialog();
+                    EditEquipment editForm = new EditEquipment(equipment);
+                    editForm.ShowDialog();
 
-                    // After editing → refresh data
+                    //After editing → refresh data
                     LoadEquipment();
                 }
                 else
