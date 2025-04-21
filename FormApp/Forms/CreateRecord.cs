@@ -108,6 +108,18 @@ namespace FormApp.Forms
                 context.ReturnRecords.Add(record);
                 context.SaveChanges();
 
+                // Log the action
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Create Return Record",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Return Record for Equipment ID: {record.Equipment}, Return Date: {record.ReturnDate.ToShortDateString()}",
+                    Source = "CreateRecord Form"
+                };
+                context.Logs.Add(log);
+                context.SaveChanges(); // Save log entry
+
                 MessageBox.Show("Record created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearControls();
             }

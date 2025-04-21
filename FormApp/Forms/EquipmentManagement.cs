@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary.Models;
 
 namespace FormApp
 {
@@ -146,8 +147,24 @@ namespace FormApp
 
                 if (equipment != null)
                 {
+                    string equipmentName = equipment.Name;
+
                     context.Equipment.Remove(equipment);
                     context.SaveChanges();
+
+                    // Log the deletion
+                    Log log = new Log
+                    {
+                        UserId = UserSession.UserID,
+                        Action = "Delete Equipment",
+                        TimeStamp = DateTime.Now,
+                        AffectedData = $"Deleted Equipment: {equipmentName}, ID: {id}",
+                        Source = "EquipmentManagement Form"
+                    };
+
+                    context.Logs.Add(log);
+                    context.SaveChanges(); // Save log
+
                     MessageBox.Show("Record deleted successfully.");
                     LoadEquipment();
                 }

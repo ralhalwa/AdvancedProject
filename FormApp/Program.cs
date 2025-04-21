@@ -16,7 +16,7 @@ namespace FormApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             
-            Application.Run(new RentalRequests());
+            Application.Run(new Login());
         }
     }
 }

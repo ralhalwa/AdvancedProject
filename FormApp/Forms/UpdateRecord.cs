@@ -92,6 +92,18 @@ namespace FormApp.Forms
                 context.Entry(selectedRecord).State = EntityState.Modified;
                 context.SaveChanges();
 
+                // Log the update
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Update Return Record",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Updated Return Record ID {selectedRecord.Id} – Late Fees: {selectedRecord.LateFees}, Return Date: {selectedRecord.ReturnDate.ToShortDateString()}",
+                    Source = "UpdateRecord Form"
+                };
+                context.Logs.Add(log);
+                context.SaveChanges(); // Save log
+
                 MessageBox.Show("Record Updated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

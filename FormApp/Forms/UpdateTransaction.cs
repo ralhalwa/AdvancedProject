@@ -9,17 +9,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary.Persistence;
+using ClassLibrary.Models;
 
 namespace FormApp.Forms
 {
     public partial class UpdateTransaction : Form
     {
-        private int transactionId;
+        private readonly DBContext _context;
+        private readonly int transactionId;
 
         public UpdateTransaction(int id)
         {
             InitializeComponent();
             transactionId = id;
+            _context = new DBContext();
 
             // display user info
             lblName.Text = UserSession.FullName;
@@ -49,29 +53,17 @@ namespace FormApp.Forms
 
         private void LoadTransactionData()
         {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
-            {
-                conn.Open();
-                string query = @"SELECT UserID, Pickup, ReturnDate, Fee, Deposit, RentalStatus, PaymentStatus 
-                         FROM Rental_Transaction WHERE ID = @ID";
+            var transaction = _context.RentalTransactions.FirstOrDefault(t => t.Id == transactionId);
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@ID", transactionId);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            txtUserID.Text = reader["UserID"].ToString();
-                            txtPickupDate.Text = Convert.ToDateTime(reader["Pickup"]).ToString("yyyy-MM-dd");
-                            txtReturnDate.Text = Convert.ToDateTime(reader["ReturnDate"]).ToString("yyyy-MM-dd");
-                            txtFee.Text = reader["Fee"].ToString();
-                            txtDeposit.Text = reader["Deposit"].ToString();
-                            cmbRentalStatus.SelectedValue = Convert.ToInt32(reader["RentalStatus"]);
-                            cmbPaymentStatus.SelectedValue = Convert.ToInt32(reader["PaymentStatus"]);
-                        }
-                    }
-                }
+            if (transaction != null)
+            {
+                txtUserID.Text = transaction.UserId.ToString();
+                txtPickupDate.Text = transaction.Pickup.ToString("yyyy-MM-dd");
+                txtReturnDate.Text = transaction.ReturnDate.ToString("yyyy-MM-dd");
+                txtFee.Text = transaction.Fee.ToString();
+                txtDeposit.Text = transaction.Deposit.ToString();
+                cmbRentalStatus.SelectedValue = transaction.RentalStatus;
+                cmbPaymentStatus.SelectedValue = transaction.PaymentStatus;
             }
         }
 
@@ -79,14 +71,14 @@ namespace FormApp.Forms
         {
             try
             {
-                // validation
+                // Validation
                 if (string.IsNullOrWhiteSpace(txtUserID.Text) ||
-            string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
-            string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
-            string.IsNullOrWhiteSpace(txtFee.Text) ||
-            string.IsNullOrWhiteSpace(txtDeposit.Text) ||
-            Convert.ToInt32(cmbRentalStatus.SelectedValue) == -1 ||
-            Convert.ToInt32(cmbPaymentStatus.SelectedValue) == -1)
+                    string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
+                    string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
+                    string.IsNullOrWhiteSpace(txtFee.Text) ||
+                    string.IsNullOrWhiteSpace(txtDeposit.Text) ||
+                    Convert.ToInt32(cmbRentalStatus.SelectedValue) == -1 ||
+                    Convert.ToInt32(cmbPaymentStatus.SelectedValue) == -1)
                 {
                     MessageBox.Show("Please fill all the details.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -98,7 +90,7 @@ namespace FormApp.Forms
                     return;
                 }
 
-                if (!UserExists(userId))
+                if (!_context.Users.Any(u => u.Id == userId))
                 {
                     MessageBox.Show("User ID does not exist.", "Validation Error");
                     return;
@@ -134,32 +126,40 @@ namespace FormApp.Forms
                 int rentalStatusId = Convert.ToInt32(cmbRentalStatus.SelectedValue);
                 int paymentStatusId = Convert.ToInt32(cmbPaymentStatus.SelectedValue);
 
-                using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
+                // Get the transaction
+                var transaction = _context.RentalTransactions.FirstOrDefault(t => t.Id == transactionId);
+                if (transaction == null)
                 {
-                    conn.Open();
-                    string updateQuery = @"UPDATE Rental_Transaction 
-                                   SET UserID = @UserID, Pickup = @Pickup, ReturnDate = @ReturnDate,
-                                       Period = @Period, Fee = @Fee, Deposit = @Deposit, 
-                                       RentalStatus = @RentalStatus, PaymentStatus = @PaymentStatus
-                                   WHERE ID = @ID";
-
-                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@UserID", userId);
-                        cmd.Parameters.AddWithValue("@Pickup", pickupDate);
-                        cmd.Parameters.AddWithValue("@ReturnDate", returnDate);
-                        cmd.Parameters.AddWithValue("@Period", period);
-                        cmd.Parameters.AddWithValue("@Fee", fee);
-                        cmd.Parameters.AddWithValue("@Deposit", deposit);
-                        cmd.Parameters.AddWithValue("@RentalStatus", rentalStatusId);
-                        cmd.Parameters.AddWithValue("@PaymentStatus", paymentStatusId);
-                        cmd.Parameters.AddWithValue("@ID", transactionId);
-
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Transaction updated successfully!", "Success");
-                        this.Close();
-                    }
+                    MessageBox.Show("Transaction not found.", "Error");
+                    return;
                 }
+
+                // Update values
+                transaction.UserId = userId;
+                transaction.Pickup = pickupDate;
+                transaction.ReturnDate = returnDate;
+                transaction.Period = period;
+                transaction.Fee = fee;
+                transaction.Deposit = deposit;
+                transaction.RentalStatus = rentalStatusId;
+                transaction.PaymentStatus = paymentStatusId;
+
+                _context.SaveChanges();
+
+                // Log the update
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Update Rental Transaction",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Updated Transaction ID {transactionId} – Fee: {fee}, Return Date: {returnDate:yyyy-MM-dd}",
+                    Source = "UpdateTransaction Form"
+                };
+
+                _context.Logs.Add(log);
+                _context.SaveChanges();
+
+                MessageBox.Show("Transaction updated successfully!", "Success");
             }
             catch (Exception ex)
             {
@@ -169,62 +169,26 @@ namespace FormApp.Forms
 
         private void LoadDropdowns()
         {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
-            {
-                conn.Open();
+            // Rental Status
+            var rentalStatuses = _context.RentalStatuses
+                .Select(s => new { s.Id, s.Status })
+                .ToList();
+            rentalStatuses.Insert(0, new { Id = -1, Status = "Rental Status" });
+            cmbRentalStatus.DataSource = rentalStatuses;
+            cmbRentalStatus.DisplayMember = "Status";
+            cmbRentalStatus.ValueMember = "Id";
 
-                // load rental status
-                SqlCommand rentalCmd = new SqlCommand("SELECT ID, Status FROM Rental_Status", conn);
-                SqlDataAdapter rentalAdapter = new SqlDataAdapter(rentalCmd);
-                DataTable rentalTable = new DataTable();
-                rentalAdapter.Fill(rentalTable);
+            // Payment Status
+            var paymentStatuses = _context.PaymentStatuses
+                .Select(p => new { p.Id, p.Status })
+                .ToList();
+            paymentStatuses.Insert(0, new { Id = -1, Status = "Payment Status" });
+            cmbPaymentStatus.DataSource = paymentStatuses;
+            cmbPaymentStatus.DisplayMember = "Status";
+            cmbPaymentStatus.ValueMember = "Id";
 
-                // add placeholder
-                DataRow rentalPlaceholder = rentalTable.NewRow();
-                rentalPlaceholder["ID"] = -1;
-                rentalPlaceholder["Status"] = "Rental Status";
-                rentalTable.Rows.InsertAt(rentalPlaceholder, 0);
-
-                cmbRentalStatus.DataSource = rentalTable;
-                cmbRentalStatus.DisplayMember = "Status";
-                cmbRentalStatus.ValueMember = "ID";
-
-                // load payment status
-                SqlCommand paymentCmd = new SqlCommand("SELECT ID, Status FROM Payment_Status", conn);
-                SqlDataAdapter paymentAdapter = new SqlDataAdapter(paymentCmd);
-                DataTable paymentTable = new DataTable();
-                paymentAdapter.Fill(paymentTable);
-
-                // add placeholder
-                DataRow paymentPlaceholder = paymentTable.NewRow();
-                paymentPlaceholder["ID"] = -1;
-                paymentPlaceholder["Status"] = "Payment Status";
-                paymentTable.Rows.InsertAt(paymentPlaceholder, 0);
-
-                cmbPaymentStatus.DataSource = paymentTable;
-                cmbPaymentStatus.DisplayMember = "Status";
-                cmbPaymentStatus.ValueMember = "ID";
-
-                // set both dropdowns to show placeholder
-                cmbRentalStatus.SelectedIndex = 0;
-                cmbPaymentStatus.SelectedIndex = 0;
-            }
-        }
-
-        // check if user exists
-        private bool UserExists(int userId)
-        {
-            using (SqlConnection conn = new SqlConnection(DBConnection.ConnectionString))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM dbo.[User] WHERE ID = @UserID";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@UserID", userId);
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0;
-                }
-            }
+            cmbRentalStatus.SelectedIndex = 0;
+            cmbPaymentStatus.SelectedIndex = 0;
         }
 
         private void btnBack_Click(object sender, EventArgs e)

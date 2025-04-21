@@ -65,6 +65,19 @@ namespace FormApp.Forms
                 context.Entry(selectedEquipment).State = EntityState.Modified;
                 context.SaveChanges();
 
+                // Log equipment update
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Edit Equipment",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Edited Equipment: {selectedEquipment.Name}, ID: {selectedEquipment.Id}, New Price: {selectedEquipment.Price}",
+                    Source = "EditEquipment Form"
+                };
+
+                context.Logs.Add(log);
+                context.SaveChanges(); // Save log entry
+
                 MessageBox.Show("Equipment Updated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

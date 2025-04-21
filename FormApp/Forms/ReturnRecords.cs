@@ -139,14 +139,31 @@ namespace FormApp
                         var confirm = MessageBox.Show("Are you sure to delete this record?", "Confirm Delete", MessageBoxButtons.YesNo);
                         if (confirm == DialogResult.Yes)
                         {
+                            // Get equipment name before deleting
+                            var equipmentName = context.Equipment.FirstOrDefault(e => e.Id == record.Equipment)?.Name ?? "Unknown";
+
                             context.ReturnRecords.Remove(record);
                             context.SaveChanges();
+
+                            // Log the deletion
+                            Log log = new Log
+                            {
+                                UserId = UserSession.UserID,
+                                Action = "Delete Return Record",
+                                TimeStamp = DateTime.Now,
+                                AffectedData = $"Deleted Return Record ID {record.Id} for Equipment: {equipmentName}",
+                                Source = "ReturnRecords Form"
+                            };
+
+                            context.Logs.Add(log);
+                            context.SaveChanges(); // Save log
+
                             MessageBox.Show("Record deleted successfully.");
                             LoadReturnRecord();
                         }
                     }
-                }
-                else
+                    }
+                    else
                 {
                     MessageBox.Show("Please select a row to delete.");
                 }

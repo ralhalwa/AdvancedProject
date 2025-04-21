@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using ClassLibrary.Persistence;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
+using ClassLibrary.Models;
 
 namespace FormApp.Forms
 {
@@ -62,6 +63,18 @@ namespace FormApp.Forms
 
                 gridReports.DataSource = new BindingSource { DataSource = ToDataTable(customers) };
                 currentReport = "ActiveCustomers";
+
+                // log report generation
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Generate Report",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = "Generated Active Customers Report",
+                    Source = "GenerateReports Form"
+                };
+                _context.Logs.Add(log);
+                _context.SaveChanges(); 
             }
             catch (Exception ex)
             {
@@ -94,6 +107,17 @@ namespace FormApp.Forms
 
                 gridReports.DataSource = new BindingSource { DataSource = ToDataTable(equipmentData) };
                 currentReport = "MostRentedEquipment";
+
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Generate Report",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = "Generated Most Rented Equipment Report",
+                    Source = "GenerateReports Form"
+                };
+                _context.Logs.Add(log);
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -121,6 +145,17 @@ namespace FormApp.Forms
                         var dt = (DataTable)((BindingSource)gridReports.DataSource).DataSource;
                         ExportDataTableToCSV(dt, sfd.FileName);
                         MessageBox.Show("Report downloaded successfully!");
+
+                        Log log = new Log
+                        {
+                            UserId = UserSession.UserID,
+                            Action = "Download Report",
+                            TimeStamp = DateTime.Now,
+                            AffectedData = $"Downloaded Report: {currentReport}_Report.csv",
+                            Source = "GenerateReports Form"
+                        };
+                        _context.Logs.Add(log);
+                        _context.SaveChanges();
                     }
                     catch (Exception ex)
                     {

@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FormApp.Classes;
+
 namespace FormApp.Forms
 {
     public partial class AddEquipment : Form
@@ -93,9 +95,22 @@ namespace FormApp.Forms
                 context.Equipment.Add(newEquipment);
                 context.SaveChanges();
 
+                // logging equipment addition
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Add Equipment",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Equipment Added: {newEquipment.Name}, ID: {newEquipment.Id}",
+                    Source = "AddEquipment Form"
+                };
+
+                context.Logs.Add(log);
+                context.SaveChanges(); // save log entry
+
                 MessageBox.Show("Equipment Added Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                ClearControls(); // Reset fields
+                ClearControls(); // reset fields
             }
             catch (Exception ex)
             {

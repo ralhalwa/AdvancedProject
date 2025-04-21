@@ -162,6 +162,19 @@ namespace FormApp.Forms
                 _context.RentalTransactions.Add(newTransaction);
                 _context.SaveChanges();
 
+                // Log transaction creation
+                Log log = new Log
+                {
+                    UserId = UserSession.UserID,
+                    Action = "Create Rental Transaction",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"Rental Transaction Created for User ID: {newTransaction.UserId}, Period: {newTransaction.Period} days, Fee: {newTransaction.Fee}, Deposit: {newTransaction.Deposit}",
+                    Source = "CreateTransaction Form"
+                };
+
+                _context.Logs.Add(log);
+                _context.SaveChanges(); // Save log entry
+
                 MessageBox.Show("Transaction created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearFields();
             }

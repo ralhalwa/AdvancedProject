@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Persistence;
+using ClassLibrary.Models;
 
 namespace FormApp.Forms
 {
@@ -48,6 +49,18 @@ namespace FormApp.Forms
                 UserSession.FullName = $"{user.Fname} {user.Lname}";
                 UserSession.Email = user.Email;
                 UserSession.RoleID = user.RoleId;
+
+                // Log successful login 
+                Log log = new Log
+                {
+                    UserId = user.Id,
+                    Action = "Login",
+                    TimeStamp = DateTime.Now,
+                    AffectedData = $"User logged in: {user.Email}",
+                    Source = "Login Form"
+                };
+                _context.Logs.Add(log);
+                _context.SaveChanges();
 
                 // display successful login message
                 MessageBox.Show($"Welcome {UserSession.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);

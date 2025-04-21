@@ -169,6 +169,18 @@ namespace FormApp
                     request.RentalStatus = rejectedStatus.Id;
                     context.SaveChanges();
 
+                    // Log the rejection
+                    Log log = new Log
+                    {
+                        UserId = UserSession.UserID,
+                        Action = "Reject Rental Request",
+                        TimeStamp = DateTime.Now,
+                        AffectedData = $"Rental Request ID {request.Id} rejected for Equipment: {request.Equipment?.Name ?? "Unknown"}",
+                        Source = "RentalRequests Form"
+                    };
+                    context.Logs.Add(log);
+                    context.SaveChanges(); // Save log
+
                     MessageBox.Show("Request rejected.");
                     LoadRentalRequest();
                 }

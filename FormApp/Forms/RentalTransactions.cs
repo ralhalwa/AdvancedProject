@@ -107,6 +107,19 @@ namespace FormApp
                         {
                             context.RentalTransactions.Remove(transaction);
                             context.SaveChanges();
+
+                            // Log the deletion
+                            Log log = new Log
+                            {
+                                UserId = UserSession.UserID,
+                                Action = "Delete Rental Transaction",
+                                TimeStamp = DateTime.Now,
+                                AffectedData = $"Deleted Rental Transaction ID {transaction.Id}",
+                                Source = "RentalTransactions Form"
+                            };
+                            context.Logs.Add(log);
+                            context.SaveChanges(); // Save the log entry
+
                             MessageBox.Show("Transaction deleted successfully.");
                             LoadRentalTransactions();
                         }
