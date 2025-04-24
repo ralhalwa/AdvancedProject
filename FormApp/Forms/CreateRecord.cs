@@ -22,6 +22,14 @@ namespace FormApp.Forms
         {
             InitializeComponent();
             context = new DBContext();
+
+
+            lblUserName.Text = UserSession.FullName;
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition
+            );
         }
 
         private void CreateRecord_Load(object sender, EventArgs e)
@@ -31,6 +39,7 @@ namespace FormApp.Forms
 
         private void LoadConditions()
         {
+            
             cmbCondition.DataSource = context.ConditionStatuses.ToList();
             cmbCondition.DisplayMember = "Status";
             cmbCondition.ValueMember = "Id";

@@ -34,6 +34,9 @@
     <Compile Update="Forms\UpdateRecord.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\UpdateRentalRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\UpdateTransaction.cs">
       <SubType>Form</SubType>
     </Compile>

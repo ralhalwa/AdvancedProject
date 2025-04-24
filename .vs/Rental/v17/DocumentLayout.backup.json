@@ -1,54 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\classlibrary\\models\\conditionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\conditionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\merged\\advancedproject\\formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,157 +38,142 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateTransaction.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateTransaction.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateTransaction.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:18:49.011Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateTransaction.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateTransaction.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateTransaction.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAYwL8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ConditionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Models\\ConditionStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
+              "RelativeToolTip": "ClassLibrary\\Models\\ConditionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:10:08.796Z",
+              "WhenOpened": "2025-04-24T04:57:25.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateRecord.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRecord.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "CreateTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
+              "RelativeToolTip": "FormApp\\Forms\\CreateTransaction.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAEwDYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:05:55.419Z",
+              "WhenOpened": "2025-04-24T04:50:35.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateRecord.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRecord.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateRecord.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "CreateRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeToolTip": "FormApp\\Forms\\CreateRecord.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAIwCkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:05:51.625Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-24T04:36:03.147Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ReturnRecords.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\ReturnRecords.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
-              "RelativeToolTip": "FormApp\\Forms\\ReturnRecords.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAqwKMAAAAVAAAAAAAAAA==",
+              "Title": "CreateRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\CreateRecord.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:02:29.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T04:36:01.344Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ReturnRecords.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\ReturnRecords.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\ReturnRecords.cs [Design]",
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs*",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:02:24.937Z",
+              "WhenOpened": "2025-04-24T03:56:23.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs [Design]*",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T03:56:08.528Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RentalTransactions.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAawGoAAAAZAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Program.cs",
+              "RelativeDocumentMoniker": "FormApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\Merged\\AdvancedProject\\FormApp\\Program.cs",
+              "RelativeToolTip": "FormApp\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:59:15.404Z",
+              "WhenOpened": "2025-04-21T23:57:19.316Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1382,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RentalTransactions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:59:07.245Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RentalRequests.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalRequests.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
-              "RelativeToolTip": "FormApp\\Forms\\RentalRequests.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAkwLUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:53:22.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RentalRequests.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalRequests.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\RentalRequests.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:53:14.854Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs",
-              "RelativeToolTip": "FormApp\\Forms\\Login.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAqwEkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:09:33.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\Login.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:09:31.829Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

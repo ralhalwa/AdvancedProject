@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatabaseBackup));
             lblGenerateReports = new Label();
             lblPerformDBBackup = new Label();
             gridBackupLogs = new DataGridView();
@@ -78,7 +79,7 @@
             // 
             gridBackupLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridBackupLogs.Location = new Point(230, 132);
-            gridBackupLogs.Margin = new Padding(2, 2, 2, 2);
+            gridBackupLogs.Margin = new Padding(2);
             gridBackupLogs.Name = "gridBackupLogs";
             gridBackupLogs.RowHeadersWidth = 82;
             gridBackupLogs.Size = new Size(623, 394);
@@ -90,7 +91,7 @@
             btnInitiateBackup.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInitiateBackup.ForeColor = Color.White;
             btnInitiateBackup.Location = new Point(239, 94);
-            btnInitiateBackup.Margin = new Padding(2, 2, 2, 2);
+            btnInitiateBackup.Margin = new Padding(2);
             btnInitiateBackup.Name = "btnInitiateBackup";
             btnInitiateBackup.Size = new Size(184, 29);
             btnInitiateBackup.TabIndex = 30;
@@ -264,7 +265,7 @@
             flowLayoutPanel1.Controls.Add(lblExit);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(-10, 83);
-            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel1.Margin = new Padding(2);
             flowLayoutPanel1.MinimumSize = new Size(233, 441);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(240, 441);
@@ -276,7 +277,7 @@
             panel1.BackColor = Color.FromArgb(249, 115, 22);
             panel1.Controls.Add(lblBackup);
             panel1.Location = new Point(2, 246);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(236, 40);
             panel1.TabIndex = 40;
@@ -295,7 +296,8 @@
             Controls.Add(lblDivider);
             Controls.Add(lblRole);
             Controls.Add(lblName);
-            Margin = new Padding(2, 2, 2, 2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
             Name = "DatabaseBackup";
             Text = "Database Backup";
             Load += DatabaseBackup_Load;

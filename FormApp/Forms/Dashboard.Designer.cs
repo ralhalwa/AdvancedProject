@@ -91,9 +91,9 @@
             lblName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblName.Location = new Point(6, 3);
             lblName.Name = "lblName";
-            lblName.Size = new Size(124, 31);
+            lblName.Size = new Size(177, 31);
             lblName.TabIndex = 0;
-            lblName.Text = "Sharmin";
+            lblName.Text = "Admin";
             // 
             // lblPosition
             // 
@@ -101,7 +101,7 @@
             lblPosition.ForeColor = Color.FromArgb(142, 142, 147);
             lblPosition.Location = new Point(6, 34);
             lblPosition.Name = "lblPosition";
-            lblPosition.Size = new Size(68, 20);
+            lblPosition.Size = new Size(154, 20);
             lblPosition.TabIndex = 1;
             lblPosition.Text = "Role";
             // 

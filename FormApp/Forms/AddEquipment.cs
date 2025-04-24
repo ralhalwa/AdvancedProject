@@ -22,6 +22,13 @@ namespace FormApp.Forms
         {
             InitializeComponent();
             context = new DBContext();
+
+            lblUserName.Text = UserSession.FullName;
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition
+            );
         }
 
         private void AddEquipment_Load(object sender, EventArgs e)

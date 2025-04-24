@@ -24,6 +24,14 @@ namespace FormApp.Forms
             InitializeComponent();
             context = new DBContext();
             selectedEquipment = equipment;
+
+
+            lblUserName.Text = UserSession.FullName;
+
+            RoleHelper.ApplyRolePermissions(
+            UserSession.RoleID,
+            lblPosition
+            );
         }
 
         private void btnBack_Click(object sender, EventArgs e)

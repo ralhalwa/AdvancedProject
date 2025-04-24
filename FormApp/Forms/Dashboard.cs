@@ -12,6 +12,8 @@ using FormApp.Classes;
 using FormApp.Forms;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using ClassLibrary.Models;
+
 
 namespace FormApp
 {
@@ -24,6 +26,7 @@ namespace FormApp
         {
             InitializeComponent();
             context = new DBContext();
+
 
 
             lblName.Text = UserSession.FullName;

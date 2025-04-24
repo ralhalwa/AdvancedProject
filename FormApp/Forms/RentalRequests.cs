@@ -1,6 +1,4 @@
-﻿using ClassLibrary.Persistence;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,9 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary.Models;
-using FormApp.Forms;
+using ClassLibrary.Persistence;
 using FormApp.Classes;
+using FormApp.Forms;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using ClassLibrary.Models;
+
 
 
 namespace FormApp
@@ -23,6 +25,8 @@ namespace FormApp
         {
             InitializeComponent();
             context = new DBContext();
+
+            lblName.Text = UserSession.FullName;
 
             RoleHelper.ApplyRolePermissions(
             UserSession.RoleID,
@@ -153,11 +157,18 @@ namespace FormApp
                 int selectedId = Convert.ToInt32(RentalRequestGrid.SelectedRows[0].Cells["Id"].Value);
 
                 var request = context.RentalRequests
+                    .Include(r => r.Equipment)
                     .Include(r => r.RentalStatus1)
                     .FirstOrDefault(r => r.Id == selectedId);
 
                 if (request != null)
                 {
+                    if (request.RentalStatus1.Status != "Pending")
+                    {
+                        MessageBox.Show("Only requests with status 'Pending' can be rejected.");
+                        return;
+                    }
+
                     var rejectedStatus = context.RentalStatuses.FirstOrDefault(s => s.Status == "Rejected");
 
                     if (rejectedStatus == null)
@@ -197,7 +208,36 @@ namespace FormApp
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (RentalRequestGrid.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Please select a rental request to update.");
+                    return;
+                }
 
+                int selectedId = Convert.ToInt32(RentalRequestGrid.SelectedRows[0].Cells["Id"].Value);
+                var request = context.RentalRequests
+                    .Include(r => r.Equipment)
+                    .Include(r => r.RentalStatus1)
+                    .FirstOrDefault(r => r.Id == selectedId);
+
+                if (request != null)
+                {
+                    UpdateRentalRequest updateForm = new UpdateRentalRequest(request);
+                    updateForm.ShowDialog();
+
+                    LoadRentalRequest(); // Refresh after update
+                }
+                else
+                {
+                    MessageBox.Show("Selected rental request not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
 
         

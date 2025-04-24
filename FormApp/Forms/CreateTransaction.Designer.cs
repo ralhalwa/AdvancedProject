@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTransaction));
             lblDivider = new Label();
             lblRole = new Label();
             lblName = new Label();
@@ -46,9 +47,10 @@
             // lblDivider
             // 
             lblDivider.BackColor = Color.FromArgb(236, 236, 236);
-            lblDivider.Location = new Point(-11, 128);
+            lblDivider.Location = new Point(-7, 80);
+            lblDivider.Margin = new Padding(2, 0, 2, 0);
             lblDivider.Name = "lblDivider";
-            lblDivider.Size = new Size(1395, 2);
+            lblDivider.Size = new Size(858, 1);
             lblDivider.TabIndex = 22;
             // 
             // lblRole
@@ -56,9 +58,10 @@
             lblRole.AutoSize = true;
             lblRole.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRole.ForeColor = Color.FromArgb(142, 142, 147);
-            lblRole.Location = new Point(28, 67);
+            lblRole.Location = new Point(17, 42);
+            lblRole.Margin = new Padding(2, 0, 2, 0);
             lblRole.Name = "lblRole";
-            lblRole.Size = new Size(61, 32);
+            lblRole.Size = new Size(39, 20);
             lblRole.TabIndex = 21;
             lblRole.Text = "Role";
             // 
@@ -66,9 +69,10 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI Semibold", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblName.Location = new Point(28, 23);
+            lblName.Location = new Point(17, 14);
+            lblName.Margin = new Padding(2, 0, 2, 0);
             lblName.Name = "lblName";
-            lblName.Size = new Size(95, 40);
+            lblName.Size = new Size(64, 25);
             lblName.TabIndex = 20;
             lblName.Text = "Name";
             // 
@@ -77,9 +81,10 @@
             btnBack.BackColor = Color.FromArgb(249, 115, 22);
             btnBack.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(28, 149);
+            btnBack.Location = new Point(17, 93);
+            btnBack.Margin = new Padding(2, 2, 2, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(147, 46);
+            btnBack.Size = new Size(90, 29);
             btnBack.TabIndex = 35;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -89,68 +94,76 @@
             // 
             lblCreateTransaction.AutoSize = true;
             lblCreateTransaction.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCreateTransaction.Location = new Point(498, 229);
+            lblCreateTransaction.Location = new Point(306, 143);
+            lblCreateTransaction.Margin = new Padding(2, 0, 2, 0);
             lblCreateTransaction.Name = "lblCreateTransaction";
-            lblCreateTransaction.Size = new Size(399, 59);
+            lblCreateTransaction.Size = new Size(256, 37);
             lblCreateTransaction.TabIndex = 36;
             lblCreateTransaction.Text = "Create Transaction";
             // 
             // txtUserID
             // 
             txtUserID.BackColor = Color.WhiteSmoke;
-            txtUserID.Location = new Point(429, 326);
+            txtUserID.Location = new Point(264, 204);
+            txtUserID.Margin = new Padding(2, 2, 2, 2);
             txtUserID.Name = "txtUserID";
-            txtUserID.Size = new Size(260, 39);
+            txtUserID.Size = new Size(162, 27);
             txtUserID.TabIndex = 37;
             // 
             // cmbRentalStatus
             // 
             cmbRentalStatus.BackColor = Color.WhiteSmoke;
             cmbRentalStatus.FormattingEnabled = true;
-            cmbRentalStatus.Location = new Point(706, 326);
+            cmbRentalStatus.Location = new Point(434, 204);
+            cmbRentalStatus.Margin = new Padding(2, 2, 2, 2);
             cmbRentalStatus.Name = "cmbRentalStatus";
-            cmbRentalStatus.Size = new Size(260, 40);
+            cmbRentalStatus.Size = new Size(162, 28);
             cmbRentalStatus.TabIndex = 39;
             // 
             // txtPickupDate
             // 
             txtPickupDate.BackColor = Color.WhiteSmoke;
-            txtPickupDate.Location = new Point(429, 391);
+            txtPickupDate.Location = new Point(264, 244);
+            txtPickupDate.Margin = new Padding(2, 2, 2, 2);
             txtPickupDate.Name = "txtPickupDate";
-            txtPickupDate.Size = new Size(537, 39);
+            txtPickupDate.Size = new Size(332, 27);
             txtPickupDate.TabIndex = 40;
             // 
             // txtReturnDate
             // 
             txtReturnDate.BackColor = Color.WhiteSmoke;
-            txtReturnDate.Location = new Point(429, 453);
+            txtReturnDate.Location = new Point(264, 283);
+            txtReturnDate.Margin = new Padding(2, 2, 2, 2);
             txtReturnDate.Name = "txtReturnDate";
-            txtReturnDate.Size = new Size(537, 39);
+            txtReturnDate.Size = new Size(332, 27);
             txtReturnDate.TabIndex = 41;
             // 
             // txtFee
             // 
             txtFee.BackColor = Color.WhiteSmoke;
-            txtFee.Location = new Point(429, 515);
+            txtFee.Location = new Point(264, 322);
+            txtFee.Margin = new Padding(2, 2, 2, 2);
             txtFee.Name = "txtFee";
-            txtFee.Size = new Size(260, 39);
+            txtFee.Size = new Size(162, 27);
             txtFee.TabIndex = 43;
             // 
             // cmbPaymentStatus
             // 
             cmbPaymentStatus.BackColor = Color.WhiteSmoke;
             cmbPaymentStatus.FormattingEnabled = true;
-            cmbPaymentStatus.Location = new Point(429, 578);
+            cmbPaymentStatus.Location = new Point(264, 361);
+            cmbPaymentStatus.Margin = new Padding(2, 2, 2, 2);
             cmbPaymentStatus.Name = "cmbPaymentStatus";
-            cmbPaymentStatus.Size = new Size(537, 40);
+            cmbPaymentStatus.Size = new Size(332, 28);
             cmbPaymentStatus.TabIndex = 45;
             // 
             // txtDeposit
             // 
             txtDeposit.BackColor = Color.WhiteSmoke;
-            txtDeposit.Location = new Point(706, 515);
+            txtDeposit.Location = new Point(434, 322);
+            txtDeposit.Margin = new Padding(2, 2, 2, 2);
             txtDeposit.Name = "txtDeposit";
-            txtDeposit.Size = new Size(260, 39);
+            txtDeposit.Size = new Size(162, 27);
             txtDeposit.TabIndex = 44;
             // 
             // btnCreate
@@ -158,9 +171,10 @@
             btnCreate.BackColor = Color.FromArgb(249, 115, 22);
             btnCreate.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCreate.ForeColor = Color.White;
-            btnCreate.Location = new Point(614, 650);
+            btnCreate.Location = new Point(378, 406);
+            btnCreate.Margin = new Padding(2, 2, 2, 2);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(168, 57);
+            btnCreate.Size = new Size(103, 36);
             btnCreate.TabIndex = 46;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
@@ -168,10 +182,10 @@
             // 
             // CreateTransaction
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1385, 838);
+            ClientSize = new Size(852, 524);
             Controls.Add(btnCreate);
             Controls.Add(cmbPaymentStatus);
             Controls.Add(txtDeposit);
@@ -185,6 +199,8 @@
             Controls.Add(lblDivider);
             Controls.Add(lblRole);
             Controls.Add(lblName);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 2, 2, 2);
             Name = "CreateTransaction";
             Text = "Create Transaction";
             Load += CreateTransaction_Load;

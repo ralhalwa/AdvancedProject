@@ -818,3 +818,4 @@ C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.CreateRecord.resources
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.EditEquipment.resources
 C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.UpdateRecord.resources
+C:\Users\Sharmin\Desktop\Merged\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.UpdateRentalRequest.resources

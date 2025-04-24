@@ -24,6 +24,11 @@ namespace FormApp
             InitializeComponent();
             context = new DBContext();
 
+
+            lblName.Text = UserSession.FullName;
+
+            
+
             RoleHelper.ApplyRolePermissions(
             UserSession.RoleID,
             lblPosition,

@@ -39,8 +39,7 @@
             requestId = new TextBox();
             btnSearch = new Button();
             RentalRequestGrid = new DataGridView();
-            btnAccept = new Button();
-            btnReject = new Button();
+            btnUpdate = new Button();
             lblLogOut = new Label();
             lblViewAuditLogs = new Label();
             lblDBbackup = new Label();
@@ -171,31 +170,18 @@
             RentalRequestGrid.TabIndex = 14;
             RentalRequestGrid.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // btnAccept
+            // btnUpdate
             // 
-            btnAccept.BackColor = Color.LightGreen;
-            btnAccept.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            btnAccept.ForeColor = Color.White;
-            btnAccept.Location = new Point(235, 473);
-            btnAccept.Name = "btnAccept";
-            btnAccept.Size = new Size(123, 39);
-            btnAccept.TabIndex = 15;
-            btnAccept.Text = "Accept";
-            btnAccept.UseVisualStyleBackColor = false;
-            btnAccept.Click += btnAccept_Click;
-            // 
-            // btnReject
-            // 
-            btnReject.BackColor = Color.Red;
-            btnReject.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            btnReject.ForeColor = Color.White;
-            btnReject.Location = new Point(410, 473);
-            btnReject.Name = "btnReject";
-            btnReject.Size = new Size(123, 39);
-            btnReject.TabIndex = 16;
-            btnReject.Text = "Reject";
-            btnReject.UseVisualStyleBackColor = false;
-            btnReject.Click += btnReject_Click;
+            btnUpdate.BackColor = Color.Black;
+            btnUpdate.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(235, 473);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(145, 39);
+            btnUpdate.TabIndex = 15;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnAccept_Click;
             // 
             // lblLogOut
             // 
@@ -333,8 +319,7 @@
             BackColor = Color.White;
             ClientSize = new Size(852, 524);
             Controls.Add(flowLayoutPanel1);
-            Controls.Add(btnReject);
-            Controls.Add(btnAccept);
+            Controls.Add(btnUpdate);
             Controls.Add(RentalRequestGrid);
             Controls.Add(btnRefresh);
             Controls.Add(btnSearch);
@@ -364,8 +349,7 @@
         private TextBox requestId;
         private Button btnSearch;
         private DataGridView RentalRequestGrid;
-        private Button btnAccept;
-        private Button btnReject;
+        private Button btnUpdate;
         private Label lblLogOut;
         private Label lblViewAuditLogs;
         private Label lblDBbackup;
