@@ -34,51 +34,44 @@
             txtEquipmentId = new TextBox();
             lblAddEquipment = new Label();
             btnBack = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             lblUserName = new Label();
             lblPosition = new Label();
             dtpReturnDate = new DateTimePicker();
             btnCreate = new Button();
             lblDivider = new Label();
-            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // cmbCondition
             // 
             cmbCondition.ForeColor = Color.Black;
             cmbCondition.FormattingEnabled = true;
-            cmbCondition.Location = new Point(444, 232);
+            cmbCondition.Location = new Point(489, 236);
             cmbCondition.Name = "cmbCondition";
-            cmbCondition.Size = new Size(176, 28);
+            cmbCondition.Size = new Size(162, 28);
             cmbCondition.TabIndex = 17;
-            cmbCondition.Text = "Condition";
             // 
             // txtLateFees
             // 
-            txtLateFees.ForeColor = SystemColors.ScrollBar;
-            txtLateFees.Location = new Point(252, 336);
+            txtLateFees.ForeColor = Color.Black;
+            txtLateFees.Location = new Point(285, 373);
             txtLateFees.Name = "txtLateFees";
-            txtLateFees.PlaceholderText = "LateFees";
-            txtLateFees.Size = new Size(176, 27);
+            txtLateFees.Size = new Size(366, 27);
             txtLateFees.TabIndex = 16;
-            txtLateFees.Text = "LateFees";
             // 
             // txtEquipmentId
             // 
-            txtEquipmentId.ForeColor = SystemColors.ScrollBar;
-            txtEquipmentId.Location = new Point(252, 233);
+            txtEquipmentId.ForeColor = Color.Black;
+            txtEquipmentId.Location = new Point(285, 236);
             txtEquipmentId.Name = "txtEquipmentId";
-            txtEquipmentId.PlaceholderText = "Equipment Id";
-            txtEquipmentId.Size = new Size(176, 27);
+            txtEquipmentId.Size = new Size(162, 27);
             txtEquipmentId.TabIndex = 14;
             // 
             // lblAddEquipment
             // 
-            lblAddEquipment.AutoSize = true;
-            lblAddEquipment.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
-            lblAddEquipment.Location = new Point(335, 154);
+            lblAddEquipment.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblAddEquipment.Location = new Point(353, 151);
             lblAddEquipment.Name = "lblAddEquipment";
-            lblAddEquipment.Size = new Size(199, 38);
+            lblAddEquipment.Size = new Size(239, 41);
             lblAddEquipment.TabIndex = 13;
             lblAddEquipment.Text = "Create Record";
             // 
@@ -95,42 +88,28 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(lblUserName);
-            flowLayoutPanel1.Controls.Add(lblPosition);
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(9, 9);
-            flowLayoutPanel1.Margin = new Padding(0, 0, 4, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(3);
-            flowLayoutPanel1.Size = new Size(851, 65);
-            flowLayoutPanel1.TabIndex = 11;
-            // 
             // lblUserName
             // 
-            lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblUserName.Location = new Point(6, 3);
+            lblUserName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblUserName.Location = new Point(4, 9);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(86, 31);
+            lblUserName.Size = new Size(217, 41);
             lblUserName.TabIndex = 0;
             lblUserName.Text = "Admin";
             // 
             // lblPosition
             // 
-            lblPosition.AutoSize = true;
             lblPosition.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblPosition.ForeColor = Color.FromArgb(142, 142, 147);
-            lblPosition.Location = new Point(6, 34);
+            lblPosition.Location = new Point(10, 60);
             lblPosition.Name = "lblPosition";
-            lblPosition.Size = new Size(39, 20);
+            lblPosition.Size = new Size(154, 20);
             lblPosition.TabIndex = 1;
             lblPosition.Text = "Role";
             // 
             // dtpReturnDate
             // 
-            dtpReturnDate.Location = new Point(252, 290);
+            dtpReturnDate.Location = new Point(283, 306);
             dtpReturnDate.Name = "dtpReturnDate";
             dtpReturnDate.Size = new Size(368, 27);
             dtpReturnDate.TabIndex = 21;
@@ -140,9 +119,9 @@
             btnCreate.BackColor = Color.FromArgb(249, 115, 22);
             btnCreate.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnCreate.ForeColor = Color.White;
-            btnCreate.Location = new Point(444, 331);
+            btnCreate.Location = new Point(412, 438);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(176, 35);
+            btnCreate.Size = new Size(113, 35);
             btnCreate.TabIndex = 22;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
@@ -154,7 +133,7 @@
             lblDivider.Location = new Point(-5, 80);
             lblDivider.Margin = new Padding(2, 0, 2, 0);
             lblDivider.Name = "lblDivider";
-            lblDivider.Size = new Size(858, 1);
+            lblDivider.Size = new Size(920, 1);
             lblDivider.TabIndex = 64;
             // 
             // CreateRecord
@@ -162,8 +141,10 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(852, 524);
+            ClientSize = new Size(927, 648);
+            Controls.Add(lblUserName);
             Controls.Add(lblDivider);
+            Controls.Add(lblPosition);
             Controls.Add(btnCreate);
             Controls.Add(dtpReturnDate);
             Controls.Add(cmbCondition);
@@ -171,14 +152,11 @@
             Controls.Add(txtEquipmentId);
             Controls.Add(lblAddEquipment);
             Controls.Add(btnBack);
-            Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CreateRecord";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CreateRecord";
             Load += CreateRecord_Load;
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,7 +172,6 @@
         private TextBox txtEquipmentId;
         private Label lblAddEquipment;
         private Button btnBack;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Label lblUserName;
         private Label lblPosition;
         private DateTimePicker dtpReturnDate;

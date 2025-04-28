@@ -40,10 +40,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(92, 81);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Location = new Point(79, 105);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(257, 291);
+            pictureBox1.Size = new Size(352, 382);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -51,30 +51,30 @@
             // txtEmail
             // 
             txtEmail.BackColor = Color.WhiteSmoke;
-            txtEmail.Location = new Point(380, 196);
-            txtEmail.Margin = new Padding(2, 2, 2, 2);
+            txtEmail.Location = new Point(508, 235);
+            txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(277, 27);
+            txtEmail.Size = new Size(285, 27);
             txtEmail.TabIndex = 1;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(380, 141);
+            lblTitle.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.Location = new Point(508, 163);
             lblTitle.Margin = new Padding(2, 0, 2, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(117, 41);
+            lblTitle.Size = new Size(143, 50);
             lblTitle.TabIndex = 2;
             lblTitle.Text = "Sign In";
             // 
             // txtPassword
             // 
             txtPassword.BackColor = Color.WhiteSmoke;
-            txtPassword.Location = new Point(380, 236);
-            txtPassword.Margin = new Padding(2, 2, 2, 2);
+            txtPassword.Location = new Point(508, 290);
+            txtPassword.Margin = new Padding(2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(277, 27);
+            txtPassword.Size = new Size(285, 27);
             txtPassword.TabIndex = 3;
             // 
             // btnSignIn
@@ -82,10 +82,10 @@
             btnSignIn.BackColor = Color.FromArgb(249, 115, 22);
             btnSignIn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSignIn.ForeColor = Color.White;
-            btnSignIn.Location = new Point(380, 278);
-            btnSignIn.Margin = new Padding(2, 2, 2, 2);
+            btnSignIn.Location = new Point(508, 388);
+            btnSignIn.Margin = new Padding(2);
             btnSignIn.Name = "btnSignIn";
-            btnSignIn.Size = new Size(275, 35);
+            btnSignIn.Size = new Size(285, 35);
             btnSignIn.TabIndex = 4;
             btnSignIn.Text = "Sign In";
             btnSignIn.UseVisualStyleBackColor = false;
@@ -96,14 +96,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(757, 461);
+            ClientSize = new Size(927, 648);
             Controls.Add(btnSignIn);
             Controls.Add(txtPassword);
             Controls.Add(lblTitle);
             Controls.Add(txtEmail);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;

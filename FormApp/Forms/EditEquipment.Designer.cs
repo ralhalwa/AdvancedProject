@@ -38,12 +38,17 @@
             txtName = new TextBox();
             lblAddEquipment = new Label();
             btnBack = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             lblUserName = new Label();
             lblPosition = new Label();
             txtEquipmentID = new TextBox();
             lblDivider = new Label();
-            flowLayoutPanel1.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
             SuspendLayout();
             // 
             // btnSaveChanges
@@ -51,9 +56,9 @@
             btnSaveChanges.BackColor = Color.FromArgb(249, 115, 22);
             btnSaveChanges.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnSaveChanges.ForeColor = Color.White;
-            btnSaveChanges.Location = new Point(328, 404);
+            btnSaveChanges.Location = new Point(383, 545);
             btnSaveChanges.Name = "btnSaveChanges";
-            btnSaveChanges.Size = new Size(172, 35);
+            btnSaveChanges.Size = new Size(154, 35);
             btnSaveChanges.TabIndex = 20;
             btnSaveChanges.Text = "Save Changes";
             btnSaveChanges.UseVisualStyleBackColor = false;
@@ -63,69 +68,61 @@
             // 
             cmbCondition.ForeColor = Color.Black;
             cmbCondition.FormattingEnabled = true;
-            cmbCondition.Location = new Point(425, 350);
+            cmbCondition.Location = new Point(493, 477);
             cmbCondition.Name = "cmbCondition";
             cmbCondition.Size = new Size(176, 28);
             cmbCondition.TabIndex = 19;
-            cmbCondition.Text = "Condition";
             // 
             // cmbAvailability
             // 
             cmbAvailability.ForeColor = Color.Black;
             cmbAvailability.FormattingEnabled = true;
-            cmbAvailability.Location = new Point(233, 350);
+            cmbAvailability.Location = new Point(254, 477);
             cmbAvailability.Name = "cmbAvailability";
             cmbAvailability.Size = new Size(176, 28);
             cmbAvailability.TabIndex = 18;
-            cmbAvailability.Text = "Availibility";
             // 
             // cmbCategory
             // 
             cmbCategory.ForeColor = Color.Black;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(233, 301);
+            cmbCategory.Location = new Point(254, 402);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(176, 28);
             cmbCategory.TabIndex = 17;
-            cmbCategory.Text = "Category";
             // 
             // txtPrice
             // 
-            txtPrice.ForeColor = SystemColors.ScrollBar;
-            txtPrice.Location = new Point(425, 301);
+            txtPrice.ForeColor = Color.Black;
+            txtPrice.Location = new Point(493, 407);
             txtPrice.Name = "txtPrice";
-            txtPrice.PlaceholderText = "Price";
             txtPrice.Size = new Size(176, 27);
             txtPrice.TabIndex = 16;
-            txtPrice.Text = "Price";
             // 
             // txtDescription
             // 
-            txtDescription.ForeColor = SystemColors.ScrollBar;
-            txtDescription.Location = new Point(233, 244);
+            txtDescription.ForeColor = Color.Black;
+            txtDescription.Location = new Point(254, 328);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
-            txtDescription.PlaceholderText = "Description";
-            txtDescription.Size = new Size(368, 27);
+            txtDescription.Size = new Size(415, 27);
             txtDescription.TabIndex = 15;
-            txtDescription.Text = "Description";
             // 
             // txtName
             // 
-            txtName.ForeColor = SystemColors.ScrollBar;
-            txtName.Location = new Point(425, 200);
+            txtName.ForeColor = Color.Black;
+            txtName.Location = new Point(493, 254);
             txtName.Name = "txtName";
-            txtName.PlaceholderText = "Name";
             txtName.Size = new Size(176, 27);
             txtName.TabIndex = 14;
             // 
             // lblAddEquipment
             // 
             lblAddEquipment.AutoSize = true;
-            lblAddEquipment.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
-            lblAddEquipment.Location = new Point(291, 129);
+            lblAddEquipment.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblAddEquipment.Location = new Point(334, 159);
             lblAddEquipment.Name = "lblAddEquipment";
-            lblAddEquipment.Size = new Size(219, 38);
+            lblAddEquipment.Size = new Size(236, 41);
             lblAddEquipment.TabIndex = 13;
             lblAddEquipment.Text = "Edit Equipment";
             // 
@@ -142,43 +139,30 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(lblUserName);
-            flowLayoutPanel1.Controls.Add(lblPosition);
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(9, 9);
-            flowLayoutPanel1.Margin = new Padding(0, 0, 4, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(3);
-            flowLayoutPanel1.Size = new Size(851, 65);
-            flowLayoutPanel1.TabIndex = 11;
-            // 
             // lblUserName
             // 
-            lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblUserName.Location = new Point(6, 3);
+            lblUserName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblUserName.Location = new Point(4, 9);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(86, 31);
+            lblUserName.Size = new Size(217, 41);
             lblUserName.TabIndex = 0;
             lblUserName.Text = "Admin";
             // 
             // lblPosition
             // 
-            lblPosition.AutoSize = true;
             lblPosition.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lblPosition.ForeColor = Color.FromArgb(142, 142, 147);
-            lblPosition.Location = new Point(6, 34);
+            lblPosition.Location = new Point(10, 60);
             lblPosition.Name = "lblPosition";
-            lblPosition.Size = new Size(39, 20);
+            lblPosition.Size = new Size(154, 20);
             lblPosition.TabIndex = 1;
             lblPosition.Text = "Role";
             // 
             // txtEquipmentID
             // 
-            txtEquipmentID.Location = new Point(233, 200);
+            txtEquipmentID.Location = new Point(254, 254);
             txtEquipmentID.Name = "txtEquipmentID";
+            txtEquipmentID.ReadOnly = true;
             txtEquipmentID.Size = new Size(176, 27);
             txtEquipmentID.TabIndex = 21;
             // 
@@ -188,15 +172,87 @@
             lblDivider.Location = new Point(-5, 80);
             lblDivider.Margin = new Padding(2, 0, 2, 0);
             lblDivider.Name = "lblDivider";
-            lblDivider.Size = new Size(858, 1);
+            lblDivider.Size = new Size(920, 1);
             lblDivider.TabIndex = 66;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(254, 231);
+            label1.Name = "label1";
+            label1.Size = new Size(103, 20);
+            label1.TabIndex = 76;
+            label1.Text = "Equipment ID:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(493, 231);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 77;
+            label2.Text = "Name:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(254, 305);
+            label3.Name = "label3";
+            label3.Size = new Size(88, 20);
+            label3.TabIndex = 78;
+            label3.Text = "Description:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(254, 379);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 20);
+            label4.TabIndex = 79;
+            label4.Text = "Category:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(493, 379);
+            label5.Name = "label5";
+            label5.Size = new Size(44, 20);
+            label5.TabIndex = 80;
+            label5.Text = "Price:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(493, 454);
+            label6.Name = "label6";
+            label6.Size = new Size(77, 20);
+            label6.TabIndex = 81;
+            label6.Text = "Condition:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(254, 454);
+            label7.Name = "label7";
+            label7.Size = new Size(74, 20);
+            label7.TabIndex = 82;
+            label7.Text = "Avaibility:";
             // 
             // EditEquipment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(852, 524);
+            ClientSize = new Size(927, 648);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(lblPosition);
+            Controls.Add(lblUserName);
             Controls.Add(lblDivider);
             Controls.Add(txtEquipmentID);
             Controls.Add(btnSaveChanges);
@@ -208,14 +264,11 @@
             Controls.Add(txtName);
             Controls.Add(lblAddEquipment);
             Controls.Add(btnBack);
-            Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EditEquipment";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EditEquipment";
             Load += EditEquipment_Load;
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,10 +284,16 @@
         private TextBox txtName;
         private Label lblAddEquipment;
         private Button btnBack;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Label lblUserName;
         private Label lblPosition;
         private TextBox txtEquipmentID;
         private Label lblDivider;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
     }
 }

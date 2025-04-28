@@ -29,6 +29,14 @@ namespace FormApp.Forms
             UserSession.RoleID,
             lblPosition
             );
+
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // setting placeholders
+            PlaceholderService.SetPlaceholder(txtName, "Name");
+            PlaceholderService.SetPlaceholder(txtDescription, "Description");
+            PlaceholderService.SetPlaceholder(txtPrice, "Price");
         }
 
         private void AddEquipment_Load(object sender, EventArgs e)
@@ -40,26 +48,44 @@ namespace FormApp.Forms
 
         private void LoadCategories()
         {
-            cmbCategory.DataSource = context.Categories.ToList();
+            var categories = context.Categories
+        .Select(c => new { c.Id, c.Name })
+        .ToList();
+
+            categories.Insert(0, new { Id = -1, Name = "Category" });
+
+            cmbCategory.DataSource = categories;
             cmbCategory.DisplayMember = "Name";
             cmbCategory.ValueMember = "Id";
-            cmbCategory.SelectedItem = null;
+            cmbCategory.SelectedIndex = 0;
         }
 
         private void LoadCondition()
         {
-            cmbCondition.DataSource = context.ConditionStatuses.ToList();
+            var conditions = context.ConditionStatuses
+       .Select(cs => new { cs.Id, cs.Status })
+       .ToList();
+
+            conditions.Insert(0, new { Id = -1, Status = "Condition" });
+
+            cmbCondition.DataSource = conditions;
             cmbCondition.DisplayMember = "Status";
             cmbCondition.ValueMember = "Id";
-            cmbCondition.SelectedItem = null;
+            cmbCondition.SelectedIndex = 0;
         }
 
         private void LoadAvailability()
         {
-            cmbAvailability.DataSource = context.AvailableStatuses.ToList();
+            var availabilities = context.AvailableStatuses
+        .Select(av => new { av.Id, av.Status })
+        .ToList();
+
+            availabilities.Insert(0, new { Id = -1, Status = "Availability" });
+
+            cmbAvailability.DataSource = availabilities;
             cmbAvailability.DisplayMember = "Status";
             cmbAvailability.ValueMember = "Id";
-            cmbAvailability.SelectedItem = null;
+            cmbAvailability.SelectedIndex = 0;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -71,16 +97,16 @@ namespace FormApp.Forms
                 if (string.IsNullOrWhiteSpace(txtName.Text) ||
                     string.IsNullOrWhiteSpace(txtDescription.Text) ||
                     string.IsNullOrWhiteSpace(txtPrice.Text) ||
-                    cmbCategory.SelectedItem == null ||
-                    cmbAvailability.SelectedItem == null ||
-                    cmbCondition.SelectedItem == null)
+                    Convert.ToInt32(cmbCategory.SelectedValue) == -1 ||
+                    Convert.ToInt32(cmbAvailability.SelectedValue) == -1 ||
+                    Convert.ToInt32(cmbCondition.SelectedValue) == -1)
                 {
                     MessageBox.Show("Please fill all fields!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 // Validate Price
-                if (!decimal.TryParse(txtPrice.Text, out decimal price))
+                if (!decimal.TryParse(txtPrice.Text.Trim(), out decimal price))
                 {
                     MessageBox.Show("Invalid Price entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -95,7 +121,7 @@ namespace FormApp.Forms
                     CategoryId = Convert.ToInt32(cmbCategory.SelectedValue),
                     AvailableId = Convert.ToInt32(cmbAvailability.SelectedValue),
                     ConditionId = Convert.ToInt32(cmbCondition.SelectedValue),
-                    Image = new byte[0] // Optional
+                    Image = new byte[0] // Optional, can be updated later
                 };
 
                 // Add to Database
@@ -121,7 +147,7 @@ namespace FormApp.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

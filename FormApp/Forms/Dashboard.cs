@@ -196,10 +196,10 @@ namespace FormApp
                     .Where(r => r.ReturnDate < DateTime.Today)
                     .Count().ToString();
 
-                // Recently Added Equipment - Top 5
+                // Recently Added Equipment - Top 3
                 var recentEquipment = context.Equipment
                     .OrderByDescending(e => e.Id)
-                    .Take(5)
+                    .Take(3)
                     .Select(e => new
                     {
                         e.Id,
@@ -212,10 +212,10 @@ namespace FormApp
 
                 recentlyAddedEquipmentGrid.DataSource = recentEquipment;
 
-                // Latest Rental Requests - Top 5
+                // Latest Rental Requests - Top 3
                 var latestRequests = context.RentalRequests
                     .OrderByDescending(r => r.Id)
-                    .Take(5)
+                    .Take(3)
                     .Select(r => new
                     {
                         r.Id,

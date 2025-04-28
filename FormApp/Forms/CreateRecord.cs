@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace FormApp.Forms
 {
@@ -30,6 +31,11 @@ namespace FormApp.Forms
             UserSession.RoleID,
             lblPosition
             );
+
+            // setting placeholders
+            PlaceholderService.SetPlaceholder(txtEquipmentId, "Equipment ID");
+           PlaceholderService.SetPlaceholder(txtLateFees, "Late Fee Amount");
+         
         }
 
         private void CreateRecord_Load(object sender, EventArgs e)
@@ -39,11 +45,16 @@ namespace FormApp.Forms
 
         private void LoadConditions()
         {
-            
-            cmbCondition.DataSource = context.ConditionStatuses.ToList();
+            var conditions = context.ConditionStatuses
+         .Select(cs => new { cs.Id, cs.Status })
+         .ToList();
+
+            conditions.Insert(0, new { Id = -1, Status = "Select Condition" });
+
+            cmbCondition.DataSource = conditions;
             cmbCondition.DisplayMember = "Status";
             cmbCondition.ValueMember = "Id";
-            cmbCondition.SelectedItem = null;
+            cmbCondition.SelectedIndex = 0;
         }
 
 
@@ -55,9 +66,9 @@ namespace FormApp.Forms
 
         private void ClearControls()
         {
-            txtEquipmentId.Text = "";
-            cmbCondition.SelectedIndex = -1;
-            txtLateFees.Text = "";
+            txtEquipmentId.Clear();
+            cmbCondition.SelectedIndex = 0;  
+            txtLateFees.Clear();
             dtpReturnDate.Value = DateTime.Today;
         }
 
@@ -66,30 +77,30 @@ namespace FormApp.Forms
 
             try
             {
-                // Validate Empty Inputs
+                // Validating Required Fields
                 if (string.IsNullOrWhiteSpace(txtEquipmentId.Text) ||
-                    cmbCondition.SelectedItem == null ||
+                    Convert.ToInt32(cmbCondition.SelectedValue) == -1 ||
                     string.IsNullOrWhiteSpace(txtLateFees.Text))
                 {
                     MessageBox.Show("Please fill all fields!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Validate Equipment ID is Numeric
-                if (!int.TryParse(txtEquipmentId.Text, out int equipmentId))
+                // Validate Equipment ID
+                if (!int.TryParse(txtEquipmentId.Text.Trim(), out int equipmentId))
                 {
-                    MessageBox.Show("Invalid Equipment ID!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Equipment ID entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Validate Late Fees is Numeric
-                if (!decimal.TryParse(txtLateFees.Text, out decimal lateFees))
+                // Validate Late Fees
+                if (!decimal.TryParse(txtLateFees.Text.Trim(), out decimal lateFees))
                 {
-                    MessageBox.Show("Invalid Late Fees!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Late Fee entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Validate Return Date is Today or Future
+                // Validate Return Date
                 if (dtpReturnDate.Value.Date < DateTime.Today)
                 {
                     MessageBox.Show("Return Date cannot be before today's date!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -100,7 +111,7 @@ namespace FormApp.Forms
                 bool exists = context.Equipment.Any(e => e.Id == equipmentId);
                 if (!exists)
                 {
-                    MessageBox.Show("Equipment ID not found in database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Equipment ID not found in the database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -113,7 +124,6 @@ namespace FormApp.Forms
                     LateFees = lateFees
                 };
 
-                // Insert into DB
                 context.ReturnRecords.Add(record);
                 context.SaveChanges();
 
@@ -126,15 +136,16 @@ namespace FormApp.Forms
                     AffectedData = $"Return Record for Equipment ID: {record.Equipment}, Return Date: {record.ReturnDate.ToShortDateString()}",
                     Source = "CreateRecord Form"
                 };
+
                 context.Logs.Add(log);
-                context.SaveChanges(); // Save log entry
+                context.SaveChanges(); // save log entry
 
                 MessageBox.Show("Record created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearControls();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

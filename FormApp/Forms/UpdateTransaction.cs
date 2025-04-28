@@ -198,5 +198,10 @@ namespace FormApp.Forms
             RentalTransactions rentalTransactions = new RentalTransactions();
             rentalTransactions.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

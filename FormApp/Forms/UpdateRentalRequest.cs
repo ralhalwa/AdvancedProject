@@ -116,5 +116,10 @@ namespace FormApp.Forms
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void txtEqName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

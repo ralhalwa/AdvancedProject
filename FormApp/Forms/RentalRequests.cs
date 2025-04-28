@@ -240,7 +240,7 @@ namespace FormApp
             }
         }
 
-        
+
         private void label16_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<Dashboard>(this);
@@ -291,6 +291,11 @@ namespace FormApp
         private void lblExit_Click(object sender, EventArgs e)
         {
             FormHelper.ExitApp();
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
