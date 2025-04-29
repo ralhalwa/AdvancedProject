@@ -33,13 +33,6 @@ namespace FormApp.Forms
 
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // setting placeholders
-            PlaceholderService.SetPlaceholder(txtUserID, "User ID");
-            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date (YYYY-MM-DD)");
-            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date (YYYY-MM-DD)");
-            PlaceholderService.SetPlaceholder(txtFee, "Fee");
-            PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
-
             LoadDropdowns();
         }
 
@@ -83,8 +76,6 @@ namespace FormApp.Forms
             {
                 // Validate inputs
                 if (string.IsNullOrWhiteSpace(txtUserID.Text) ||
-                    string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
-                    string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
                     string.IsNullOrWhiteSpace(txtFee.Text) ||
                     string.IsNullOrWhiteSpace(txtDeposit.Text) ||
                     Convert.ToInt32(cmbRentalStatus.SelectedValue) == -1 ||
@@ -106,17 +97,9 @@ namespace FormApp.Forms
                     return;
                 }
 
-                if (!DateTime.TryParse(txtPickupDate.Text.Trim(), out DateTime pickupDate))
-                {
-                    MessageBox.Show("Please enter a valid Pickup Date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                DateTime pickupDate = dtpPickupDate.Value;
 
-                if (!DateTime.TryParse(txtReturnDate.Text.Trim(), out DateTime returnDate))
-                {
-                    MessageBox.Show("Please enter a valid Return Date.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                DateTime returnDate = dtpReturnDate.Value;
 
                 if (returnDate <= pickupDate)
                 {
@@ -188,17 +171,10 @@ namespace FormApp.Forms
         private void ClearFields()
         {
             txtUserID.Clear();
-            txtPickupDate.Clear();
-            txtReturnDate.Clear();
+            dtpPickupDate.Value = DateTime.Today;
+            dtpReturnDate.Value = DateTime.Today;
             txtFee.Clear();
             txtDeposit.Clear();
-
-            // reapply placeholders
-            PlaceholderService.SetPlaceholder(txtUserID, "User ID");
-            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date (YYYY-MM-DD)");
-            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date (YYYY-MM-DD)");
-            PlaceholderService.SetPlaceholder(txtFee, "Fee");
-            PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
 
             cmbRentalStatus.SelectedIndex = 0;
             cmbPaymentStatus.SelectedIndex = 0;

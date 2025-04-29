@@ -971,3 +971,5 @@ C:\Users\Sharmin\Desktop\FINAL-MERGE\AdvancedProject\FormApp\obj\Debug\net8.0-wi
 C:\Users\Sharmin\Desktop\FINAL-MERGE\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.pdb
 C:\Users\Sharmin\Desktop\FINAL-MERGE\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.genruntimeconfig.cache
 C:\Users\Sharmin\Desktop\FINAL-MERGE\AdvancedProject\FormApp\obj\Debug\net8.0-windows\ref\FormApp.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.UpdateRentalRequest.resources
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.LogsFilter.resources

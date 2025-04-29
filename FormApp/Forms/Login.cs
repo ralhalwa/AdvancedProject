@@ -21,9 +21,11 @@ namespace FormApp.Forms
             InitializeComponent();
             _context = new DBContext();
 
+            // mask password input
+            txtPassword.UseSystemPasswordChar = true;
+
             // apply placeholders to email and password fields
             PlaceholderService.SetPlaceholder(txtEmail, "Email");
-            PlaceholderService.SetPlaceholder(txtPassword, "Password");
 
             // centering the form
             this.StartPosition = FormStartPosition.CenterScreen;

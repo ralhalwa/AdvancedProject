@@ -36,41 +36,45 @@
             lblCreateTransaction = new Label();
             txtUserID = new TextBox();
             cmbRentalStatus = new ComboBox();
-            txtPickupDate = new TextBox();
-            txtReturnDate = new TextBox();
             txtFee = new TextBox();
             cmbPaymentStatus = new ComboBox();
             txtDeposit = new TextBox();
             btnCreate = new Button();
+            lblUserID = new Label();
+            lblRentalStatus = new Label();
+            lblPickupDate = new Label();
+            lblReturnDate = new Label();
+            lblFee = new Label();
+            lblDeposit = new Label();
+            lblPaymentStatus = new Label();
+            dtpPickupDate = new DateTimePicker();
+            dtpReturnDate = new DateTimePicker();
             SuspendLayout();
             // 
             // lblDivider
             // 
             lblDivider.BackColor = Color.FromArgb(236, 236, 236);
-            lblDivider.Location = new Point(-5, 80);
-            lblDivider.Margin = new Padding(2, 0, 2, 0);
+            lblDivider.Location = new Point(-8, 128);
             lblDivider.Name = "lblDivider";
-            lblDivider.Size = new Size(920, 1);
+            lblDivider.Size = new Size(1495, 2);
             lblDivider.TabIndex = 22;
             // 
             // lblRole
             // 
             lblRole.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRole.ForeColor = Color.FromArgb(142, 142, 147);
-            lblRole.Location = new Point(10, 60);
-            lblRole.Margin = new Padding(2, 0, 2, 0);
+            lblRole.Location = new Point(16, 96);
             lblRole.Name = "lblRole";
-            lblRole.Size = new Size(154, 20);
+            lblRole.Size = new Size(250, 32);
             lblRole.TabIndex = 21;
             lblRole.Text = "Role";
             // 
             // lblName
             // 
             lblName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblName.Location = new Point(4, 9);
-            lblName.Margin = new Padding(2, 0, 2, 0);
+            lblName.Location = new Point(6, 14);
             lblName.Name = "lblName";
-            lblName.Size = new Size(217, 41);
+            lblName.Size = new Size(353, 66);
             lblName.TabIndex = 20;
             lblName.Text = "Name";
             // 
@@ -79,10 +83,9 @@
             btnBack.BackColor = Color.FromArgb(249, 115, 22);
             btnBack.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(9, 96);
-            btnBack.Margin = new Padding(2);
+            btnBack.Location = new Point(15, 154);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(113, 35);
+            btnBack.Size = new Size(184, 56);
             btnBack.TabIndex = 35;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -92,76 +95,52 @@
             // 
             lblCreateTransaction.AutoSize = true;
             lblCreateTransaction.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblCreateTransaction.Location = new Point(328, 153);
-            lblCreateTransaction.Margin = new Padding(2, 0, 2, 0);
+            lblCreateTransaction.Location = new Point(535, 222);
             lblCreateTransaction.Name = "lblCreateTransaction";
-            lblCreateTransaction.Size = new Size(279, 41);
+            lblCreateTransaction.Size = new Size(446, 65);
             lblCreateTransaction.TabIndex = 36;
             lblCreateTransaction.Text = "Create Transaction";
             // 
             // txtUserID
             // 
             txtUserID.BackColor = Color.WhiteSmoke;
-            txtUserID.Location = new Point(277, 241);
-            txtUserID.Margin = new Padding(2);
+            txtUserID.Location = new Point(452, 363);
             txtUserID.Name = "txtUserID";
-            txtUserID.Size = new Size(162, 27);
+            txtUserID.Size = new Size(261, 39);
             txtUserID.TabIndex = 37;
             // 
             // cmbRentalStatus
             // 
             cmbRentalStatus.BackColor = Color.WhiteSmoke;
             cmbRentalStatus.FormattingEnabled = true;
-            cmbRentalStatus.Location = new Point(481, 241);
-            cmbRentalStatus.Margin = new Padding(2);
+            cmbRentalStatus.Location = new Point(784, 363);
             cmbRentalStatus.Name = "cmbRentalStatus";
-            cmbRentalStatus.Size = new Size(162, 28);
+            cmbRentalStatus.Size = new Size(261, 40);
             cmbRentalStatus.TabIndex = 39;
-            // 
-            // txtPickupDate
-            // 
-            txtPickupDate.BackColor = Color.WhiteSmoke;
-            txtPickupDate.Location = new Point(277, 293);
-            txtPickupDate.Margin = new Padding(2);
-            txtPickupDate.Name = "txtPickupDate";
-            txtPickupDate.Size = new Size(366, 27);
-            txtPickupDate.TabIndex = 40;
-            // 
-            // txtReturnDate
-            // 
-            txtReturnDate.BackColor = Color.WhiteSmoke;
-            txtReturnDate.Location = new Point(277, 344);
-            txtReturnDate.Margin = new Padding(2);
-            txtReturnDate.Name = "txtReturnDate";
-            txtReturnDate.Size = new Size(366, 27);
-            txtReturnDate.TabIndex = 41;
             // 
             // txtFee
             // 
             txtFee.BackColor = Color.WhiteSmoke;
-            txtFee.Location = new Point(277, 390);
-            txtFee.Margin = new Padding(2);
+            txtFee.Location = new Point(452, 640);
             txtFee.Name = "txtFee";
-            txtFee.Size = new Size(162, 27);
+            txtFee.Size = new Size(261, 39);
             txtFee.TabIndex = 43;
             // 
             // cmbPaymentStatus
             // 
             cmbPaymentStatus.BackColor = Color.WhiteSmoke;
             cmbPaymentStatus.FormattingEnabled = true;
-            cmbPaymentStatus.Location = new Point(277, 451);
-            cmbPaymentStatus.Margin = new Padding(2);
+            cmbPaymentStatus.Location = new Point(452, 738);
             cmbPaymentStatus.Name = "cmbPaymentStatus";
-            cmbPaymentStatus.Size = new Size(366, 28);
+            cmbPaymentStatus.Size = new Size(592, 40);
             cmbPaymentStatus.TabIndex = 45;
             // 
             // txtDeposit
             // 
             txtDeposit.BackColor = Color.WhiteSmoke;
-            txtDeposit.Location = new Point(481, 390);
-            txtDeposit.Margin = new Padding(2);
+            txtDeposit.Location = new Point(784, 640);
             txtDeposit.Name = "txtDeposit";
-            txtDeposit.Size = new Size(162, 27);
+            txtDeposit.Size = new Size(261, 39);
             txtDeposit.TabIndex = 44;
             // 
             // btnCreate
@@ -169,27 +148,110 @@
             btnCreate.BackColor = Color.FromArgb(249, 115, 22);
             btnCreate.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnCreate.ForeColor = Color.White;
-            btnCreate.Location = new Point(403, 521);
-            btnCreate.Margin = new Padding(2);
+            btnCreate.Location = new Point(657, 822);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(113, 35);
+            btnCreate.Size = new Size(184, 56);
             btnCreate.TabIndex = 46;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
             btnCreate.Click += btnCreate_Click;
             // 
+            // lblUserID
+            // 
+            lblUserID.AutoSize = true;
+            lblUserID.Location = new Point(452, 326);
+            lblUserID.Name = "lblUserID";
+            lblUserID.Size = new Size(96, 32);
+            lblUserID.TabIndex = 47;
+            lblUserID.Text = "User ID:";
+            // 
+            // lblRentalStatus
+            // 
+            lblRentalStatus.AutoSize = true;
+            lblRentalStatus.Location = new Point(784, 326);
+            lblRentalStatus.Name = "lblRentalStatus";
+            lblRentalStatus.Size = new Size(156, 32);
+            lblRentalStatus.TabIndex = 48;
+            lblRentalStatus.Text = "Rental Status:";
+            // 
+            // lblPickupDate
+            // 
+            lblPickupDate.AutoSize = true;
+            lblPickupDate.Location = new Point(452, 419);
+            lblPickupDate.Name = "lblPickupDate";
+            lblPickupDate.Size = new Size(146, 32);
+            lblPickupDate.TabIndex = 49;
+            lblPickupDate.Text = "Pickup Date:";
+            // 
+            // lblReturnDate
+            // 
+            lblReturnDate.AutoSize = true;
+            lblReturnDate.Location = new Point(452, 510);
+            lblReturnDate.Name = "lblReturnDate";
+            lblReturnDate.Size = new Size(146, 32);
+            lblReturnDate.TabIndex = 50;
+            lblReturnDate.Text = "Return Date:";
+            // 
+            // lblFee
+            // 
+            lblFee.AutoSize = true;
+            lblFee.Location = new Point(452, 604);
+            lblFee.Name = "lblFee";
+            lblFee.Size = new Size(57, 32);
+            lblFee.TabIndex = 51;
+            lblFee.Text = "Fee:";
+            // 
+            // lblDeposit
+            // 
+            lblDeposit.AutoSize = true;
+            lblDeposit.Location = new Point(784, 604);
+            lblDeposit.Name = "lblDeposit";
+            lblDeposit.Size = new Size(101, 32);
+            lblDeposit.TabIndex = 52;
+            lblDeposit.Text = "Deposit:";
+            // 
+            // lblPaymentStatus
+            // 
+            lblPaymentStatus.AutoSize = true;
+            lblPaymentStatus.Location = new Point(452, 702);
+            lblPaymentStatus.Name = "lblPaymentStatus";
+            lblPaymentStatus.Size = new Size(182, 32);
+            lblPaymentStatus.TabIndex = 53;
+            lblPaymentStatus.Text = "Payment Status:";
+            // 
+            // dtpPickupDate
+            // 
+            dtpPickupDate.Location = new Point(452, 454);
+            dtpPickupDate.Name = "dtpPickupDate";
+            dtpPickupDate.Size = new Size(592, 39);
+            dtpPickupDate.TabIndex = 54;
+            // 
+            // dtpReturnDate
+            // 
+            dtpReturnDate.Location = new Point(452, 545);
+            dtpReturnDate.Name = "dtpReturnDate";
+            dtpReturnDate.Size = new Size(592, 39);
+            dtpReturnDate.TabIndex = 55;
+            // 
             // CreateTransaction
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(927, 648);
+            ClientSize = new Size(1506, 1037);
+            Controls.Add(dtpReturnDate);
+            Controls.Add(dtpPickupDate);
+            Controls.Add(lblPaymentStatus);
+            Controls.Add(lblDeposit);
+            Controls.Add(lblFee);
+            Controls.Add(lblReturnDate);
+            Controls.Add(lblPickupDate);
+            Controls.Add(lblRentalStatus);
+            Controls.Add(lblUserID);
             Controls.Add(btnCreate);
             Controls.Add(cmbPaymentStatus);
             Controls.Add(txtDeposit);
             Controls.Add(txtFee);
-            Controls.Add(txtReturnDate);
-            Controls.Add(txtPickupDate);
             Controls.Add(cmbRentalStatus);
             Controls.Add(txtUserID);
             Controls.Add(lblCreateTransaction);
@@ -198,7 +260,6 @@
             Controls.Add(lblRole);
             Controls.Add(lblName);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
             Name = "CreateTransaction";
             Text = "Create Transaction";
             Load += CreateTransaction_Load;
@@ -215,11 +276,18 @@
         private Label lblCreateTransaction;
         private TextBox txtUserID;
         private ComboBox cmbRentalStatus;
-        private TextBox txtPickupDate;
-        private TextBox txtReturnDate;
         private TextBox txtFee;
         private ComboBox cmbPaymentStatus;
         private TextBox txtDeposit;
         private Button btnCreate;
+        private Label lblUserID;
+        private Label lblRentalStatus;
+        private Label lblPickupDate;
+        private Label lblReturnDate;
+        private Label lblFee;
+        private Label lblDeposit;
+        private Label lblPaymentStatus;
+        private DateTimePicker dtpPickupDate;
+        private DateTimePicker dtpReturnDate;
     }
 }

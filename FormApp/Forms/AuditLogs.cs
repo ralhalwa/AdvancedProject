@@ -131,5 +131,93 @@ namespace FormApp.Forms
         {
             FormHelper.ExitApp();
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            // open the filter form as a dialog
+            LogsFilter filter = new LogsFilter();
+            if (filter.ShowDialog() == DialogResult.OK)
+            {
+                // retrieve the values entered by the user
+                string logId = filter.LogId;
+                string userId = filter.UserId;
+                string action = filter.ActionSelected;
+                string date = filter.Date;
+
+                // apply the filters to the grid
+                ApplyFilters(logId, userId, action, date);
+            }
+        }
+
+        private void ApplyFilters(string logId, string userId, string action, string date)
+        {
+            using (var context = new DBContext())
+            {
+                // start with the full logs table as a queryable object
+                var query = context.Logs.AsQueryable();
+
+                // filter by log id if provided
+                if (!string.IsNullOrEmpty(logId))
+                {
+                    if (int.TryParse(logId, out int logIdInt))
+                    {
+                        query = query.Where(l => l.Id == logIdInt);
+                    }
+                }
+
+                // filter by user id if provided
+                if (!string.IsNullOrEmpty(userId))
+                {
+                    if (int.TryParse(userId, out int userIdInt))
+                    {
+                        query = query.Where(l => l.UserId == userIdInt);
+                    }
+                }
+
+                // filter by action if its selected
+                if (!string.IsNullOrEmpty(action) && action != "Select Action")
+                {
+                    query = query.Where(l => l.Action == action);
+                }
+
+                // filter by date
+                if (!string.IsNullOrEmpty(date))
+                {
+                    if (DateTime.TryParse(date, out DateTime selectedDate))
+                    {
+                        query = query.Where(l => l.TimeStamp.Date == selectedDate.Date);
+                    }
+                }
+
+                // project and order by most recent logs first
+                var result = query
+                    .Select(l => new
+                    {
+                        l.Id,
+                        l.UserId,
+                        l.Action,
+                        l.TimeStamp,
+                        l.AffectedData,
+                        l.Source
+                    })
+                    .OrderByDescending(l => l.TimeStamp)
+                    .ToList();
+
+                // bind the filtered results to the grid view
+                gridLogs.DataSource = result;
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            // clear the search bar
+            txtSearchBar.Text = "";
+
+            // reapply the placeholder
+            PlaceholderService.SetPlaceholder(txtSearchBar, "Log ID");
+
+            // reload all logs from the database
+            LoadLogs();
+        }
     }
 }

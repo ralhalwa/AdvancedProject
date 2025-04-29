@@ -35,13 +35,6 @@ namespace FormApp.Forms
 
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // setting placeholders
-            PlaceholderService.SetPlaceholder(txtUserID, "User ID");
-            PlaceholderService.SetPlaceholder(txtPickupDate, "Pickup Date");
-            PlaceholderService.SetPlaceholder(txtReturnDate, "Return Date");
-            PlaceholderService.SetPlaceholder(txtFee, "Fee");
-            PlaceholderService.SetPlaceholder(txtDeposit, "Deposit");
-
             LoadDropdowns();
             LoadTransactionData(); // load current values
         }
@@ -58,8 +51,8 @@ namespace FormApp.Forms
             if (transaction != null)
             {
                 txtUserID.Text = transaction.UserId.ToString();
-                txtPickupDate.Text = transaction.Pickup.ToString("yyyy-MM-dd");
-                txtReturnDate.Text = transaction.ReturnDate.ToString("yyyy-MM-dd");
+                dtpPickupDate.Value = transaction.Pickup;
+                dtpReturnDate.Value = transaction.ReturnDate;
                 txtFee.Text = transaction.Fee.ToString();
                 txtDeposit.Text = transaction.Deposit.ToString();
                 cmbRentalStatus.SelectedValue = transaction.RentalStatus;
@@ -73,8 +66,6 @@ namespace FormApp.Forms
             {
                 // Validation
                 if (string.IsNullOrWhiteSpace(txtUserID.Text) ||
-                    string.IsNullOrWhiteSpace(txtPickupDate.Text) ||
-                    string.IsNullOrWhiteSpace(txtReturnDate.Text) ||
                     string.IsNullOrWhiteSpace(txtFee.Text) ||
                     string.IsNullOrWhiteSpace(txtDeposit.Text) ||
                     Convert.ToInt32(cmbRentalStatus.SelectedValue) == -1 ||
@@ -96,12 +87,8 @@ namespace FormApp.Forms
                     return;
                 }
 
-                if (!DateTime.TryParse(txtPickupDate.Text.Trim(), out DateTime pickupDate) ||
-                    !DateTime.TryParse(txtReturnDate.Text.Trim(), out DateTime returnDate))
-                {
-                    MessageBox.Show("Please enter valid dates.");
-                    return;
-                }
+                DateTime pickupDate = dtpPickupDate.Value;
+                DateTime returnDate = dtpReturnDate.Value;
 
                 if (returnDate <= pickupDate)
                 {

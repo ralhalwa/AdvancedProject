@@ -1,74 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\",
+  "WorkspaceRootPath": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\huawei\\desktop\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\final-merge\\advancedproject\\formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,253 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReturnRecords.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\ReturnRecords.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\ReturnRecords.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "AuditLogs.cs",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
+              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAUwNYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:12.34Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateRecord.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRecord.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateRecord.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T21:57:20.026Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateRentalRequest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRentalRequest.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateRentalRequest.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T21:57:33.307Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-29T08:42:16.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateTransaction.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateTransaction.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\UpdateTransaction.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:14:24.956Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T19:41:37.873Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RentalTransactions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:20.41Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RentalRequests.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalRequests.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\RentalRequests.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:17.288Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\Login.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:48:40.654Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GenerateReports.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\GenerateReports.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\GenerateReports.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:48:32.569Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EquipmentManagement.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\EquipmentManagement.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\EquipmentManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:48:11.918Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateTransaction.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateTransaction.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\CreateTransaction.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:59.083Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateRecord.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateRecord.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\CreateRecord.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:40.599Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DatabaseBackup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\DatabaseBackup.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\DatabaseBackup.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:47:05.593Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EditEquipment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\EditEquipment.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\EditEquipment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:13:38.292Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "AuditLogs.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "DocumentMoniker": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
               "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs [Design]",
+              "ToolTip": "C:\\Users\\HUAWEI\\Desktop\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs [Design]",
               "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:38.126Z",
+              "WhenOpened": "2025-04-29T08:42:13.682Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AddEquipment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
-              "RelativeDocumentMoniker": "FormApp\\Forms\\AddEquipment.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs [Design]",
-              "RelativeToolTip": "FormApp\\Forms\\AddEquipment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:45:35.832Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Program.cs",
-              "RelativeDocumentMoniker": "FormApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINAL-MERGE\\AdvancedProject\\FormApp\\Program.cs",
-              "RelativeToolTip": "FormApp\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:57:19.316Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1382,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
