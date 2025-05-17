@@ -163,7 +163,8 @@ namespace FormApp.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string fullMessage = ex.InnerException?.InnerException?.Message ?? ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show("An error occurred:\n" + fullMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
