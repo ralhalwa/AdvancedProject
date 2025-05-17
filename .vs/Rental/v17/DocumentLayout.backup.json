@@ -1,225 +1,365 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\gaming\\downloads\\advancedproject\\formapp\\formapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\logsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\logsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\createrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\addequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updatetransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\updaterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\returnrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentaltransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\rentalrequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\logsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\logsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\generatereports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\equipmentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\editequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\databasebackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\formapp\\formapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{01227FBA-5D7C-48AF-842B-8933BC4AF3BE}|FormApp\\FormApp.csproj|solutionrelative:formapp\\formapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250504182137_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary\\Migrations\\20250504182137_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\rentalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\rentalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\feedback1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\feedback1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\feedback1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\conditionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\conditionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\conditionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\models\\availablestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\models\\availablestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\models\\availablestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\rentalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\rentalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\rentalrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\rentalrequest\\userrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\rentalrequest\\userrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\rentalrequest\\userrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\rentalrequest\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\rentalrequest\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\rentalrequest\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\rentalrequest\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\myrentals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\myrentals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\myrentals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\logs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\logs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\logs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\migrations\\20250428052924_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\migrations\\20250428052924_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250428052924_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\usermanagement\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\usermanagement\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\usermanagement\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\models\\signinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\models\\signinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\models\\signinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\signin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\controllers\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\controllers\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\controllers\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\models\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\models\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\models\\myrentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\gaming\\downloads\\advancedproject\\helloworld\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\helloworld\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{72868917-91F6-49FB-A794-D022C49BC913}|HelloWorld\\Rental.csproj|solutionrelative:helloworld\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/NewDB/True/SqlTable/dbo.User_Role.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\migrations\\20250420135644_seedproductstatusdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\migrations\\20250420135644_seedproductstatusdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250420135644_seedproductstatusdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\gaming\\downloads\\advancedproject\\classlibrary\\migrations\\20250430095734_seedequipmentwithimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\migrations\\20250430095734_seedequipmentwithimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250430095734_seedequipmentwithimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\sharmin\\desktop\\finalap\\advancedproject\\classlibrary\\migrations\\20250504182137_migrationname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1101F6-8864-4A62-A408-380D21BAB54B}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\migrations\\20250504182137_migrationname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -229,12 +369,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -242,6 +378,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Bookmark",
@@ -253,11 +393,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -265,50 +401,455 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormApp",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\FormApp\\FormApp.csproj",
-              "RelativeDocumentMoniker": "FormApp\\FormApp.csproj",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\FormApp\\FormApp.csproj",
-              "RelativeToolTip": "FormApp\\FormApp.csproj",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-04T18:23:29.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20250504182137_MigrationName.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
-              "RelativeToolTip": "ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.Designer.cs",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.Designer.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAkwLAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T18:21:37.794Z",
+              "WhenOpened": "2025-05-17T22:16:25.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClassLibrary.csproj",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
-              "RelativeDocumentMoniker": "ClassLibrary\\ClassLibrary.csproj",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
-              "RelativeToolTip": "ClassLibrary\\ClassLibrary.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-30T06:19:28.742Z",
-              "EditorCaption": ""
+              "Title": "UpdateRentalRequest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRentalRequest.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateRentalRequest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:35:39.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateTransaction.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateTransaction.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:36:15.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:17:08.111Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\CreateRecord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:15:52.525Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UpdateRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateRecord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:34:33.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReturnRecords.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\ReturnRecords.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\ReturnRecords.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:33:42.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RentalTransactions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:32:25.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RentalRequests.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalRequests.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\RentalRequests.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:31:31.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogsFilter.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\LogsFilter.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\LogsFilter.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\LogsFilter.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\LogsFilter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:30:52.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Login.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Login.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:30:48.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenerateReports.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\GenerateReports.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\GenerateReports.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:29:52.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EquipmentManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\EquipmentManagement.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\EquipmentManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:20:11.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditEquipment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\EditEquipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\EditEquipment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:19:15.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DatabaseBackup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\DatabaseBackup.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\DatabaseBackup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:19:04.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
+              "RelativeToolTip": "FormApp\\Forms\\CreateTransaction.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAWwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:17:01.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateTransaction.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateTransaction.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\CreateTransaction.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:16:59.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\CreateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\CreateRecord.cs",
+              "RelativeToolTip": "FormApp\\Forms\\CreateRecord.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAWwCgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:15:54.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuditLogs.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAWwB8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:14:38.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuditLogs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AuditLogs.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AuditLogs.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\AuditLogs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:14:36.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AddEquipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeToolTip": "FormApp\\Forms\\AddEquipment.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAWwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:09:53.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddEquipment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\AddEquipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\AddEquipment.cs [Design]",
+              "RelativeToolTip": "FormApp\\Forms\\AddEquipment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:09:29.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateTransaction.cs",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateTransaction.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAADwvysAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:36:16.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRecord.cs",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateRecord.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:34:34.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateRentalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\UpdateRentalRequest.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\UpdateRentalRequest.cs",
+              "RelativeToolTip": "FormApp\\Forms\\UpdateRentalRequest.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:35:41.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ReturnRecords.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\ReturnRecords.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\ReturnRecords.cs",
+              "RelativeToolTip": "FormApp\\Forms\\ReturnRecords.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAqwBcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:33:45.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RentalTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalTransactions.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalTransactions.cs",
+              "RelativeToolTip": "FormApp\\Forms\\RentalTransactions.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAuwBMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:32:27.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RentalRequests.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\RentalRequests.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\RentalRequests.cs",
+              "RelativeToolTip": "FormApp\\Forms\\RentalRequests.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAowCUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:31:34.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LogsFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\LogsFilter.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\LogsFilter.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\LogsFilter.cs",
+              "RelativeToolTip": "FormApp\\Forms\\LogsFilter.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:30:54.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Login.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Login.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Login.cs",
+              "RelativeToolTip": "FormApp\\Forms\\Login.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:30:49.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GenerateReports.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\GenerateReports.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\GenerateReports.cs",
+              "RelativeToolTip": "FormApp\\Forms\\GenerateReports.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAIwAgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:29:54.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EquipmentManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\EquipmentManagement.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EquipmentManagement.cs",
+              "RelativeToolTip": "FormApp\\Forms\\EquipmentManagement.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAIwBABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:20:13.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EditEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\EditEquipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\EditEquipment.cs",
+              "RelativeToolTip": "FormApp\\Forms\\EditEquipment.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAIwJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:19:16.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DatabaseBackup.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\DatabaseBackup.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\DatabaseBackup.cs",
+              "RelativeToolTip": "FormApp\\Forms\\DatabaseBackup.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAmwCwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:19:07.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeDocumentMoniker": "FormApp\\Forms\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\Forms\\Dashboard.cs",
+              "RelativeToolTip": "FormApp\\Forms\\Dashboard.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAUwOgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:17:09.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FormApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\FormApp.csproj",
+              "RelativeDocumentMoniker": "FormApp\\FormApp.csproj",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\FormApp\\FormApp.csproj",
+              "RelativeToolTip": "FormApp\\FormApp.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T18:23:29.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20250504182137_MigrationName.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
+              "RelativeToolTip": "ClassLibrary\\Migrations\\20250504182137_MigrationName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T18:21:37.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ClassLibrary.csproj",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+              "RelativeDocumentMoniker": "ClassLibrary\\ClassLibrary.csproj",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\ClassLibrary.csproj",
+              "RelativeToolTip": "ClassLibrary\\ClassLibrary.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-30T06:19:28.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\UserRole.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\UserRole.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\UserRole.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -316,11 +857,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 40,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\User.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\User.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,24 +869,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 36,
               "Title": "DBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Context\\DBContext.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Context\\DBContext.cs",
               "RelativeToolTip": "ClassLibrary\\Context\\DBContext.cs",
               "ViewState": "AgIAABABAAAAAAAAAAAqwCgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T07:01:15.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T07:01:15.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 88,
               "Title": "20250430095734_SeedEquipmentWithImage.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250430095734_SeedEquipmentWithImage.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,11 +893,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Program.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Program.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Program.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Program.cs",
               "RelativeToolTip": "HelloWorld\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -365,11 +905,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 41,
               "Title": "ReturnRecord.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ReturnRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ReturnRecord.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\ReturnRecord.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ReturnRecord.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ReturnRecord.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\ReturnRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -377,11 +917,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 42,
               "Title": "RentalTransaction.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\RentalTransaction.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalTransaction.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\RentalTransaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -389,11 +929,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 43,
               "Title": "RentalStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalStatus.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\RentalStatus.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalStatus.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\RentalStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -401,11 +941,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 44,
               "Title": "RentalRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\RentalRequest.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\RentalRequest.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\RentalRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -413,11 +953,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 45,
               "Title": "ProductStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ProductStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ProductStatus.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\ProductStatus.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ProductStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ProductStatus.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\ProductStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -425,11 +965,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 46,
               "Title": "PaymentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\PaymentStatus.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\PaymentStatus.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\PaymentStatus.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\PaymentStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -437,11 +977,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 47,
               "Title": "NotificationType.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\NotificationType.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\NotificationType.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\NotificationType.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\NotificationType.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\NotificationType.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\NotificationType.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -449,11 +989,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 48,
               "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Notification.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -461,11 +1001,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 50,
               "Title": "FeedBack1.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\FeedBack1.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\FeedBack1.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\FeedBack1.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\FeedBack1.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\FeedBack1.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\FeedBack1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -473,11 +1013,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 51,
               "Title": "FeedBack.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\FeedBack.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\FeedBack.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\FeedBack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -485,11 +1025,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 53,
               "Title": "DocumentType.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\DocumentType.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\DocumentType.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\DocumentType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -497,11 +1037,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 54,
               "Title": "Document.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Document.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Document.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Document.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Document.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Document.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Document.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -509,11 +1049,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 55,
               "Title": "ConditionStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\ConditionStatus.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\ConditionStatus.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\ConditionStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -521,11 +1061,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 56,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Category.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Category.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -533,11 +1073,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 57,
               "Title": "AvailableStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\AvailableStatus.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\AvailableStatus.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\AvailableStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -545,11 +1085,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 59,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -557,11 +1097,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 61,
               "Title": "UserRequests.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\RentalRequest\\UserRequests.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -569,11 +1109,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 68,
               "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\ProfileController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -581,11 +1121,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 71,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Logs\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Logs\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Logs\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Logs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Logs\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Logs\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -593,11 +1133,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 72,
               "Title": "LogsController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\LogsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\LogsController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\LogsController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\LogsController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\LogsController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\LogsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -605,11 +1145,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 74,
               "Title": "SignUpController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\SignUpController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\SignUpController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\SignUpController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAUwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -617,11 +1157,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 49,
               "Title": "Log.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Log.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Log.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Log.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Log.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Log.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Log.cs",
               "ViewState": "AgIAABUAAAAAAAAAAADwvxwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -629,11 +1169,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 75,
               "Title": "20250428052924_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250428052924_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -641,11 +1181,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 76,
               "Title": "ManageUsers.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\UserManagement\\ManageUsers.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -653,11 +1193,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 73,
               "Title": "UserManagementController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\UserManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\UserManagementController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\UserManagementController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\UserManagementController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\UserManagementController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\UserManagementController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -665,11 +1205,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 52,
               "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Models\\Equipment.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Models\\Equipment.cs",
               "RelativeToolTip": "ClassLibrary\\Models\\Equipment.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAgwDQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -677,11 +1217,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 81,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\SignIn\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\SignIn\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\SignIn\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -689,11 +1229,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 70,
               "Title": "SignInController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\SignInController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\SignInController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\SignInController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -701,11 +1241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 80,
               "Title": "SignInViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Models\\SignInViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Models\\SignInViewModel.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Models\\SignInViewModel.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Models\\SignInViewModel.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Models\\SignInViewModel.cs",
               "RelativeToolTip": "HelloWorld\\Models\\SignInViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -713,11 +1253,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 87,
               "Title": "20250420135644_SeedProductStatusData.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
               "RelativeToolTip": "ClassLibrary\\Migrations\\20250420135644_SeedProductStatusData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -725,11 +1265,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 62,
               "Title": "Payment.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\RentalRequest\\Payment.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -737,11 +1277,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 64,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\MyRentals\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\MyRentals\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\MyRentals\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\MyRentals\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\MyRentals\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\MyRentals\\Index.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAADwvykAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -749,11 +1289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 83,
               "Title": "MyRentals.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Models\\MyRentals.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Models\\MyRentals.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Models\\MyRentals.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Models\\MyRentals.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Models\\MyRentals.cs",
               "RelativeToolTip": "HelloWorld\\Models\\MyRentals.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -761,11 +1301,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 85,
               "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\Error.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -773,11 +1313,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 66,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Equipment\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Details.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Equipment\\Details.cshtml",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -785,11 +1325,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 60,
               "Title": "RentalRequestController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\RentalRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\RentalRequestController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\RentalRequestController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\RentalRequestController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\RentalRequestController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\RentalRequestController.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAAowMIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -797,11 +1337,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 63,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\RentalRequest\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\RentalRequest\\Index.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -809,11 +1349,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 82,
               "Title": "MyRentals.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\MyRentals.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\MyRentals.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\MyRentals.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\MyRentals.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\MyRentals.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\MyRentals.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -821,11 +1361,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 69,
               "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\BaseController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\BaseController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAiwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -833,11 +1373,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 77,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\AdminController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAswFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -845,11 +1385,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 65,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -857,11 +1397,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 84,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -869,11 +1409,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 78,
               "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Admin\\Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Admin\\Dashboard.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Admin\\Dashboard.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -881,11 +1421,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 67,
               "Title": "EquipmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
               "RelativeDocumentMoniker": "HelloWorld\\Controllers\\EquipmentController.cs",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Controllers\\EquipmentController.cs",
               "RelativeToolTip": "HelloWorld\\Controllers\\EquipmentController.cs",
               "ViewState": "AgIAANYAAAAAAAAAAAAAwOgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -893,11 +1433,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 58,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -905,11 +1445,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 79,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
               "RelativeDocumentMoniker": "HelloWorld\\Views\\Equipment\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gaming\\Downloads\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sharmin\\Desktop\\FINALaP\\AdvancedProject\\HelloWorld\\Views\\Equipment\\Index.cshtml",
               "RelativeToolTip": "HelloWorld\\Views\\Equipment\\Index.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -917,7 +1457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 86,
               "Title": "dbo.User_Role.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/NewDB/True/SqlTable/dbo.User_Role.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/NewDB/True/SqlTable/dbo.User_Role.sql",

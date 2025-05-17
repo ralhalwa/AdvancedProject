@@ -174,7 +174,7 @@
             lblOverdue.Size = new Size(128, 20);
             lblOverdue.TabIndex = 7;
             lblOverdue.Text = "Overdue Requests";
-            lblOverdue.Click += lblOverdue_Click;
+//            lblOverdue.Click += lblOverdue_Click;
             // 
             // lblActiveRental
             // 
