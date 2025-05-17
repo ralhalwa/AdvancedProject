@@ -8,57 +8,60 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 using ClassLibrary.Persistence;
-using System.Reflection.Metadata.Ecma335;
 
 namespace FormApp.Forms
 {
     public partial class AuditLogs : Form
     {
+        // DB context for database access
         private readonly DBContext _context;
 
         public AuditLogs()
         {
             InitializeComponent();
 
-            // instantiate DBContext
+            // Initialize the DB context
             _context = new DBContext();
 
-            // apply placeholder to the search bar
+            // Set placeholder in the search bar
             PlaceholderService.SetPlaceholder(txtSearchBar, "Log ID");
 
-            // displaying user info
+            // Display logged-in user information
             lblName.Text = UserSession.FullName;
 
+            // Apply role-based UI permissions
             RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblRole,
-            lblViewAuditLogs,
-            lblPerformDBBackup,
-            lblGenerateReports
+                UserSession.RoleID,
+                lblRole,
+                lblViewAuditLogs,
+                lblPerformDBBackup,
+                lblGenerateReports
             );
 
-            // centering the form
+            // Center the form on screen
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void AuditLogs_Load(object sender, EventArgs e)
         {
-            LoadLogs(); // load all logs on form load
+            // Load logs into grid when form loads
+            LoadLogs();
         }
 
-        // load the grid view and filter logs by id
+        // Loads logs into the grid view, filtered by optional Log ID
         private void LoadLogs(string searchId = "")
         {
             var logsQuery = _context.Logs.AsQueryable();
 
+            // If search ID is provided and valid, filter the logs
             if (!string.IsNullOrWhiteSpace(searchId) && int.TryParse(searchId, out int id))
             {
                 logsQuery = logsQuery.Where(log => log.Id == id);
             }
 
+            // Project relevant log properties into an anonymous object and convert to list
             var logList = logsQuery
                 .Select(log => new
                 {
@@ -71,125 +74,120 @@ namespace FormApp.Forms
                 })
                 .ToList();
 
+            // Bind the list to the grid view
             gridLogs.DataSource = logList;
         }
 
-        // search button click event
+        // Search button click: reload logs filtered by input Log ID
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadLogs(txtSearchBar.Text.Trim());
         }
 
+        // Navigation: Dashboard
         private void lblDashboard_Click(object sender, EventArgs e)
         {
-            // display dashboard
             FormHelper.NavigateTo<Dashboard>(this);
         }
 
+        // Navigation: Rental Requests
         private void lblRentalRequests_Click(object sender, EventArgs e)
         {
-            // display rental requests form
             FormHelper.NavigateTo<RentalRequests>(this);
         }
 
+        // Navigation: Rental Transactions
         private void lblRentalTransactions_Click(object sender, EventArgs e)
         {
-            // display rental transactions form
             FormHelper.NavigateTo<RentalTransactions>(this);
         }
 
+        // Navigation: Return Records
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            // display return records form
             FormHelper.NavigateTo<ReturnRecords>(this);
         }
 
+        // Navigation: Equipment Management
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
-            // display equipment management form
             FormHelper.NavigateTo<EquipmentManagement>(this);
         }
 
+        // Navigation: Perform DB Backup
         private void lblPerformDBBackup_Click(object sender, EventArgs e)
         {
-            // display database backup form
             FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
+        // Navigation: Generate Reports
         private void lblGenerateReports_Click(object sender, EventArgs e)
         {
-            // display generate reports form
             FormHelper.NavigateTo<GenerateReports>(this);
         }
 
+        // Logout the user
         private void lblLogOut_Click(object sender, EventArgs e)
         {
             FormHelper.ConfirmAndLogout(this);
         }
 
+        // Exit the application
         private void lblExit_Click(object sender, EventArgs e)
         {
             FormHelper.ExitApp();
         }
 
+        // Opens the logs filter popup dialog
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            // open the filter form as a dialog
             LogsFilter filter = new LogsFilter();
+
+            // Show dialog and apply filters if user confirms
             if (filter.ShowDialog() == DialogResult.OK)
             {
-                // retrieve the values entered by the user
                 string logId = filter.LogId;
                 string userId = filter.UserId;
                 string action = filter.ActionSelected;
                 string date = filter.Date;
 
-                // apply the filters to the grid
+                // Apply user-selected filters to the log list
                 ApplyFilters(logId, userId, action, date);
             }
         }
 
+        // Applies multiple filters to logs and updates grid
         private void ApplyFilters(string logId, string userId, string action, string date)
         {
             using (var context = new DBContext())
             {
-                // start with the full logs table as a queryable object
                 var query = context.Logs.AsQueryable();
 
-                // filter by log id if provided
-                if (!string.IsNullOrEmpty(logId))
+                // Filter by Log ID
+                if (!string.IsNullOrEmpty(logId) && int.TryParse(logId, out int logIdInt))
                 {
-                    if (int.TryParse(logId, out int logIdInt))
-                    {
-                        query = query.Where(l => l.Id == logIdInt);
-                    }
+                    query = query.Where(l => l.Id == logIdInt);
                 }
 
-                // filter by user id if provided
-                if (!string.IsNullOrEmpty(userId))
+                // Filter by User ID
+                if (!string.IsNullOrEmpty(userId) && int.TryParse(userId, out int userIdInt))
                 {
-                    if (int.TryParse(userId, out int userIdInt))
-                    {
-                        query = query.Where(l => l.UserId == userIdInt);
-                    }
+                    query = query.Where(l => l.UserId == userIdInt);
                 }
 
-                // filter by action if its selected
+                // Filter by Action
                 if (!string.IsNullOrEmpty(action) && action != "Select Action")
                 {
                     query = query.Where(l => l.Action == action);
                 }
 
-                // filter by date
-                if (!string.IsNullOrEmpty(date))
+                // Filter by Date
+                if (!string.IsNullOrEmpty(date) && DateTime.TryParse(date, out DateTime selectedDate))
                 {
-                    if (DateTime.TryParse(date, out DateTime selectedDate))
-                    {
-                        query = query.Where(l => l.TimeStamp.Date == selectedDate.Date);
-                    }
+                    query = query.Where(l => l.TimeStamp.Date == selectedDate.Date);
                 }
 
-                // project and order by most recent logs first
+                // Sort and select filtered results
                 var result = query
                     .Select(l => new
                     {
@@ -203,21 +201,17 @@ namespace FormApp.Forms
                     .OrderByDescending(l => l.TimeStamp)
                     .ToList();
 
-                // bind the filtered results to the grid view
+                // Bind result to DataGridView
                 gridLogs.DataSource = result;
             }
         }
 
+        // Reloads all logs and resets search bar
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            // clear the search bar
             txtSearchBar.Text = "";
-
-            // reapply the placeholder
             PlaceholderService.SetPlaceholder(txtSearchBar, "Log ID");
-
-            // reload all logs from the database
-            LoadLogs();
+            LoadLogs(); // reload all logs
         }
     }
 }

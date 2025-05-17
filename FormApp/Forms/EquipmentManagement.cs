@@ -2,15 +2,8 @@
 using FormApp.Classes;
 using FormApp.Forms;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Graph.Drives.Item.Items.Item.GetActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithInterval;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Models;
 
@@ -19,36 +12,39 @@ namespace FormApp
     public partial class EquipmentManagement : Form
     {
         DBContext context;
+
         public EquipmentManagement()
         {
             InitializeComponent();
             context = new DBContext();
 
-
+            // Display user info
             lblName.Text = UserSession.FullName;
 
-            
-
+            // Apply role-based UI permissions
             RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblPosition,
-            lblViewAuditLogs,
-            lblDBbackup,
-            lblGenerateReport
+                UserSession.RoleID,
+                lblPosition,
+                lblViewAuditLogs,
+                lblDBbackup,
+                lblGenerateReport
             );
         }
 
         private void EquipmentManagement_Load(object sender, EventArgs e)
         {
+            // Setup DataGridView settings
             eqGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             eqGrid.MultiSelect = false;
             eqGrid.ReadOnly = true;
+
+            // Load equipment data on form load
             LoadEquipment();
         }
 
+        // Load all equipment data into grid
         private void LoadEquipment()
         {
-
             try
             {
                 var equipmentData = context.Equipment
@@ -72,10 +68,9 @@ namespace FormApp
             {
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
-
-
         }
 
+        // Search functionality based on any field or ID
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
@@ -91,6 +86,7 @@ namespace FormApp
                 var query = from ee in context.Equipment
                             select ee;
 
+                // If search is numeric → treat as ID
                 if (int.TryParse(search, out int id))
                 {
                     query = query.Where(ee => ee.Id == id);
@@ -131,11 +127,13 @@ namespace FormApp
             }
         }
 
+        // Reload grid data
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadEquipment();
         }
 
+        // Delete selected equipment
         private void btnDelete_Click(object sender, EventArgs e)
         {
             try
@@ -147,7 +145,6 @@ namespace FormApp
                 }
 
                 int id = Convert.ToInt32(eqGrid.SelectedRows[0].Cells["Id"].Value);
-
                 var equipment = context.Equipment.Find(id);
 
                 if (equipment != null)
@@ -157,7 +154,7 @@ namespace FormApp
                     context.Equipment.Remove(equipment);
                     context.SaveChanges();
 
-                    // Log the deletion
+                    // Log deletion
                     Log log = new Log
                     {
                         UserId = UserSession.UserID,
@@ -168,7 +165,7 @@ namespace FormApp
                     };
 
                     context.Logs.Add(log);
-                    context.SaveChanges(); // Save log
+                    context.SaveChanges();
 
                     MessageBox.Show("Record deleted successfully.");
                     LoadEquipment();
@@ -180,53 +177,13 @@ namespace FormApp
             }
         }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
-            FormHelper.NavigateTo<Dashboard>(this);
-        }
-
-        private void lblRequest_Click(object sender, EventArgs e)
-        {
-            FormHelper.NavigateTo<RentalRequests>(this);
-        }
-
-        private void lblViewAuditLogs_Click(object sender, EventArgs e)
-        {
-            // display audit logs form
-            FormHelper.NavigateTo<AuditLogs>(this);
-        }
-
-        private void lblDBbackup_Click(object sender, EventArgs e)
-        {
-            // display database backup form
-            FormHelper.NavigateTo<DatabaseBackup>(this);
-        }
-
-        private void lblGenerateReport_Click(object sender, EventArgs e)
-        {
-            // display generate reports form
-            FormHelper.NavigateTo<GenerateReports>(this);
-        }
-
-        private void lblLogOut_Click(object sender, EventArgs e)
-        {
-            // return to login page
-            FormHelper.ConfirmAndLogout(this);
-        }
-
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-
-            FormHelper.ExitApp();
-        }
-
+        // Add new equipment
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
-
             FormHelper.NavigateTo<AddEquipment>(this);
         }
 
+        // Edit selected equipment
         private void btnEdit_Click(object sender, EventArgs e)
         {
             try
@@ -239,7 +196,7 @@ namespace FormApp
 
                 int id = Convert.ToInt32(eqGrid.SelectedRows[0].Cells["Id"].Value);
 
-                // Find Equipment from DB
+                // Get full equipment object with navigation properties
                 var equipment = context.Equipment
                     .Include(e => e.Category)
                     .Include(e => e.Available)
@@ -251,7 +208,7 @@ namespace FormApp
                     EditEquipment editForm = new EditEquipment(equipment);
                     editForm.ShowDialog();
 
-                    //After editing → refresh data
+                    // Refresh grid after editing
                     LoadEquipment();
                 }
                 else
@@ -265,6 +222,18 @@ namespace FormApp
             }
         }
 
+        // ================== Navigation Labels ==================
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            FormHelper.NavigateTo<Dashboard>(this);
+        }
+
+        private void lblRequest_Click(object sender, EventArgs e)
+        {
+            FormHelper.NavigateTo<RentalRequests>(this);
+        }
+
         private void lblTransactions_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<RentalTransactions>(this);
@@ -272,8 +241,32 @@ namespace FormApp
 
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            // display return records form
             FormHelper.NavigateTo<ReturnRecords>(this);
+        }
+
+        private void lblViewAuditLogs_Click(object sender, EventArgs e)
+        {
+            FormHelper.NavigateTo<AuditLogs>(this);
+        }
+
+        private void lblDBbackup_Click(object sender, EventArgs e)
+        {
+            FormHelper.NavigateTo<DatabaseBackup>(this);
+        }
+
+        private void lblGenerateReport_Click(object sender, EventArgs e)
+        {
+            FormHelper.NavigateTo<GenerateReports>(this);
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FormHelper.ConfirmAndLogout(this);
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            FormHelper.ExitApp();
         }
     }
 }

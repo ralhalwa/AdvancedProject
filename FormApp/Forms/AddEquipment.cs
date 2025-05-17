@@ -11,29 +11,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FormApp.Classes;
 
 namespace FormApp.Forms
 {
     public partial class AddEquipment : Form
     {
         DBContext context;
+
         public AddEquipment()
         {
             InitializeComponent();
             context = new DBContext();
 
+            // Display user name from session
             lblUserName.Text = UserSession.FullName;
 
-            RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblPosition
-            );
-
+            // Apply role-based permissions
+            RoleHelper.ApplyRolePermissions(UserSession.RoleID, lblPosition);
 
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // setting placeholders
+            // Setting placeholder text for input fields
             PlaceholderService.SetPlaceholder(txtName, "Name");
             PlaceholderService.SetPlaceholder(txtDescription, "Description");
             PlaceholderService.SetPlaceholder(txtPrice, "Price");
@@ -41,6 +39,7 @@ namespace FormApp.Forms
 
         private void AddEquipment_Load(object sender, EventArgs e)
         {
+            // Load values into dropdowns
             LoadCategories();
             LoadAvailability();
             LoadCondition();
@@ -48,10 +47,12 @@ namespace FormApp.Forms
 
         private void LoadCategories()
         {
+            // Fetch category list from database and bind to ComboBox
             var categories = context.Categories
-        .Select(c => new { c.Id, c.Name })
-        .ToList();
+                .Select(c => new { c.Id, c.Name })
+                .ToList();
 
+            // Insert placeholder item
             categories.Insert(0, new { Id = -1, Name = "Category" });
 
             cmbCategory.DataSource = categories;
@@ -62,10 +63,12 @@ namespace FormApp.Forms
 
         private void LoadCondition()
         {
+            // Fetch condition list and bind to ComboBox
             var conditions = context.ConditionStatuses
-       .Select(cs => new { cs.Id, cs.Status })
-       .ToList();
+                .Select(cs => new { cs.Id, cs.Status })
+                .ToList();
 
+            // Insert placeholder item
             conditions.Insert(0, new { Id = -1, Status = "Condition" });
 
             cmbCondition.DataSource = conditions;
@@ -76,10 +79,12 @@ namespace FormApp.Forms
 
         private void LoadAvailability()
         {
+            // Fetch availability statuses and bind to ComboBox
             var availabilities = context.AvailableStatuses
-        .Select(av => new { av.Id, av.Status })
-        .ToList();
+                .Select(av => new { av.Id, av.Status })
+                .ToList();
 
+            // Insert placeholder item
             availabilities.Insert(0, new { Id = -1, Status = "Availability" });
 
             cmbAvailability.DataSource = availabilities;
@@ -90,10 +95,9 @@ namespace FormApp.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
             try
             {
-                // Validating Required Fields
+                // Basic validation
                 if (string.IsNullOrWhiteSpace(txtName.Text) ||
                     string.IsNullOrWhiteSpace(txtDescription.Text) ||
                     string.IsNullOrWhiteSpace(txtPrice.Text) ||
@@ -105,14 +109,14 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // Validate Price
+                // Validate price input
                 if (!decimal.TryParse(txtPrice.Text.Trim(), out decimal price))
                 {
                     MessageBox.Show("Invalid Price entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Create Equipment Object
+                // Create and populate new Equipment object
                 Equipment newEquipment = new Equipment
                 {
                     Name = txtName.Text.Trim(),
@@ -121,14 +125,14 @@ namespace FormApp.Forms
                     CategoryId = Convert.ToInt32(cmbCategory.SelectedValue),
                     AvailableId = Convert.ToInt32(cmbAvailability.SelectedValue),
                     ConditionId = Convert.ToInt32(cmbCondition.SelectedValue),
-                    Image = new byte[0] // Optional, can be updated later
+                    Image = new byte[0] // Placeholder for image data
                 };
 
-                // Add to Database
+                // Save new equipment to database
                 context.Equipment.Add(newEquipment);
                 context.SaveChanges();
 
-                // logging equipment addition
+                // Log the addition
                 Log log = new Log
                 {
                     UserId = UserSession.UserID,
@@ -139,20 +143,23 @@ namespace FormApp.Forms
                 };
 
                 context.Logs.Add(log);
-                context.SaveChanges(); // save log entry
+                context.SaveChanges(); // Save log entry
 
                 MessageBox.Show("Equipment Added Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                ClearControls(); // reset fields
+                // Reset input fields
+                ClearControls();
             }
             catch (Exception ex)
             {
+                // Display error if any exception occurs
                 MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ClearControls()
         {
+            // Clear all input fields and reset dropdowns
             txtName.Text = "";
             txtDescription.Text = "";
             txtPrice.Text = "";
@@ -163,12 +170,13 @@ namespace FormApp.Forms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            // Navigate back to EquipmentManagement form
             FormHelper.NavigateTo<EquipmentManagement>(this);
         }
 
         private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Event handler in case you need logic on category change
         }
     }
 }

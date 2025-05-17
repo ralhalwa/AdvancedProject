@@ -1,60 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Persistence;
 using FormApp.Classes;
-using FormApp.Forms;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using ClassLibrary.Models;
-
-
+using FormApp.Forms;
 
 namespace FormApp
 {
     public partial class RentalRequests : Form
     {
         DBContext context;
+
         public RentalRequests()
         {
             InitializeComponent();
             context = new DBContext();
 
+            // Display logged-in user
             lblName.Text = UserSession.FullName;
 
+            // Apply role-based permissions
             RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblPosition,
-            lblViewAuditLogs,
-            lblDBbackup,
-            lblGenerateReport
+                UserSession.RoleID,
+                lblPosition,
+                lblViewAuditLogs,
+                lblDBbackup,
+                lblGenerateReport
             );
         }
 
-        private void lblDashboard_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        // On form load
         private void RentalRequest_Load(object sender, EventArgs e)
         {
             RentalRequestGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             RentalRequestGrid.MultiSelect = false;
             RentalRequestGrid.ReadOnly = true;
-            LoadRentalRequest();
+
+            LoadRentalRequest(); // Load data into grid
         }
 
+        // Load all rental requests into grid
         private void LoadRentalRequest()
         {
             try
@@ -74,17 +62,14 @@ namespace FormApp
                     .ToList();
 
                 RentalRequestGrid.DataSource = requests;
-                RentalRequestGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-                RentalRequestGrid.MultiSelect = false;
-                RentalRequestGrid.ReadOnly = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
         }
 
+        // Search rental request by ID or name/status
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
@@ -139,11 +124,13 @@ namespace FormApp
             }
         }
 
+        // Reload all records
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadRentalRequest();
         }
 
+        // Reject rental request
         private void btnReject_Click(object sender, EventArgs e)
         {
             if (RentalRequestGrid.SelectedRows.Count == 0)
@@ -190,7 +177,7 @@ namespace FormApp
                         Source = "RentalRequests Form"
                     };
                     context.Logs.Add(log);
-                    context.SaveChanges(); // Save log
+                    context.SaveChanges();
 
                     MessageBox.Show("Request rejected.");
                     LoadRentalRequest();
@@ -206,6 +193,7 @@ namespace FormApp
             }
         }
 
+        // Accept rental request (open update form)
         private void btnAccept_Click(object sender, EventArgs e)
         {
             try
@@ -217,6 +205,7 @@ namespace FormApp
                 }
 
                 int selectedId = Convert.ToInt32(RentalRequestGrid.SelectedRows[0].Cells["Id"].Value);
+
                 var request = context.RentalRequests
                     .Include(r => r.Equipment)
                     .Include(r => r.RentalStatus1)
@@ -224,10 +213,11 @@ namespace FormApp
 
                 if (request != null)
                 {
+                    // Open update form with selected request
                     UpdateRentalRequest updateForm = new UpdateRentalRequest(request);
                     updateForm.ShowDialog();
 
-                    LoadRentalRequest(); // Refresh after update
+                    LoadRentalRequest(); // Refresh grid after update
                 }
                 else
                 {
@@ -240,11 +230,11 @@ namespace FormApp
             }
         }
 
+        // ========== Navigation Labels ==========
 
         private void label16_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<Dashboard>(this);
-
         }
 
         private void lblTransactions_Click(object sender, EventArgs e)
@@ -255,36 +245,30 @@ namespace FormApp
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<ReturnRecords>(this);
-
         }
 
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<EquipmentManagement>(this);
-
         }
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            // display audit logs form
             FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            // display database backup form
             FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
-            // display generate reports form
             FormHelper.NavigateTo<GenerateReports>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            // return to login page
             FormHelper.ConfirmAndLogout(this);
         }
 
@@ -293,9 +277,17 @@ namespace FormApp
             FormHelper.ExitApp();
         }
 
+        // Placeholder event if needed
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
+        }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
         }
     }
 }

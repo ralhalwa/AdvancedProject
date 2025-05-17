@@ -4,13 +4,7 @@ using FormApp.Classes;
 using FormApp.Forms;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FormApp
@@ -18,44 +12,38 @@ namespace FormApp
     public partial class ReturnRecords : Form
     {
         DBContext context;
+
         public ReturnRecords()
         {
             InitializeComponent();
             context = new DBContext();
 
-
+            // Display logged-in user's full name
             lblName.Text = UserSession.FullName;
 
+            // Apply role-based access controls
             RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblPosition,
-            lblViewAuditLogs,
-            lblDBbackup,
-            lblGenerateReport
+                UserSession.RoleID,
+                lblPosition,
+                lblViewAuditLogs,
+                lblDBbackup,
+                lblGenerateReport
             );
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // On form load, set up grid and load data
         private void ReturnRecords_Load(object sender, EventArgs e)
         {
             ReturnRecordGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             ReturnRecordGrid.MultiSelect = false;
             ReturnRecordGrid.ReadOnly = true;
-            LoadReturnRecord();
+
+            LoadReturnRecord(); // Load records from DB
         }
 
-        private void ReturnRecords_Load_1(object sender, EventArgs e)
-        {
-            LoadReturnRecord();
-        }
-
+        // Load all return records from the database
         private void LoadReturnRecord()
         {
-
             try
             {
                 var records = context.ReturnRecords
@@ -76,9 +64,9 @@ namespace FormApp
             {
                 MessageBox.Show("Error fetching records: " + ex.Message);
             }
-
         }
 
+        // Search return record by ID or name/condition
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
@@ -91,9 +79,10 @@ namespace FormApp
                     return;
                 }
 
-                IQueryable<ReturnRecord> query = context.ReturnRecords
+                var query = context.ReturnRecords
                     .Include(r => r.EquipmentNavigation)
-                    .Include(r => r.ConditionNavigation);
+                    .Include(r => r.ConditionNavigation)
+                    .AsQueryable();
 
                 if (int.TryParse(search, out int id))
                 {
@@ -103,8 +92,7 @@ namespace FormApp
                 {
                     query = query.Where(r =>
                         r.EquipmentNavigation.Name.ToLower().Contains(search) ||
-                        r.ConditionNavigation.Status.ToLower().Contains(search)
-                    );
+                        r.ConditionNavigation.Status.ToLower().Contains(search));
                 }
 
                 var result = query.Select(r => new
@@ -127,6 +115,7 @@ namespace FormApp
             }
         }
 
+        // Delete selected return record
         private void btnDelete_Click(object sender, EventArgs e)
         {
             try
@@ -134,7 +123,6 @@ namespace FormApp
                 if (ReturnRecordGrid.SelectedRows.Count > 0)
                 {
                     int id = Convert.ToInt32(ReturnRecordGrid.SelectedRows[0].Cells["Id"].Value);
-
                     var record = context.ReturnRecords.Find(id);
 
                     if (record != null)
@@ -142,7 +130,7 @@ namespace FormApp
                         var confirm = MessageBox.Show("Are you sure to delete this record?", "Confirm Delete", MessageBoxButtons.YesNo);
                         if (confirm == DialogResult.Yes)
                         {
-                            // Get equipment name before deleting
+                            // Get equipment name before deletion
                             var equipmentName = context.Equipment.FirstOrDefault(e => e.Id == record.Equipment)?.Name ?? "Unknown";
 
                             context.ReturnRecords.Remove(record);
@@ -159,14 +147,14 @@ namespace FormApp
                             };
 
                             context.Logs.Add(log);
-                            context.SaveChanges(); // Save log
+                            context.SaveChanges();
 
                             MessageBox.Show("Record deleted successfully.");
                             LoadReturnRecord();
                         }
                     }
-                    }
-                    else
+                }
+                else
                 {
                     MessageBox.Show("Please select a row to delete.");
                 }
@@ -175,9 +163,9 @@ namespace FormApp
             {
                 MessageBox.Show("Error deleting record: " + ex.Message);
             }
-
         }
 
+        // Refresh the return records grid
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             try
@@ -190,6 +178,7 @@ namespace FormApp
             }
         }
 
+        // Update selected return record
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -202,7 +191,6 @@ namespace FormApp
 
                 int id = Convert.ToInt32(ReturnRecordGrid.SelectedRows[0].Cells["Id"].Value);
 
-                // Find ReturnRecord from DB
                 var record = context.ReturnRecords
                     .Include(r => r.EquipmentNavigation)
                     .Include(r => r.ConditionNavigation)
@@ -211,10 +199,9 @@ namespace FormApp
                 if (record != null)
                 {
                     UpdateRecord updateForm = new UpdateRecord(record);
-                    updateForm.ShowDialog();
+                    updateForm.ShowDialog(); // Open update form
 
-                    //After editing → refresh data
-                    LoadReturnRecord();
+                    LoadReturnRecord(); // Refresh after update
                 }
                 else
                 {
@@ -227,10 +214,13 @@ namespace FormApp
             }
         }
 
+        // Navigate to create return record form
         private void btnCreate_Click(object sender, EventArgs e)
         {
             FormHelper.NavigateTo<CreateRecord>(this);
         }
+
+        // ========== Navigation Labels ==========
 
         private void label16_Click(object sender, EventArgs e)
         {
@@ -249,25 +239,21 @@ namespace FormApp
 
         private void lblViewAuditLogs_Click(object sender, EventArgs e)
         {
-            // display view audit form
             FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblDBbackup_Click(object sender, EventArgs e)
         {
-            // display database backup form
             FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblGenerateReport_Click(object sender, EventArgs e)
         {
-            // display generate reports form
             FormHelper.NavigateTo<GenerateReports>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            // return to login page
             FormHelper.ConfirmAndLogout(this);
         }
 
@@ -278,11 +264,16 @@ namespace FormApp
 
         private void lblTransactions_Click(object sender, EventArgs e)
         {
-            // display rental transactions form
             FormHelper.NavigateTo<RentalTransactions>(this);
         }
+
+        // Unused button event
+        private void button1_Click(object sender, EventArgs e) { }
+
+        // Duplicate load event handler (can remove)
+        private void ReturnRecords_Load_1(object sender, EventArgs e)
+        {
+            LoadReturnRecord();
+        }
     }
-
 }
-
-

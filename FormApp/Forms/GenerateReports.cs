@@ -1,15 +1,11 @@
 ﻿using FormApp.Classes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary.Persistence;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using ClassLibrary.Models;
 
@@ -18,38 +14,41 @@ namespace FormApp.Forms
     public partial class GenerateReports : Form
     {
         private readonly DBContext _context;
-        private string currentReport = "";
+        private string currentReport = ""; // to track current report name for download
 
         public GenerateReports()
         {
             InitializeComponent();
-
             _context = new DBContext();
 
+            // Display logged-in user
             lblName.Text = UserSession.FullName;
 
+            // Apply role-based UI permissions
             RoleHelper.ApplyRolePermissions(
-            UserSession.RoleID,
-            lblRole,
-            lblAuditLogs,
-            lblPerformDBBackup,
-            lblGenerateReports
+                UserSession.RoleID,
+                lblRole,
+                lblAuditLogs,
+                lblPerformDBBackup,
+                lblGenerateReports
             );
 
+            // Format grid
             gridReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void GenerateReports_Load(object sender, EventArgs e)
         {
-
+            // No data loaded initially
         }
 
+        // ======================== Report 1: Active Customers ========================
         private void btnActiveCustomers_Click(object sender, EventArgs e)
         {
             try
             {
+                // Get users with RoleId = 3 (Customer)
                 var customers = _context.Users
                     .Where(u => u.RoleId == 3)
                     .Select(u => new Dictionary<string, object>
@@ -61,10 +60,11 @@ namespace FormApp.Forms
                     })
                     .ToList();
 
+                // Bind to grid
                 gridReports.DataSource = new BindingSource { DataSource = ToDataTable(customers) };
                 currentReport = "ActiveCustomers";
 
-                // log report generation
+                // Log action
                 Log log = new Log
                 {
                     UserId = UserSession.UserID,
@@ -74,7 +74,7 @@ namespace FormApp.Forms
                     Source = "GenerateReports Form"
                 };
                 _context.Logs.Add(log);
-                _context.SaveChanges(); 
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -82,6 +82,7 @@ namespace FormApp.Forms
             }
         }
 
+        // ======================== Report 2: Most Rented Equipment ========================
         private void btnMostRentedEquipment_Click(object sender, EventArgs e)
         {
             try
@@ -98,16 +99,18 @@ namespace FormApp.Forms
                     })
                     .Select(g => new Dictionary<string, object>
                     {
-                { "Equipment Name", g.Key.Name },
-                { "Category", g.Key.Category },
-                { "Rental Count", g.Count() }
+                        { "Equipment Name", g.Key.Name },
+                        { "Category", g.Key.Category },
+                        { "Rental Count", g.Count() }
                     })
                     .OrderByDescending(e => (int)e["Rental Count"])
                     .ToList();
 
+                // Bind to grid
                 gridReports.DataSource = new BindingSource { DataSource = ToDataTable(equipmentData) };
                 currentReport = "MostRentedEquipment";
 
+                // Log action
                 Log log = new Log
                 {
                     UserId = UserSession.UserID,
@@ -125,6 +128,7 @@ namespace FormApp.Forms
             }
         }
 
+        // ======================== Export Report to CSV ========================
         private void btnDownload_Click(object sender, EventArgs e)
         {
             if (gridReports.DataSource == null)
@@ -144,8 +148,10 @@ namespace FormApp.Forms
                     {
                         var dt = (DataTable)((BindingSource)gridReports.DataSource).DataSource;
                         ExportDataTableToCSV(dt, sfd.FileName);
+
                         MessageBox.Show("Report downloaded successfully!");
 
+                        // Log download
                         Log log = new Log
                         {
                             UserId = UserSession.UserID,
@@ -165,17 +171,19 @@ namespace FormApp.Forms
             }
         }
 
+        // Converts DataTable to CSV
         private void ExportDataTableToCSV(DataTable dt, string filePath)
         {
             var lines = new List<string>();
 
+            // Header
             string[] columnNames = dt.Columns.Cast<DataColumn>()
                                      .Select(column => column.ColumnName)
                                      .ToArray();
-
             var header = string.Join(",", columnNames);
             lines.Add(header);
 
+            // Rows
             foreach (DataRow row in dt.Rows)
             {
                 string[] fields = row.ItemArray.Select(field => field.ToString()).ToArray();
@@ -185,6 +193,7 @@ namespace FormApp.Forms
             File.WriteAllLines(filePath, lines);
         }
 
+        // Converts List<Dictionary<string, object>> to DataTable for grid binding
         private DataTable ToDataTable(List<Dictionary<string, object>> data)
         {
             DataTable table = new DataTable();
@@ -193,68 +202,57 @@ namespace FormApp.Forms
                 return table;
 
             foreach (var key in data[0].Keys)
-            {
                 table.Columns.Add(key);
-            }
 
             foreach (var dict in data)
             {
                 DataRow row = table.NewRow();
                 foreach (var key in dict.Keys)
-                {
                     row[key] = dict[key] ?? DBNull.Value;
-                }
                 table.Rows.Add(row);
             }
 
             return table;
         }
 
+        // ======================== Sidebar Navigation ========================
         private void lblDashboard_Click(object sender, EventArgs e)
         {
-            // display dashboard
             FormHelper.NavigateTo<Dashboard>(this);
         }
 
         private void lblRentalRequests_Click(object sender, EventArgs e)
         {
-            // display rental requests form
             FormHelper.NavigateTo<RentalRequests>(this);
         }
 
         private void lblRentalTransactions_Click(object sender, EventArgs e)
         {
-            // display rental transactions form
             FormHelper.NavigateTo<RentalTransactions>(this);
         }
 
         private void lblReturnRecords_Click(object sender, EventArgs e)
         {
-            // display return records form
             FormHelper.NavigateTo<ReturnRecords>(this);
         }
 
         private void lblEquipmentManagement_Click(object sender, EventArgs e)
         {
-            // display equipment management form
             FormHelper.NavigateTo<EquipmentManagement>(this);
         }
 
         private void lblAuditLogs_Click(object sender, EventArgs e)
         {
-            // display audit logs form
             FormHelper.NavigateTo<AuditLogs>(this);
         }
 
         private void lblPerformDBBackup_Click(object sender, EventArgs e)
         {
-            // display database backup form
             FormHelper.NavigateTo<DatabaseBackup>(this);
         }
 
         private void lblLogOut_Click(object sender, EventArgs e)
         {
-            // return to login page
             FormHelper.ConfirmAndLogout(this);
         }
 
