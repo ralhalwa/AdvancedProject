@@ -275,5 +275,58 @@ namespace FormApp
         {
             LoadReturnRecord();
         }
+
+        private void txtReturnRecordId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            ReturnRecordFilter filterForm = new ReturnRecordFilter();
+
+            if (filterForm.ShowDialog() == DialogResult.OK)
+            {
+                var query = context.ReturnRecords
+                    .Include(r => r.EquipmentNavigation)
+                    .Include(r => r.ConditionNavigation)
+                    .AsQueryable();
+
+                // Apply filters from filter form
+                if (int.TryParse(filterForm.RecordId, out int recordId))
+                    query = query.Where(r => r.Id == recordId);
+
+                if (!string.IsNullOrWhiteSpace(filterForm.EquipmentName))
+                    query = query.Where(r => r.EquipmentNavigation.Name.ToLower().Contains(filterForm.EquipmentName.ToLower()));
+
+                if (!string.IsNullOrWhiteSpace(filterForm.Condition) && filterForm.Condition != "Select Condition")
+                    query = query.Where(r => r.ConditionNavigation.Status == filterForm.Condition);
+
+                if (decimal.TryParse(filterForm.LateFee, out decimal fee))
+                    query = query.Where(r => r.LateFees == fee);
+
+                if (filterForm.ReturnDate.HasValue)
+                    query = query.Where(r => r.ReturnDate.Date == filterForm.ReturnDate.Value.Date);
+
+                var filtered = query.Select(r => new
+                {
+                    r.Id,
+                    EquipmentName = r.EquipmentNavigation.Name,
+                    Condition = r.ConditionNavigation.Status,
+                    r.ReturnDate,
+                    r.LateFees
+                }).ToList();
+
+                // If no results
+                if (filtered.Count == 0)
+                {
+                    MessageBox.Show("No matching records found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Display in grid
+                ReturnRecordGrid.DataSource = filtered;
+            }
+        }
     }
 }

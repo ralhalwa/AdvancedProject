@@ -41,6 +41,9 @@
             cmbCondition = new ComboBox();
             btnAdd = new Button();
             lblDivider = new Label();
+            pictureBoxPreview = new PictureBox();
+            btnBrowse = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPreview).BeginInit();
             SuspendLayout();
             // 
             // lblUserName
@@ -89,7 +92,7 @@
             // 
             txtName.BackColor = Color.WhiteSmoke;
             txtName.ForeColor = Color.Black;
-            txtName.Location = new Point(285, 236);
+            txtName.Location = new Point(283, 226);
             txtName.Name = "txtName";
             txtName.Size = new Size(162, 27);
             txtName.TabIndex = 3;
@@ -98,19 +101,20 @@
             // 
             txtDescription.BackColor = Color.WhiteSmoke;
             txtDescription.ForeColor = Color.Black;
-            txtDescription.Location = new Point(285, 293);
+            txtDescription.Location = new Point(283, 277);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(366, 27);
+            txtDescription.Size = new Size(166, 27);
             txtDescription.TabIndex = 5;
+            txtDescription.TextChanged += txtDescription_TextChanged;
             // 
             // txtPrice
             // 
             txtPrice.BackColor = Color.WhiteSmoke;
             txtPrice.ForeColor = Color.Black;
-            txtPrice.Location = new Point(285, 351);
+            txtPrice.Location = new Point(283, 338);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(162, 27);
+            txtPrice.Size = new Size(166, 27);
             txtPrice.TabIndex = 6;
             // 
             // cmbCategory
@@ -118,7 +122,7 @@
             cmbCategory.BackColor = Color.WhiteSmoke;
             cmbCategory.ForeColor = Color.Black;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(489, 236);
+            cmbCategory.Location = new Point(518, 225);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(162, 28);
             cmbCategory.TabIndex = 7;
@@ -130,7 +134,7 @@
             cmbAvailability.DisplayMember = "Status";
             cmbAvailability.ForeColor = Color.Black;
             cmbAvailability.FormattingEnabled = true;
-            cmbAvailability.Location = new Point(489, 351);
+            cmbAvailability.Location = new Point(518, 276);
             cmbAvailability.Name = "cmbAvailability";
             cmbAvailability.Size = new Size(162, 28);
             cmbAvailability.TabIndex = 8;
@@ -140,9 +144,9 @@
             cmbCondition.BackColor = Color.WhiteSmoke;
             cmbCondition.ForeColor = Color.Black;
             cmbCondition.FormattingEnabled = true;
-            cmbCondition.Location = new Point(285, 413);
+            cmbCondition.Location = new Point(518, 338);
             cmbCondition.Name = "cmbCondition";
-            cmbCondition.Size = new Size(366, 28);
+            cmbCondition.Size = new Size(162, 28);
             cmbCondition.TabIndex = 9;
             // 
             // btnAdd
@@ -150,7 +154,7 @@
             btnAdd.BackColor = Color.FromArgb(249, 115, 22);
             btnAdd.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(404, 483);
+            btnAdd.Location = new Point(408, 570);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(113, 35);
             btnAdd.TabIndex = 10;
@@ -167,12 +171,36 @@
             lblDivider.Size = new Size(920, 1);
             lblDivider.TabIndex = 63;
             // 
+            // pictureBoxPreview
+            // 
+            pictureBoxPreview.Location = new Point(294, 384);
+            pictureBoxPreview.Name = "pictureBoxPreview";
+            pictureBoxPreview.Size = new Size(150, 150);
+            pictureBoxPreview.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxPreview.TabIndex = 64;
+            pictureBoxPreview.TabStop = false;
+            // 
+            // btnBrowse
+            // 
+            btnBrowse.BackColor = Color.FromArgb(249, 115, 22);
+            btnBrowse.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnBrowse.ForeColor = Color.White;
+            btnBrowse.Location = new Point(524, 427);
+            btnBrowse.Name = "btnBrowse";
+            btnBrowse.Size = new Size(156, 35);
+            btnBrowse.TabIndex = 65;
+            btnBrowse.Text = "Browse";
+            btnBrowse.UseVisualStyleBackColor = false;
+            btnBrowse.Click += btnBrowse_Click;
+            // 
             // AddEquipment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(927, 648);
+            Controls.Add(btnBrowse);
+            Controls.Add(pictureBoxPreview);
             Controls.Add(lblPosition);
             Controls.Add(lblUserName);
             Controls.Add(lblDivider);
@@ -190,6 +218,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddEquipment";
             Load += AddEquipment_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPreview).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -207,5 +236,7 @@
         private ComboBox cmbCondition;
         private Button btnAdd;
         private Label lblDivider;
+        private PictureBox pictureBoxPreview;
+        private Button btnBrowse;
     }
 }

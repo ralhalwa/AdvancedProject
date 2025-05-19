@@ -136,6 +136,7 @@
             // 
             // dptStartDate
             // 
+            dptStartDate.Enabled = false;
             dptStartDate.Format = DateTimePickerFormat.Short;
             dptStartDate.Location = new Point(254, 352);
             dptStartDate.Name = "dptStartDate";
@@ -144,6 +145,7 @@
             // 
             // dptReturnDate
             // 
+            dptReturnDate.Enabled = false;
             dptReturnDate.Format = DateTimePickerFormat.Short;
             dptReturnDate.Location = new Point(493, 352);
             dptReturnDate.Name = "dptReturnDate";
@@ -156,6 +158,7 @@
             txtCost.ForeColor = Color.Black;
             txtCost.Location = new Point(254, 435);
             txtCost.Name = "txtCost";
+            txtCost.ReadOnly = true;
             txtCost.Size = new Size(162, 27);
             txtCost.TabIndex = 83;
             // 

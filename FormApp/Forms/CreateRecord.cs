@@ -142,8 +142,8 @@ namespace FormApp.Forms
             }
             catch (Exception ex)
             {
-                // Catch and show any unexpected error
-                MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string innerMessage = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show("Error creating record:\n" + innerMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

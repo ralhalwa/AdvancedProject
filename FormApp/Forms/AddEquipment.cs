@@ -14,8 +14,12 @@ using System.Windows.Forms;
 
 namespace FormApp.Forms
 {
+
+
     public partial class AddEquipment : Form
     {
+        private byte[] uploadedImageBytes = null;
+
         DBContext context;
 
         public AddEquipment()
@@ -97,7 +101,7 @@ namespace FormApp.Forms
         {
             try
             {
-                // Basic validation
+                // Validate required fields
                 if (string.IsNullOrWhiteSpace(txtName.Text) ||
                     string.IsNullOrWhiteSpace(txtDescription.Text) ||
                     string.IsNullOrWhiteSpace(txtPrice.Text) ||
@@ -105,18 +109,25 @@ namespace FormApp.Forms
                     Convert.ToInt32(cmbAvailability.SelectedValue) == -1 ||
                     Convert.ToInt32(cmbCondition.SelectedValue) == -1)
                 {
-                    MessageBox.Show("Please fill all fields!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please fill all fields and select dropdowns!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // ✅ New validation: ensure name has no numbers
+                if (txtName.Text.Any(char.IsDigit))
+                {
+                    MessageBox.Show("Name must contain only letters. Numbers are not allowed.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // Validate price input
                 if (!decimal.TryParse(txtPrice.Text.Trim(), out decimal price))
                 {
-                    MessageBox.Show("Invalid Price entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid price entered!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Create and populate new Equipment object
+                // Create equipment object
                 Equipment newEquipment = new Equipment
                 {
                     Name = txtName.Text.Trim(),
@@ -125,47 +136,45 @@ namespace FormApp.Forms
                     CategoryId = Convert.ToInt32(cmbCategory.SelectedValue),
                     AvailableId = Convert.ToInt32(cmbAvailability.SelectedValue),
                     ConditionId = Convert.ToInt32(cmbCondition.SelectedValue),
-                    Image = new byte[0] // Placeholder for image data
+                    Image = uploadedImageBytes ?? new byte[0]
                 };
 
-                // Save new equipment to database
+                // Save to database
                 context.Equipment.Add(newEquipment);
                 context.SaveChanges();
 
-                // Log the addition
+                // Log
                 Log log = new Log
                 {
                     UserId = UserSession.UserID,
                     Action = "Add Equipment",
                     TimeStamp = DateTime.Now,
-                    AffectedData = $"Equipment Added: {newEquipment.Name}, ID: {newEquipment.Id}",
+                    AffectedData = $"Added Equipment: {newEquipment.Name}, ID: {newEquipment.Id}",
                     Source = "AddEquipment Form"
                 };
 
                 context.Logs.Add(log);
-                context.SaveChanges(); // Save log entry
+                context.SaveChanges();
 
-                MessageBox.Show("Equipment Added Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Reset input fields
+                MessageBox.Show("Equipment added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearControls();
             }
             catch (Exception ex)
             {
-                // Display error if any exception occurs
                 MessageBox.Show("An error occurred:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ClearControls()
         {
-            // Clear all input fields and reset dropdowns
             txtName.Text = "";
             txtDescription.Text = "";
             txtPrice.Text = "";
-            cmbCategory.SelectedIndex = -1;
-            cmbAvailability.SelectedIndex = -1;
-            cmbCondition.SelectedIndex = -1;
+            cmbCategory.SelectedIndex = 0;
+            cmbAvailability.SelectedIndex = 0;
+            cmbCondition.SelectedIndex = 0;
+            pictureBoxPreview.Image = null;            // Clear preview
+            uploadedImageBytes = null;                 // Clear image bytes
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -177,6 +186,35 @@ namespace FormApp.Forms
         private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Event handler in case you need logic on category change
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Select Image";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Load the image to the PictureBox
+                    Image img = Image.FromFile(openFileDialog.FileName);
+                    pictureBoxPreview.Image = img;
+                    pictureBoxPreview.SizeMode = PictureBoxSizeMode.Zoom;
+
+                    // Convert image to byte[]
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        img.Save(ms, img.RawFormat);
+                        uploadedImageBytes = ms.ToArray();
+                    }
+                }
+            }
         }
     }
 }

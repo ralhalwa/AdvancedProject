@@ -1286,3 +1286,6 @@ C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-window
 C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.pdb
 C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.genruntimeconfig.cache
 C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\ref\FormApp.dll
+C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.RentalRequestFilter.resources
+C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.RentalTransactionFilter.resources
+C:\Users\Sharmin\Desktop\FINALaP\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.ReturnRecordFilter.resources

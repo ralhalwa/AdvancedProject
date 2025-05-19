@@ -271,5 +271,66 @@ namespace FormApp
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e) { }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+             // Open the filter form as dialog
+    RentalTransactionFilter filterForm = new RentalTransactionFilter();
+
+    if (filterForm.ShowDialog() == DialogResult.OK)
+    {
+        // Start base query
+        var query = context.RentalTransactions
+            .Include(t => t.User)
+            .Include(t => t.PaymentStatusNavigation)
+            .Include(t => t.RentalStatusNavigation)
+            .AsQueryable();
+
+        // Apply filters one by one based on input
+
+        if (int.TryParse(filterForm.RequestId, out int reqId))
+            query = query.Where(t => t.Id == reqId);
+
+        if (!string.IsNullOrWhiteSpace(filterForm.FullName))
+            query = query.Where(t => t.User.Fname.ToLower().Contains(filterForm.FullName.ToLower()));
+
+        if (decimal.TryParse(filterForm.Fee, out decimal fee))
+            query = query.Where(t => t.Fee == fee);
+
+        if (DateTime.TryParse(filterForm.PickupDate, out DateTime pickup))
+            query = query.Where(t => t.Pickup.Date == pickup.Date);
+
+        if (DateTime.TryParse(filterForm.ReturnDate, out DateTime ret))
+            query = query.Where(t => t.ReturnDate.Date == ret.Date);
+
+        if (!string.IsNullOrWhiteSpace(filterForm.PaymentStatus) && filterForm.PaymentStatus != "Select Payment")
+            query = query.Where(t => t.PaymentStatusNavigation.Status == filterForm.PaymentStatus);
+
+        if (!string.IsNullOrWhiteSpace(filterForm.RentalStatus) && filterForm.RentalStatus != "Select Rental")
+            query = query.Where(t => t.RentalStatusNavigation.Status == filterForm.RentalStatus);
+
+        // Project results
+        var filtered = query.Select(t => new
+        {
+            t.Id,
+            FullName = t.User.Fname,
+            PaymentStatus = t.PaymentStatusNavigation.Status,
+            RentalStatus = t.RentalStatusNavigation.Status,
+            Fee = t.Fee,
+            PickupDate = t.Pickup,
+            ReturnDate = t.ReturnDate
+        }).ToList();
+
+        // Handle no results
+        if (filtered.Count == 0)
+        {
+            MessageBox.Show("No matching records found.");
+            return;
+        }
+
+        // Display filtered results
+        transactionGrid.DataSource = filtered;
+    }
+        }
     }
 }

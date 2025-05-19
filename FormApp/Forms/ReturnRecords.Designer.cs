@@ -51,6 +51,7 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel4 = new Panel();
             lblDivider = new Label();
+            btnFilter = new Button();
             ((System.ComponentModel.ISupportInitialize)ReturnRecordGrid).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel4.SuspendLayout();
@@ -77,19 +78,19 @@
             // 
             // txtReturnRecordId
             // 
-            txtReturnRecordId.ForeColor = SystemColors.ScrollBar;
+            txtReturnRecordId.ForeColor = Color.Black;
             txtReturnRecordId.Location = new Point(262, 97);
             txtReturnRecordId.Name = "txtReturnRecordId";
-            txtReturnRecordId.Size = new Size(371, 27);
+            txtReturnRecordId.Size = new Size(303, 27);
             txtReturnRecordId.TabIndex = 18;
-            txtReturnRecordId.Text = "Rental Record ID";
+            txtReturnRecordId.TextChanged += txtReturnRecordId_TextChanged;
             // 
             // btnSearch
             // 
             btnSearch.BackColor = Color.FromArgb(249, 115, 22);
             btnSearch.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(662, 95);
+            btnSearch.Location = new Point(571, 95);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(113, 35);
             btnSearch.TabIndex = 19;
@@ -261,7 +262,7 @@
             btnRefresh.BackColor = Color.FromArgb(249, 115, 22);
             btnRefresh.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(791, 95);
+            btnRefresh.Location = new Point(807, 97);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(115, 35);
             btnRefresh.TabIndex = 70;
@@ -322,12 +323,27 @@
             lblDivider.Size = new Size(920, 1);
             lblDivider.TabIndex = 71;
             // 
+            // btnFilter
+            // 
+            btnFilter.BackColor = Color.FromArgb(249, 115, 22);
+            btnFilter.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(689, 97);
+            btnFilter.Margin = new Padding(2);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(113, 35);
+            btnFilter.TabIndex = 77;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
+            // 
             // ReturnRecords
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(927, 648);
+            Controls.Add(btnFilter);
             Controls.Add(lblPosition);
             Controls.Add(lblName);
             Controls.Add(lblDivider);
@@ -376,5 +392,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel4;
         private Label lblDivider;
+        private Button btnFilter;
     }
 }

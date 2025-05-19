@@ -289,5 +289,59 @@ namespace FormApp
         private void lblDashboard_Click(object sender, EventArgs e)
         {
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            // Open the RentalRequestFilter form as a popup
+            RentalRequestFilter filterForm = new RentalRequestFilter();
+
+            if (filterForm.ShowDialog() == DialogResult.OK)
+            {
+                // Start query with includes
+                var query = context.RentalRequests
+                    .Include(r => r.Equipment)
+                    .Include(r => r.RentalStatus1)
+                    .AsQueryable();
+
+                // Apply filters only if user provided values
+
+                if (int.TryParse(filterForm.RequestId, out int reqId))
+                    query = query.Where(r => r.Id == reqId);
+
+                if (int.TryParse(filterForm.EquipmentId, out int eqId))
+                    query = query.Where(r => r.Equipment.Id == eqId);
+
+                if (decimal.TryParse(filterForm.Cost, out decimal cost))
+                    query = query.Where(r => r.Cost == cost);
+
+                if (!string.IsNullOrWhiteSpace(filterForm.RentalStatus) && filterForm.RentalStatus != "Select Status")
+                    query = query.Where(r => r.RentalStatus1.Status == filterForm.RentalStatus);
+
+                if (DateTime.TryParse(filterForm.StartDate, out DateTime startDate))
+                    query = query.Where(r => r.StartDate.Date == startDate.Date);
+
+                if (DateTime.TryParse(filterForm.ReturnDate, out DateTime returnDate))
+                    query = query.Where(r => r.ReturnDate.Date == returnDate.Date);
+
+                // Project result to anonymous type and display in DataGridView
+                var filtered = query.Select(r => new
+                {
+                    r.Id,
+                    EquipmentName = r.Equipment.Name,
+                    r.StartDate,
+                    r.ReturnDate,
+                    r.Cost,
+                    RentalStatus = r.RentalStatus1.Status
+                }).ToList();
+
+                if (filtered.Count == 0)
+                {
+                    MessageBox.Show("No matching records found.");
+                    return;
+                }
+
+                RentalRequestGrid.DataSource = filtered;
+            }
+        }
     }
 }

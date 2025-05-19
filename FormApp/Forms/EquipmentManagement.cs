@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 using ClassLibrary.Models;
+using System.Data;
 
 namespace FormApp
 {
@@ -47,26 +48,70 @@ namespace FormApp
         {
             try
             {
-                var equipmentData = context.Equipment
+                // Create a DataTable to store all equipment info including image
+                DataTable table = new DataTable();
+                table.Columns.Add("ID", typeof(int));
+                table.Columns.Add("Name", typeof(string));
+                table.Columns.Add("Description", typeof(string));
+                table.Columns.Add("Category", typeof(string));
+                table.Columns.Add("Availability", typeof(string));
+                table.Columns.Add("Condition", typeof(string));
+                table.Columns.Add("Price", typeof(decimal));
+                table.Columns.Add("Image", typeof(Image)); // Final image column
+
+                // Load from DB including navigation properties
+                var equipmentList = context.Equipment
                     .Include(e => e.Category)
                     .Include(e => e.Available)
                     .Include(e => e.Condition)
-                    .Select(e => new
+                    .ToList();
+
+                foreach (var e in equipmentList)
+                {
+                    Image img = null;
+
+                    // Try converting byte[] to Image
+                    if (e.Image != null && e.Image.Length > 0)
                     {
+                        try
+                        {
+                            using (var ms = new MemoryStream(e.Image))
+                            {
+                                img = Image.FromStream(ms);
+                            }
+                        }
+                        catch
+                        {
+                            img = null; // fallback if image is broken
+                        }
+                    }
+
+                    // Add row to table
+                    table.Rows.Add(
                         e.Id,
                         e.Name,
                         e.Description,
-                        Category = e.Category.Name,
-                        Availability = e.Available.Status,
-                        Condition = e.Condition.Status,
-                        e.Price
-                    }).ToList();
+                        e.Category.Name,
+                        e.Available.Status,
+                        e.Condition.Status,
+                        e.Price,
+                        img
+                    );
+                }
 
-                eqGrid.DataSource = equipmentData;
+                // Set data source to the DataGridView
+                eqGrid.DataSource = table;
+
+                // Format image column
+                DataGridViewImageColumn imgCol = (DataGridViewImageColumn)eqGrid.Columns["Image"];
+                imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                eqGrid.RowTemplate.Height = 80;
+                eqGrid.Columns["Image"].Width = 100; // optional
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading data: " + ex.Message);
+                MessageBox.Show("Error loading equipment with images: " + ex.Message);
             }
         }
 
@@ -173,7 +218,11 @@ namespace FormApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error deleting record: " + ex.Message);
+              // Show inner exception if available
+        string message = ex.InnerException?.Message ?? ex.Message;
+
+        MessageBox.Show("Error deleting record: " + message,
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -268,5 +317,11 @@ namespace FormApp
         {
             FormHelper.ExitApp();
         }
+
+        //private void btnFilter_Click(object sender, EventArgs e)
+        //{
+            
+            
+        //}
     }
 }

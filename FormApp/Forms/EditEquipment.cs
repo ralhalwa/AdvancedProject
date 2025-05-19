@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using System.IO;
+using System.Drawing;
 
 namespace FormApp.Forms
 {
@@ -12,6 +14,7 @@ namespace FormApp.Forms
     {
         DBContext context;
         private Equipment selectedEquipment;
+        private byte[] selectedImageBytes = null; // for updated image
 
         // Constructor receives the selected Equipment object
         public EditEquipment(Equipment equipment)
@@ -20,10 +23,8 @@ namespace FormApp.Forms
             context = new DBContext();
             selectedEquipment = equipment;
 
-            // Display the logged-in user's name
             lblUserName.Text = UserSession.FullName;
 
-            // Apply permissions based on user role
             RoleHelper.ApplyRolePermissions(
                 UserSession.RoleID,
                 lblPosition
@@ -41,7 +42,7 @@ namespace FormApp.Forms
         {
             try
             {
-                // Validation for empty fields
+                // Validate required fields
                 if (string.IsNullOrWhiteSpace(txtName.Text) ||
                     string.IsNullOrWhiteSpace(txtDescription.Text) ||
                     string.IsNullOrWhiteSpace(txtPrice.Text) ||
@@ -53,6 +54,13 @@ namespace FormApp.Forms
                     return;
                 }
 
+                // ✅ Name validation: No digits allowed
+                if (txtName.Text.Any(char.IsDigit))
+                {
+                    MessageBox.Show("Name must contain only letters. Numbers are not allowed.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 // Validate price format
                 if (!decimal.TryParse(txtPrice.Text, out decimal price))
                 {
@@ -60,7 +68,7 @@ namespace FormApp.Forms
                     return;
                 }
 
-                // Assign new values to the selected equipment object
+                // Update equipment details
                 selectedEquipment.Name = txtName.Text.Trim();
                 selectedEquipment.Description = txtDescription.Text.Trim();
                 selectedEquipment.Price = price;
@@ -68,11 +76,15 @@ namespace FormApp.Forms
                 selectedEquipment.AvailableId = Convert.ToInt32(cmbAvailability.SelectedValue);
                 selectedEquipment.ConditionId = Convert.ToInt32(cmbCondition.SelectedValue);
 
-                // Mark entity as modified and save changes
+                if (selectedImageBytes != null)
+                {
+                    selectedEquipment.Image = selectedImageBytes;
+                }
+
                 context.Entry(selectedEquipment).State = EntityState.Modified;
                 context.SaveChanges();
 
-                // Log the edit action
+                // Log the update
                 Log log = new Log
                 {
                     UserId = UserSession.UserID,
@@ -83,15 +95,13 @@ namespace FormApp.Forms
                 };
 
                 context.Logs.Add(log);
-                context.SaveChanges(); // Save log to database
+                context.SaveChanges();
 
-                // Notify user of success
                 MessageBox.Show("Equipment Updated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); // Close the edit form
+                this.Close();
             }
             catch (Exception ex)
             {
-                // Show error message if something goes wrong
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -139,6 +149,46 @@ namespace FormApp.Forms
             cmbCategory.SelectedValue = selectedEquipment.CategoryId;
             cmbAvailability.SelectedValue = selectedEquipment.AvailableId;
             cmbCondition.SelectedValue = selectedEquipment.ConditionId;
+            // Load existing image from database
+            if (selectedEquipment.Image != null && selectedEquipment.Image.Length > 0)
+            {
+                using (var ms = new MemoryStream(selectedEquipment.Image))
+                {
+                    picEquipment.Image = Image.FromStream(ms);
+                }
+            }
+            else
+            {
+                picEquipment.Image = null; // Or set a default placeholder image
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Title = "Select Equipment Image";
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    // Display image preview
+                    picEquipment.Image = Image.FromFile(ofd.FileName);
+
+                    // Store byte[] to be saved on Save Changes
+                    selectedImageBytes = File.ReadAllBytes(ofd.FileName);
+                }
+            }
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

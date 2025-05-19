@@ -138,7 +138,7 @@
             btnRefresh.BackColor = Color.FromArgb(249, 115, 22);
             btnRefresh.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(791, 95);
+            btnRefresh.Location = new Point(782, 91);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(113, 35);
             btnRefresh.TabIndex = 26;
@@ -151,7 +151,7 @@
             btnSearch.BackColor = Color.FromArgb(249, 115, 22);
             btnSearch.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(662, 95);
+            btnSearch.Location = new Point(629, 91);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(113, 35);
             btnSearch.TabIndex = 25;
@@ -161,12 +161,11 @@
             // 
             // txtSearch
             // 
-            txtSearch.ForeColor = SystemColors.ScrollBar;
+            txtSearch.ForeColor = Color.Black;
             txtSearch.Location = new Point(262, 97);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(371, 27);
+            txtSearch.Size = new Size(344, 27);
             txtSearch.TabIndex = 24;
-            txtSearch.Text = "Equipment ID";
             // 
             // lblLogOut
             // 
@@ -377,5 +376,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel4;
         private Label lblDivider;
+      //  private Button btnFilter;
     }
 }

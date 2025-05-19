@@ -49,6 +49,9 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            picEquipment = new PictureBox();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)picEquipment).BeginInit();
             SuspendLayout();
             // 
             // btnSaveChanges
@@ -56,7 +59,7 @@
             btnSaveChanges.BackColor = Color.FromArgb(249, 115, 22);
             btnSaveChanges.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnSaveChanges.ForeColor = Color.White;
-            btnSaveChanges.Location = new Point(383, 545);
+            btnSaveChanges.Location = new Point(301, 573);
             btnSaveChanges.Name = "btnSaveChanges";
             btnSaveChanges.Size = new Size(154, 35);
             btnSaveChanges.TabIndex = 20;
@@ -68,7 +71,7 @@
             // 
             cmbCondition.ForeColor = Color.Black;
             cmbCondition.FormattingEnabled = true;
-            cmbCondition.Location = new Point(493, 477);
+            cmbCondition.Location = new Point(441, 488);
             cmbCondition.Name = "cmbCondition";
             cmbCondition.Size = new Size(176, 28);
             cmbCondition.TabIndex = 19;
@@ -77,7 +80,7 @@
             // 
             cmbAvailability.ForeColor = Color.Black;
             cmbAvailability.FormattingEnabled = true;
-            cmbAvailability.Location = new Point(254, 477);
+            cmbAvailability.Location = new Point(155, 488);
             cmbAvailability.Name = "cmbAvailability";
             cmbAvailability.Size = new Size(176, 28);
             cmbAvailability.TabIndex = 18;
@@ -86,7 +89,7 @@
             // 
             cmbCategory.ForeColor = Color.Black;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(254, 402);
+            cmbCategory.Location = new Point(155, 402);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(176, 28);
             cmbCategory.TabIndex = 17;
@@ -94,24 +97,26 @@
             // txtPrice
             // 
             txtPrice.ForeColor = Color.Black;
-            txtPrice.Location = new Point(493, 407);
+            txtPrice.Location = new Point(441, 407);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(176, 27);
             txtPrice.TabIndex = 16;
+            txtPrice.TextChanged += txtPrice_TextChanged;
             // 
             // txtDescription
             // 
             txtDescription.ForeColor = Color.Black;
-            txtDescription.Location = new Point(254, 328);
+            txtDescription.Location = new Point(155, 330);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(415, 27);
+            txtDescription.Size = new Size(454, 27);
             txtDescription.TabIndex = 15;
+            txtDescription.TextChanged += txtDescription_TextChanged;
             // 
             // txtName
             // 
             txtName.ForeColor = Color.Black;
-            txtName.Location = new Point(493, 254);
+            txtName.Location = new Point(433, 254);
             txtName.Name = "txtName";
             txtName.Size = new Size(176, 27);
             txtName.TabIndex = 14;
@@ -120,7 +125,7 @@
             // 
             lblAddEquipment.AutoSize = true;
             lblAddEquipment.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblAddEquipment.Location = new Point(334, 159);
+            lblAddEquipment.Location = new Point(328, 138);
             lblAddEquipment.Name = "lblAddEquipment";
             lblAddEquipment.Size = new Size(236, 41);
             lblAddEquipment.TabIndex = 13;
@@ -160,7 +165,7 @@
             // 
             // txtEquipmentID
             // 
-            txtEquipmentID.Location = new Point(254, 254);
+            txtEquipmentID.Location = new Point(152, 254);
             txtEquipmentID.Name = "txtEquipmentID";
             txtEquipmentID.ReadOnly = true;
             txtEquipmentID.Size = new Size(176, 27);
@@ -178,7 +183,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(254, 231);
+            label1.Location = new Point(152, 220);
             label1.Name = "label1";
             label1.Size = new Size(103, 20);
             label1.TabIndex = 76;
@@ -187,7 +192,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(493, 231);
+            label2.Location = new Point(433, 220);
             label2.Name = "label2";
             label2.Size = new Size(52, 20);
             label2.TabIndex = 77;
@@ -196,7 +201,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(254, 305);
+            label3.Location = new Point(152, 298);
             label3.Name = "label3";
             label3.Size = new Size(88, 20);
             label3.TabIndex = 78;
@@ -205,7 +210,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(254, 379);
+            label4.Location = new Point(155, 379);
             label4.Name = "label4";
             label4.Size = new Size(72, 20);
             label4.TabIndex = 79;
@@ -214,7 +219,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(493, 379);
+            label5.Location = new Point(441, 379);
             label5.Name = "label5";
             label5.Size = new Size(44, 20);
             label5.TabIndex = 80;
@@ -223,7 +228,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(493, 454);
+            label6.Location = new Point(433, 462);
             label6.Name = "label6";
             label6.Size = new Size(77, 20);
             label6.TabIndex = 81;
@@ -232,11 +237,34 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(254, 454);
+            label7.Location = new Point(155, 454);
             label7.Name = "label7";
             label7.Size = new Size(74, 20);
             label7.TabIndex = 82;
             label7.Text = "Avaibility:";
+            // 
+            // picEquipment
+            // 
+            picEquipment.BorderStyle = BorderStyle.FixedSingle;
+            picEquipment.Location = new Point(709, 249);
+            picEquipment.Name = "picEquipment";
+            picEquipment.Size = new Size(150, 150);
+            picEquipment.SizeMode = PictureBoxSizeMode.Zoom;
+            picEquipment.TabIndex = 83;
+            picEquipment.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(249, 115, 22);
+            button1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(709, 439);
+            button1.Name = "button1";
+            button1.Size = new Size(154, 35);
+            button1.TabIndex = 84;
+            button1.Text = "Browse Image";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // EditEquipment
             // 
@@ -244,6 +272,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(927, 648);
+            Controls.Add(button1);
+            Controls.Add(picEquipment);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -269,6 +299,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EditEquipment";
             Load += EditEquipment_Load;
+            ((System.ComponentModel.ISupportInitialize)picEquipment).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -295,5 +326,7 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private PictureBox picEquipment;
+        private Button button1;
     }
 }

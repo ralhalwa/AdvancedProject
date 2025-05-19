@@ -49,6 +49,7 @@
             btnRefresh = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            btnFilter = new Button();
             ((System.ComponentModel.ISupportInitialize)RentalRequestGrid).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
@@ -61,7 +62,7 @@
             lblName.Name = "lblName";
             lblName.Size = new Size(217, 41);
             lblName.TabIndex = 0;
-            lblName.Text = "Sharmin";
+            lblName.Text = "Name";
             // 
             // lblPosition
             // 
@@ -123,19 +124,18 @@
             // 
             // requestId
             // 
-            requestId.ForeColor = SystemColors.ScrollBar;
+            requestId.ForeColor = Color.Black;
             requestId.Location = new Point(262, 97);
             requestId.Name = "requestId";
-            requestId.Size = new Size(371, 27);
+            requestId.Size = new Size(304, 27);
             requestId.TabIndex = 11;
-            requestId.Text = "Rental Request ID";
             // 
             // btnSearch
             // 
             btnSearch.BackColor = Color.FromArgb(249, 115, 22);
             btnSearch.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(662, 95);
+            btnSearch.Location = new Point(572, 95);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(113, 35);
             btnSearch.TabIndex = 12;
@@ -255,7 +255,7 @@
             btnRefresh.BackColor = Color.FromArgb(249, 115, 22);
             btnRefresh.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(791, 95);
+            btnRefresh.Location = new Point(808, 95);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(113, 35);
             btnRefresh.TabIndex = 13;
@@ -294,12 +294,27 @@
             panel1.Size = new Size(255, 40);
             panel1.TabIndex = 72;
             // 
+            // btnFilter
+            // 
+            btnFilter.BackColor = Color.FromArgb(249, 115, 22);
+            btnFilter.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(690, 95);
+            btnFilter.Margin = new Padding(2);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(113, 35);
+            btnFilter.TabIndex = 64;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
+            // 
             // RentalRequests
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(927, 648);
+            Controls.Add(btnFilter);
             Controls.Add(lblName);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblPosition);
@@ -345,5 +360,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private Label lblDivider;
+        private Button btnFilter;
     }
 }
