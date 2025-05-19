@@ -1449,3 +1449,9 @@ C:\Users\zahra\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\refint\F
 C:\Users\zahra\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.pdb
 C:\Users\zahra\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.genruntimeconfig.cache
 C:\Users\zahra\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\ref\FormApp.dll
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\SeedImages\camera.jfif
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\bin\Debug\net8.0-windows\SeedImages\camera1.jpg
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Form1.resources
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.RentalRequestFilter.resources
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.RentalTransactionFilter.resources
+C:\Users\HUAWEI\Desktop\AdvancedProject\FormApp\obj\Debug\net8.0-windows\FormApp.Forms.ReturnRecordFilter.resources

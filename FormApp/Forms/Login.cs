@@ -46,31 +46,39 @@ namespace FormApp.Forms
 
             if (user != null)
             {
-                // store session data
-                UserSession.UserID = user.Id;
-                UserSession.FullName = $"{user.Fname} {user.Lname}";
-                UserSession.Email = user.Email;
-                UserSession.RoleID = user.RoleId;
-
-                // Log successful login 
-                Log log = new Log
+                // only allow Admins or Managers to login
+                if (user.RoleId == 1 || user.RoleId == 2)
                 {
-                    UserId = user.Id,
-                    Action = "Login",
-                    TimeStamp = DateTime.Now,
-                    AffectedData = $"User logged in: {user.Email}",
-                    Source = "Login Form"
-                };
-                _context.Logs.Add(log);
-                _context.SaveChanges();
+                    // store session data
+                    UserSession.UserID = user.Id;
+                    UserSession.FullName = $"{user.Fname} {user.Lname}";
+                    UserSession.Email = user.Email;
+                    UserSession.RoleID = user.RoleId;
 
-                // display successful login message
-                MessageBox.Show($"Welcome {UserSession.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Log successful login 
+                    Log log = new Log
+                    {
+                        UserId = user.Id,
+                        Action = "Login",
+                        TimeStamp = DateTime.Now,
+                        AffectedData = $"User logged in: {user.Email}",
+                        Source = "Login Form"
+                    };
+                    _context.Logs.Add(log);
+                    _context.SaveChanges();
 
-                // open dashboard and close login form
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
+                    // display successful login message
+                    MessageBox.Show($"Welcome {UserSession.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // open dashboard and close login form
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Access denied. Only Admins and Managers can sign in.", "Unauthorized", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
