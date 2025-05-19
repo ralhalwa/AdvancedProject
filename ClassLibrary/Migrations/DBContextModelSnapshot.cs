@@ -359,9 +359,8 @@ namespace ClassLibrary.Migrations
 
                     b.Property<string>("AffectedData")
                         .IsRequired()
-                        .HasMaxLength(50)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Source")
                         .IsRequired()

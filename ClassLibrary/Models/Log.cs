@@ -23,7 +23,7 @@ public partial class Log
     [Column(TypeName = "datetime")]
     public DateTime TimeStamp { get; set; }
 
-    [StringLength(50)]
+    [Column(TypeName ="nvarchar(max)")]
     [Unicode(false)]
     public string AffectedData { get; set; } = null!;
 
